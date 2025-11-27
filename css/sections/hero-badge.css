@@ -1,0 +1,27 @@
+/* Hero Badge Style */
+.hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    color: #fbbf24;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.1);
+    animation: floatBadge 3s ease-in-out infinite;
+}
+
+@keyframes floatBadge {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}

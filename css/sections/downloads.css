@@ -1,0 +1,280 @@
+/* Downloads Section Styles - Premium Overhaul */
+
+.downloads-section {
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.platform-section {
+    background: rgba(30, 41, 59, 0.6);
+    border-radius: 24px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Platform Specific Glows */
+.android-glow:hover {
+    border-color: rgba(34, 197, 94, 0.5);
+    /* Green */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(34, 197, 94, 0.2);
+}
+
+.ios-glow:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    /* White/Silver */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.tv-glow:hover {
+    border-color: rgba(59, 130, 246, 0.5);
+    /* Blue */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(59, 130, 246, 0.2);
+}
+
+.platform-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.platform-header i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Icon Colors */
+.android-glow .platform-header i {
+    color: #4ade80;
+    text-shadow: 0 0 20px rgba(74, 222, 128, 0.4);
+}
+
+.ios-glow .platform-header i {
+    color: #f8fafc;
+    text-shadow: 0 0 20px rgba(248, 250, 252, 0.4);
+}
+
+.tv-glow .platform-header i {
+    color: #60a5fa;
+    text-shadow: 0 0 20px rgba(96, 165, 250, 0.4);
+}
+
+.platform-section:hover .platform-header i {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Platform Title Colors */
+.platform-header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    /* Fallback */
+}
+
+.android-glow .platform-header h3 {
+    color: #4ade80;
+    /* Android Green */
+    text-shadow: 0 0 15px rgba(74, 222, 128, 0.3);
+}
+
+.ios-glow .platform-header h3 {
+    background: linear-gradient(to right, #fff, #cbd5e1);
+    /* Silver Gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.tv-glow .platform-header h3 {
+    color: #60a5fa;
+    /* Smart TV Blue */
+    text-shadow: 0 0 15px rgba(96, 165, 250, 0.3);
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.method-card {
+    background: rgba(15, 23, 42, 0.5);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.method-card:hover {
+    background: rgba(15, 23, 42, 0.8);
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.method-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.method-number {
+    width: 36px;
+    height: 36px;
+    background: var(--accent-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px rgba(124, 58, 237, 0.4);
+}
+
+.method-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #fff, #e2e8f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.method-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.method-body p {
+    color: #e2e8f0;
+    /* Brighter text */
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Activation Box */
+.activation-box {
+    background: rgba(15, 23, 42, 0.6);
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-top: auto;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    /* Purple tint border */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.activation-title {
+    color: #fbbf24;
+    /* Gold */
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: block;
+    font-weight: 800;
+    text-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
+    border-bottom: 1px solid rgba(251, 191, 36, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.step-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.step-list li {
+    position: relative;
+    padding-right: 30px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #f1f5f9;
+    /* Very bright gray/white */
+    font-weight: 500;
+}
+
+.step-list li strong {
+    color: #38bdf8;
+    /* Light Blue for labels */
+}
+
+.step-list li::before {
+    content: '✓';
+    color: #4ade80;
+    /* Bright Green */
+    position: absolute;
+    right: 0;
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-shadow: 0 0 10px rgba(74, 222, 128, 0.4);
+}
+
+.code-badge {
+    background: rgba(124, 58, 237, 0.2);
+    color: #c084fc;
+    /* Bright Purple */
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    border: 1px solid rgba(124, 58, 237, 0.5);
+    direction: ltr;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 0 10px rgba(192, 132, 252, 0.2);
+}
+
+/* Buttons */
+.download-btn-wrapper {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.download-btn-wrapper .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
+}
+
+.pulse-btn {
+    animation: pulse-btn 2s infinite;
+}
+
+@keyframes pulse-btn {
+    0% {
+        box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(124, 58, 237, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(124, 58, 237, 0);
+    }
+}
+
+/* Holographic Text Utility */
+.holographic-text {
+    background: linear-gradient(to right, #ffffff, #a5b4fc, #e0e7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(165, 180, 252, 0.4);
+}
+
+.text-glow {
+    text-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+}

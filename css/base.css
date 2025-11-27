@@ -1,0 +1,161 @@
+/* Base Styles & Variables */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+
+:root {
+    /* Color Palette - Premium Dark Theme */
+    --bg-color: #050505;
+    --bg-gradient: radial-gradient(circle at top center, #1a1a2e 0%, #050505 100%);
+    
+    /* Glassmorphism Surface */
+    --surface-color: rgba(255, 255, 255, 0.03);
+    --surface-border: rgba(255, 255, 255, 0.05);
+    --surface-hover: rgba(255, 255, 255, 0.08);
+    --glass-blur: blur(10px);
+    
+    /* Text Colors */
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --text-muted: #666666;
+    
+    /* Brand Accents */
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
+    --accent-color: #d946ef;
+    --gold-color: #fbbf24;
+    
+    /* Gradients */
+    --primary-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    --accent-gradient: linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%);
+    --gold-gradient: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+    --text-gradient: linear-gradient(to right, #fff, #a5b4fc);
+    
+    /* Glow Effects */
+    --glow-primary: 0 0 20px rgba(99, 102, 241, 0.3);
+    --glow-accent: 0 0 20px rgba(217, 70, 239, 0.3);
+    --glow-gold: 0 0 20px rgba(251, 191, 36, 0.3);
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+    --spacing-xxl: 8rem;
+
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-smooth: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: var(--bg-color);
+    background-image: var(--bg-gradient);
+    background-attachment: fixed;
+    color: var(--text-primary);
+    line-height: 1.7;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-fast);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--surface-border);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Utilities */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.section {
+    padding: var(--spacing-xl) 0;
+    position: relative;
+}
+
+/* Glassmorphism Utility */
+.glass-panel {
+    background: var(--surface-color);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--surface-border);
+    border-radius: 16px;
+}
+
+.bg-surface {
+    background: transparent; /* Overridden by glass-panel usually, or kept transparent for particles */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    width: 100%;
+}
+
+.section-desc {
+    max-width: 700px;
+    margin: 0 auto var(--spacing-xl);
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Particles Background */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none; /* Allow clicking through */
+}

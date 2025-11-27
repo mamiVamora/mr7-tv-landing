@@ -1,0 +1,108 @@
+/* Services Section Styles */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: 2rem;
+}
+
+/* Shiny Card Effect */
+.shiny-card {
+    background: var(--surface-color);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--surface-border);
+    border-radius: 20px;
+    padding: var(--spacing-lg);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shiny-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.5;
+}
+
+.shiny-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(124, 58, 237, 0.2);
+    border-color: rgba(124, 58, 237, 0.5);
+}
+
+.shiny-card:hover::before {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color), var(--gold-color));
+    opacity: 1;
+}
+
+/* Icon Animation */
+.stat-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 10px rgba(217, 70, 239, 0.4));
+}
+
+.pulse-icon {
+    animation: pulseIcon 2s infinite;
+}
+
+@keyframes pulseIcon {
+    0% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px rgba(217, 70, 239, 0.4));
+    }
+
+    50% {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 20px rgba(217, 70, 239, 0.8));
+    }
+
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px rgba(217, 70, 239, 0.4));
+    }
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 900;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: #e0e7ff;
+    font-weight: 500;
+}
+
+/* Holographic Text Utility */
+.holographic-text {
+    background: linear-gradient(to right, #ffffff, #a5b4fc, #e0e7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(165, 180, 252, 0.4);
+}
+
+.text-glow {
+    text-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

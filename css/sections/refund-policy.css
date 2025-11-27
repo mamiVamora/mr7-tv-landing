@@ -1,0 +1,45 @@
+}
+
+.refund-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-primary);
+}
+
+.refund-list li i {
+    color: var(--gold-accent);
+}
+
+.refund-note {
+    background: rgba(124, 58, 237, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    border: 1px dashed rgba(124, 58, 237, 0.3);
+}
+
+.refund-note i {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .refund-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .refund-icon {
+        margin: 0 auto;
+    }
+
+    .refund-list li {
+        justify-content: center;
+    }
+}

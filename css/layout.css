@@ -1,0 +1,137 @@
+/* Layout Styles (Header & Footer) */
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    padding: 10px 0;
+    background: rgba(5, 5, 5, 0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.3));
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.nav-links a {
+    font-size: 1.05rem;
+    font-weight: 700;
+    position: relative;
+    color: #e0f2fe;
+    /* Fixed Bright Cyan-White */
+    text-shadow: 0 0 5px rgba(56, 189, 248, 0.3);
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: linear-gradient(to right, #fbbf24, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+    transform: scale(1.1);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--primary-gradient);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    background: linear-gradient(to top, #000 0%, transparent 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+footer p {
+    background: linear-gradient(90deg, #22d3ee, #e879f9, #fbbf24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: inline-block;
+    text-shadow: 0 0 15px rgba(232, 121, 249, 0.3);
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 1px;
+    background: radial-gradient(circle, var(--primary-color) 0%, transparent 100%);
+    opacity: 0.5;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .logo img {
+        height: 40px;
+    }
+
+    .nav-links {
+        display: none;
+        /* Mobile menu implementation would go here */
+    }
+}

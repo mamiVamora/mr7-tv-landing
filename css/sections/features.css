@@ -1,0 +1,128 @@
+/* Features Section Styles - Premium Overhaul */
+
+.features-premium-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.feature-premium {
+    background: rgba(30, 41, 59, 0.7);
+    /* Deep dark glass base */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Shiny Border Effect */
+.feature-premium::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    padding: 2px;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+/* Alive Hover Effect - Matching Pricing Page */
+.feature-premium:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: rgba(30, 41, 59, 0.85);
+    border-color: rgba(124, 58, 237, 0.8);
+    /* Purple border base */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6),
+        0 0 30px rgba(124, 58, 237, 0.4),
+        /* Purple Glow */
+        inset 0 0 20px rgba(124, 58, 237, 0.2);
+    /* Inner Glow */
+}
+
+/* Gradient Border Animation on Hover */
+.feature-premium:hover::before {
+    opacity: 1;
+    background: linear-gradient(45deg, #f472b6, #a78bfa, #22d3ee);
+    /* Pink, Purple, Cyan */
+}
+
+/* Neon Icon Container */
+.feature-premium-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(34, 211, 238, 0.1);
+    /* Cyan tint */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #22d3ee;
+    /* Cyan Neon */
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.2);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+.feature-premium:hover .feature-premium-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: linear-gradient(45deg, #22d3ee, #818cf8);
+    color: white;
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.6);
+    border-color: transparent;
+}
+
+/* Holographic Title */
+.feature-premium h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #fff, #e0e7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+}
+
+.feature-premium:hover h4 {
+    background: linear-gradient(to right, #fbbf24, #fcd34d, #fff);
+    /* Gold to White on hover */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.5));
+}
+
+/* Description Text */
+.feature-premium p {
+    font-size: 1rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .features-premium-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .feature-premium {
+        padding: 1.5rem;
+    }
+}

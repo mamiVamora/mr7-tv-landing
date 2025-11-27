@@ -1,0 +1,127 @@
+/* Component Styles (Buttons, Cards, etc) */
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+
+.btn-primary {
+    background: var(--primary-gradient);
+    color: white;
+    box-shadow: var(--glow-primary);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.5);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: white;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.1);
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: var(--glow-primary);
+}
+
+.btn-lg {
+    padding: 18px 45px;
+    font-size: 1.1rem;
+}
+
+/* General Card Styles */
+.card {
+    background: var(--surface-color);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--surface-border);
+    padding: var(--spacing-lg);
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+        inset 0 0 20px rgba(99, 102, 241, 0.1);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    background: var(--surface-hover);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    border: 1px solid var(--surface-border);
+    transition: var(--transition-fast);
+}
+
+.card:hover .icon-box {
+    background: var(--primary-gradient);
+    color: white;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: var(--glow-primary);
+    border-color: transparent;
+}
