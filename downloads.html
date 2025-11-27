@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MR7 TV - التحميلات</title>
+    <title>MR7 TV - طريقة التحميل</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sections/downloads.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -20,6 +20,9 @@
                 <a href="index.html" class="logo">
                     <img src="images/logo.jpg" alt="MR7 TV Logo">
                 </a>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <ul class="nav-links">
                     <li><a href="index.html">الرئيسية</a></li>
                     <li><a href="services.html">خدماتنا</a></li>
@@ -27,7 +30,7 @@
                     <li><a href="features.html">المميزات</a></li>
                     <li><a href="gallery.html">المعرض</a></li>
                     <li><a href="become-agent.html">كن وكيلاً</a></li>
-                    <li><a href="downloads.html" class="active">التحميلات</a></li>
+                    <li><a href="downloads.html" class="active">طريقة التحميل</a></li>
                     <li><a href="faq.html">الأسئلة الشائعة</a></li>
                     <li><a href="contact.html">تواصل معنا</a></li>
                 </ul>
@@ -46,8 +49,8 @@
             </div>
 
             <div class="container" style="position: relative; z-index: 2;">
-                <h2 class="section-title text-glow" data-aos="fade-up">تحميل <span
-                        class="holographic-text">التطبيق</span></h2>
+                <h2 class="section-title text-glow" data-aos="fade-up">طريقة <span
+                        class="holographic-text">التحميل</span></h2>
                 <p class="section-desc" data-aos="fade-up" data-aos-delay="100">
                     اختر منصتك وابدأ المشاهدة فوراً
                 </p>
@@ -82,7 +85,7 @@
                             <div class="method-body">
                                 <p>التحميل من متجر Google Play.</p>
                                 <div class="download-btn-wrapper">
-                                    <a href="https://play.google.com/store/search?q=000+player&c=apps" target="_blank"
+                                    <a href="market://search?q=000+player&c=apps" target="_blank"
                                         class="btn btn-primary">
                                         <i class="fab fa-google-play"></i> فتح المتجر
                                     </a>
@@ -91,7 +94,7 @@
                                     <span class="activation-title"><i class="fas fa-key"></i> خطوات التفعيل:</span>
                                     <ul class="step-list">
                                         <li>افتح التطبيق بعد التحميل</li>
-                                        <li>أدخل كود التفعيل: <span class="code-badge">6913771</span></li>
+                                        <li>أدخل كود التفعيل: <span class="code-badge">6021421</span></li>
                                         <li>أدخل بيانات اشتراكك</li>
                                     </ul>
                                 </div>
@@ -114,7 +117,7 @@
                             </div>
                             <div class="method-body">
                                 <div class="download-btn-wrapper">
-                                    <a href="https://apps.apple.com/us/app/000-player/id1665441224" target="_blank"
+                                    <a href="itms-apps://apps.apple.com/us/app/000-player/id1665441224" target="_blank"
                                         class="btn btn-primary">
                                         <i class="fab fa-app-store"></i> تحميل من App Store
                                     </a>
@@ -197,6 +200,24 @@
             },
             retina_detect: true
         });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = menuToggle.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
     </script>
 </body>
 

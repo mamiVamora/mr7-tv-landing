@@ -21,6 +21,9 @@
                 <a href="index.html" class="logo">
                     <img src="logo.jpg" alt="MR7 TV Logo">
                 </a>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">الرئيسية</a></li>
                     <li><a href="services.html">خدماتنا</a></li>
@@ -28,7 +31,7 @@
                     <li><a href="features.html">المميزات</a></li>
                     <li><a href="gallery.html">المعرض</a></li>
                     <li><a href="become-agent.html">كن وكيلاً</a></li>
-                    <li><a href="downloads.html">التحميلات</a></li>
+                    <li><a href="downloads.html">طريقة التحميل</a></li>
                     <li><a href="contact.html">تواصل معنا</a></li>
                 </ul>
             </nav>
@@ -103,6 +106,24 @@
             },
             retina_detect: true
         });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = menuToggle.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
     </script>
 </body>
 
