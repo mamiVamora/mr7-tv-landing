@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR7 TV - المميزات</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="MR7 TV Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="pricing.html">الباقات</a></li>
+                    <li><a href="features.html" class="active">المميزات</a></li>
+                    <li><a href="gallery.html">المعرض</a></li>
+                    <li><a href="become-agent.html">كن وكيلاً</a></li>
+                    <li><a href="downloads.html">التحميلات</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="features" class="section">
+            <!-- Floating Icons Background -->
+            <div class="floating-icons" style="z-index: 0;">
+                <i class="fas fa-bolt icon-float icon-1"></i>
+                <i class="fas fa-shield-alt icon-float icon-2"></i>
+                <i class="fas fa-film icon-float icon-3"></i>
+                <i class="fas fa-globe icon-float icon-4"></i>
+            </div>
+
+            <div class="container" style="position: relative; z-index: 2;">
+                <h2 class="section-title text-glow" data-aos="fade-up">مميزات <span
+                        class="holographic-text">استثنائية</span></h2>
+                <p class="section-desc" data-aos="fade-up" data-aos-delay="100">
+                    تجربة مشاهدة متكاملة مع أحدث التقنيات
+                </p>
+
+                <div class="features-premium-grid">
+                    <div class="feature-premium" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-premium-icon"><i class="fas fa-bolt"></i></div>
+                        <h4>سرعة فائقة</h4>
+                        <p>تحميل فوري وتشغيل سلس بدون انتظار أو تحميل مسبق - بدون تقطيع</p>
+                    </div>
+                    <div class="feature-premium" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-premium-icon"><i class="fas fa-star"></i></div>
+                        <h4>جودة 4K Ultra HD</h4>
+                        <p>صورة واضحة حادة بدقة عالية وصوت Dolby محيطي</p>
+                    </div>
+                    <div class="feature-premium" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-premium-icon"><i class="fas fa-download"></i></div>
+                        <h4>التحميل للمشاهدة لاحقاً</h4>
+                        <p>حمّل المحتوى المفضل وشاهده بدون إنترنت</p>
+                    </div>
+                    <div class="feature-premium" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-premium-icon"><i class="fas fa-users"></i></div>
+                        <h4>حسابين بسعر مناسب</h4>
+                        <p>شارك الاشتراك مع العائلة - حسابين بسعر مميز</p>
+                    </div>
+                    <div class="feature-premium" data-aos="fade-up" data-aos-delay="500">
+                        <div class="feature-premium-icon"><i class="fas fa-closed-captioning"></i></div>
+                        <h4>ترجمة احترافية</h4>
+                        <p>ترجمة عربية دقيقة لجميع المحتويات الأجنبية</p>
+                    </div>
+                    <div class="feature-premium" data-aos="fade-up" data-aos-delay="600">
+                        <div class="feature-premium-icon"><i class="fas fa-sync-alt"></i></div>
+                        <h4>تحديث يومي</h4>
+                        <p>إضافة محتوى جديد كل يوم - دائماً ما هو جديد</p>
+                    </div>
+                    <div class="feature-premium" data-aos="fade-up" data-aos-delay="700">
+                        <div class="feature-premium-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>آمن ومشفّر</h4>
+                        <p>حماية كاملة لبياناتك وخصوصيتك مع تشفير عالي</p>
+                    </div>
+                    <div class="feature-premium" data-aos="fade-up" data-aos-delay="800">
+                        <div class="feature-premium-icon"><i class="fas fa-headset"></i></div>
+                        <h4>دعم فني 24/7</h4>
+                        <p>فريق دعم متواجد على مدار الساعة لمساعدتك</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MR7 TV. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#7c3aed' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: '#7c3aed', opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR7 TV - سياسة الاستبدال والاسترجاع</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="logo.jpg" alt="MR7 TV Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="pricing.html">الباقات</a></li>
+                    <li><a href="features.html">المميزات</a></li>
+                    <li><a href="gallery.html">المعرض</a></li>
+                    <li><a href="become-agent.html">كن وكيلاً</a></li>
+                    <li><a href="downloads.html">التحميلات</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="refund-policy" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">سياسة الاستبدال والاسترجاع</h2>
+                <div class="refund-policy-content" data-aos="fade-up" data-aos-delay="100">
+
+                    <!-- Rule 1 -->
+                    <div class="refund-card compensation">
+                        <div class="refund-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="refund-text">
+                            <h3>تعويض فترة العطل</h3>
+                            <p>يحق للعميل تعويض <strong>ضعف مدة العطل</strong> في حال حصل الخلل بسبب سيرفرات مرح TV.</p>
+                        </div>
+                    </div>
+
+                    <!-- Rule 2 -->
+                    <div class="refund-card no-refund">
+                        <div class="refund-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="refund-text">
+                            <h3>لا يوجد استرجاع نقدي</h3>
+                            <p>لا يحق للعميل استرجاع المبلغ المدفوع نهائياً <strong>بعد تفعيل الاشتراك</strong>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Rule 3 -->
+                    <div class="refund-card replacement">
+                        <div class="refund-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <div class="refund-text">
+                            <h3>استبدال الاشتراكات</h3>
+                            <p>يتم استبدال الاشتراك في حال وجود خلل تقني من جانبنا <strong>ولم يتم التمكن من
+                                    إصلاحه</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center" style="margin-top: 2rem;">
+                        <a href="https://wa.me/905340218618" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i> تواصل معنا: +90 5340218618
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MR7 TV. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#7c3aed' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: '#7c3aed', opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+
+</html>
