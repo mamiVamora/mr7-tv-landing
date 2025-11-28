@@ -125,13 +125,98 @@ footer::before {
 }
 
 /* Responsive Navigation */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+    color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
     .logo img {
         height: 40px;
     }
 
+    .menu-toggle {
+        display: block;
+    }
+
     .nav-links {
         display: none;
-        /* Mobile menu implementation would go here */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(5, 5, 5, 0.98);
+        padding: 20px 0;
+        gap: 15px;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+
+    .nav-links.active {
+        display: flex;
+        animation: slideDown 0.3s ease forwards;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 15px 20px;
+        font-size: 1.1rem;
+        color: #ffffff !important;
+        /* Force solid white color */
+        background: transparent !important;
+        /* Remove any background gradients */
+        -webkit-text-fill-color: #ffffff !important;
+        /* Override text clip */
+        background-clip: border-box !important;
+        -webkit-background-clip: border-box !important;
+        text-shadow: none !important;
+        /* Clean text */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        background: rgba(255, 255, 255, 0.05) !important;
+        color: #fbbf24 !important;
+        -webkit-text-fill-color: #fbbf24 !important;
+        transform: none !important;
+        /* Prevent layout shifts */
+        padding-right: 25px;
+        /* Simple movement effect */
+    }
+
+    .nav-links a::after {
+        display: none;
+        /* Remove underline animation on mobile */
     }
 }
