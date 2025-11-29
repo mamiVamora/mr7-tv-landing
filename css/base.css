@@ -5,30 +5,30 @@
     /* Color Palette - Premium Dark Theme */
     --bg-color: #050505;
     --bg-gradient: radial-gradient(circle at top center, #1a1a2e 0%, #050505 100%);
-    
+
     /* Glassmorphism Surface */
     --surface-color: rgba(255, 255, 255, 0.03);
     --surface-border: rgba(255, 255, 255, 0.05);
     --surface-hover: rgba(255, 255, 255, 0.08);
     --glass-blur: blur(10px);
-    
+
     /* Text Colors */
     --text-primary: #ffffff;
     --text-secondary: #b3b3b3;
     --text-muted: #666666;
-    
+
     /* Brand Accents */
     --primary-color: #6366f1;
     --secondary-color: #8b5cf6;
     --accent-color: #d946ef;
     --gold-color: #fbbf24;
-    
+
     /* Gradients */
     --primary-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
     --accent-gradient: linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%);
     --gold-gradient: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
     --text-gradient: linear-gradient(to right, #fff, #a5b4fc);
-    
+
     /* Glow Effects */
     --glow-primary: 0 0 20px rgba(99, 102, 241, 0.3);
     --glow-accent: 0 0 20px rgba(217, 70, 239, 0.3);
@@ -121,7 +121,8 @@ ul {
 }
 
 .bg-surface {
-    background: transparent; /* Overridden by glass-panel usually, or kept transparent for particles */
+    background: transparent;
+    /* Overridden by glass-panel usually, or kept transparent for particles */
 }
 
 .text-center {
@@ -157,5 +158,47 @@ ul {
     top: 0;
     left: 0;
     z-index: -1;
-    pointer-events: none; /* Allow clicking through */
+    pointer-events: none;
+    /* Allow clicking through */
+}
+
+/* --- NEW AESTHETIC ENHANCEMENTS --- */
+
+/* 1. Custom Text Selection */
+::selection {
+    background: rgba(251, 191, 36, 0.3);
+    /* Gold tint */
+    color: #fff;
+    text-shadow: 0 0 10px #fbbf24;
+}
+
+/* 2. Gradient Icons Utility */
+.icon-gradient {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    /* Required for transform */
+    transition: transform 0.3s ease;
+}
+
+.icon-gradient-gold {
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-gradient-accent {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 3. Subtle Hover Lift for Icons */
+.icon-hover-lift:hover {
+    transform: translateY(-3px) scale(1.1);
+    filter: drop-shadow(0 5px 15px rgba(99, 102, 241, 0.4));
 }

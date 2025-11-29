@@ -1,0 +1,95 @@
+/* Devices Section Styles */
+.devices-section {
+    padding: 60px 0;
+    background: #0f172a;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.devices-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.device-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #94a3b8;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 15px;
+    border-radius: 16px;
+    position: relative;
+}
+
+/* Specific Device Colors */
+.device-item:nth-child(1) {
+    --device-color: #8b5cf6;
+}
+
+/* Smart TV - Violet */
+.device-item:nth-child(2) {
+    --device-color: #3ddc84;
+}
+
+/* Android - Green */
+.device-item:nth-child(3) {
+    --device-color: #e2e8f0;
+}
+
+/* Apple - White/Silver */
+.device-item:nth-child(4) {
+    --device-color: #00a4ef;
+}
+
+/* Windows - Blue */
+.device-item:nth-child(5) {
+    --device-color: #f59e0b;
+}
+
+/* Tablet - Amber */
+
+/* Permanent Colors (No Hover Required) */
+.device-item i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    transition: all 0.4s ease;
+    color: var(--device-color);
+    /* Always colored */
+    filter: drop-shadow(0 0 10px var(--device-color));
+    /* Always glowing */
+}
+
+.device-item span {
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    color: var(--device-color);
+    /* Always colored */
+    text-shadow: 0 0 5px var(--device-color);
+}
+
+/* Hover Effects - Scale Only */
+.device-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.device-item:hover i {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px var(--device-color));
+    /* Stronger glow on hover */
+}
+
+@media (max-width: 768px) {
+    .devices-grid {
+        gap: 20px;
+    }
+
+    .device-item i {
+        font-size: 2.5rem;
+    }
+}

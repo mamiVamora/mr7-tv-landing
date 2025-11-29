@@ -20,5 +20,10 @@
 @import 'sections/agent.css';
 @import 'sections/faq.css';
 @import 'sections/downloads.css';
+@import 'sections/testimonials.css';
+@import 'sections/countdown.css';
+@import 'sections/floating-cta.css';
+@import 'sections/devices.css';
+@import 'sections/steps.css';
 
 /* Contact section uses standard components, no specific extra CSS needed currently */
