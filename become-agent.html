@@ -4,24 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="كن وكيلاً لـ MR7 TV وحقق دخلاً إضافياً. انضم إلينا الآن واحصل على لوحة تحكم خاصة وأسعار جملة مميزة.">
     <title>MR7 TV - كن وكيلاً</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sections/agent.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MR7 TV - كن وكيلاً</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sections/agent.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/global-enhancements.css">
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <meta property="og:title" content="MR7 TV - كن وكيلاً">
+    <meta property="og:description"
+        content="كن وكيلاً لـ MR7 TV وحقق دخلاً إضافياً. انضم إلينا الآن واحصل على لوحة تحكم خاصة وأسعار جملة مميزة.">
+    <meta property="og:image" content="https://mr7tv.online/images/logo.jpg">
+    <meta property="og:url" content="https://mr7tv.online/become-agent.html">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
@@ -102,29 +99,29 @@
                         <p>احصل على قوالب تصميم احترافية جاهزة للاستخدام في حملاتك التسويقية</p>
                     </div>
                 </div>
-
                 <!-- Registration Form -->
                 <div class="agent-form-container" data-aos="fade-up" data-aos-delay="500">
                     <div class="form-glass">
                         <h3><i class="fas fa-file-signature"></i> طلب انضمام كوكيل</h3>
                         <p>املأ البيانات وسنتواصل معك فوراً لتفعيل حساب الوكيل</p>
-                        <form action="https://wa.me/+905340218618" method="get" target="_blank" class="agent-form">
+                        <form onsubmit="event.preventDefault(); sendWhatsapp();" class="agent-form">
                             <div class="form-group">
-                                <input type="text" name="text" placeholder="الاسم الكامل" required class="form-input"
-                                    id="agentName">
+                                <input type="text" id="agentName" placeholder="الاسم الكامل" required
+                                    class="form-input">
                             </div>
                             <div class="form-group">
-                                <input type="text" placeholder="رقم الواتساب" required class="form-input">
+                                <input type="tel" id="agentPhone" placeholder="رقم الواتساب" required
+                                    class="form-input">
                             </div>
                             <div class="form-group">
-                                <select class="form-input">
+                                <select id="agentExp" class="form-input" required>
                                     <option value="" disabled selected>الخبرة السابقة</option>
-                                    <option value="new">مبتدئ</option>
-                                    <option value="expert">لدي خبرة في المجال</option>
-                                    <option value="reseller">لدي لوحة سابقة</option>
+                                    <option value="مبتدئ">مبتدئ</option>
+                                    <option value="خبير">لدي خبرة في المجال</option>
+                                    <option value="موزع سابق">لدي لوحة سابقة</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block" onclick="prepareWhatsappMessage()">
+                            <button type="submit" class="btn btn-primary btn-block">
                                 إرسال الطلب <i class="fab fa-whatsapp"></i>
                             </button>
                         </form>
@@ -143,6 +140,7 @@
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/global-enhancements.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
         particlesJS('particles-js', {
@@ -162,11 +160,20 @@
             retina_detect: true
         });
 
-        function prepareWhatsappMessage() {
+        function sendWhatsapp() {
             const name = document.getElementById('agentName').value;
-            const text = `مرحباً، أرغب في الانضمام كوكيل. اسمي: ${name}`;
-            // The form action handles the redirect, this just updates the text param if we were using JS fully.
-            // For simple HTML form to WA, we rely on the input name="text" but let's keep it simple.
+            const phone = document.getElementById('agentPhone').value;
+            const exp = document.getElementById('agentExp').value;
+
+            if (!name || !phone || !exp) {
+                alert('يرجى تعبئة جميع الحقول');
+                return;
+            }
+
+            const message = `مرحباً، أرغب في الانضمام كوكيل MR7 TV.%0a%0a👤 *الاسم:* ${name}%0a📱 *رقم الهاتف:* ${phone}%0a💼 *الخبرة:* ${exp}`;
+
+            const url = `https://wa.me/905340218618?text=${message}`;
+            window.open(url, '_blank');
         }
 
         // Mobile Menu Toggle
