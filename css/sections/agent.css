@@ -1,0 +1,251 @@
+/* Agent Section Styles - Premium Overhaul */
+
+.agent-section {
+    /* Removed the generic image, relying on the global particle background for consistency */
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.agent-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.benefit-card {
+    background: rgba(30, 41, 59, 0.6);
+    padding: 2rem;
+    border-radius: 24px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Shiny Border */
+.benefit-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    padding: 2px;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    background: rgba(30, 41, 59, 0.8);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(124, 58, 237, 0.3);
+    border-color: rgba(124, 58, 237, 0.6);
+}
+
+.benefit-card:hover::before {
+    opacity: 1;
+    background: linear-gradient(45deg, #ec4899, #8b5cf6, #3b82f6);
+}
+
+/* Featured / Wholesale Card */
+.benefit-card.featured {
+    background: linear-gradient(180deg, rgba(124, 58, 237, 0.15) 0%, rgba(30, 41, 59, 0.7) 100%);
+    border-color: rgba(124, 58, 237, 0.4);
+}
+
+/* Gold Card (Free App) */
+.benefit-card.featured-gold {
+    background: linear-gradient(180deg, rgba(251, 191, 36, 0.15) 0%, rgba(30, 41, 59, 0.7) 100%);
+    border-color: rgba(251, 191, 36, 0.4);
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.1);
+}
+
+.benefit-card.featured-gold:hover {
+    border-color: rgba(251, 191, 36, 1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(251, 191, 36, 0.4);
+}
+
+.benefit-card.featured-gold:hover::before {
+    background: linear-gradient(45deg, #fcd34d, #fbbf24, #f59e0b);
+}
+
+/* Badges */
+.benefit-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 4px 15px;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.benefit-badge.best {
+    background: var(--accent-gradient);
+    color: white;
+    box-shadow: 0 0 10px rgba(124, 58, 237, 0.5);
+}
+
+.benefit-badge.gold {
+    background: var(--gold-gradient);
+    color: black;
+    box-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+}
+
+/* Icons */
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--accent-color);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-card:hover .benefit-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: var(--accent-gradient);
+    color: white;
+    box-shadow: 0 0 25px rgba(124, 58, 237, 0.5);
+}
+
+.benefit-card.featured-gold .benefit-icon {
+    color: var(--gold-color);
+}
+
+.benefit-card.featured-gold:hover .benefit-icon {
+    background: var(--gold-gradient);
+    color: black;
+    box-shadow: 0 0 25px rgba(251, 191, 36, 0.5);
+}
+
+/* Typography */
+.benefit-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 700;
+}
+
+.benefit-card p {
+    color: #cbd5e1;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Registration Form Styles */
+.agent-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.form-glass {
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 3rem;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-glass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--accent-gradient);
+}
+
+.form-glass h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #fff, #e0e7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-glass p {
+    color: #94a3b8;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+    background: rgba(15, 23, 42, 0.8);
+}
+
+.form-input option {
+    background: #0f172a;
+    color: white;
+}
+
+.btn-block {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    background: var(--accent-gradient);
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
+}
+
+.btn-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(124, 58, 237, 0.5);
+}
+
+/* Holographic Text Utility */
+.holographic-text {
+    background: linear-gradient(to right, #ffffff, #a5b4fc, #e0e7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(165, 180, 252, 0.4);
+}
+
+.text-glow {
+    text-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+}

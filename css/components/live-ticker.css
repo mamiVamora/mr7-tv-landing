@@ -1,0 +1,131 @@
+/* Live Ticker Component - Original Colorful Design */
+.live-ticker-wrapper {
+    background: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid rgba(124, 58, 237, 0.3);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 100;
+    padding: 12px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    margin-top: 85px;
+    /* Keep it below fixed header */
+}
+
+.ticker-track {
+    display: inline-block;
+    animation: scroll-ticker 40s linear infinite;
+    /* Fast speed as requested */
+}
+
+.ticker-track:hover {
+    animation-play-state: paused;
+}
+
+.ticker-item {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 25px;
+    font-size: 1.1rem;
+    /* Larger font */
+    color: #e2e8f0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ticker-item:hover {
+    background: rgba(124, 58, 237, 0.1);
+    border-color: rgba(124, 58, 237, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.2);
+    color: #fff;
+}
+
+/* Channel Logo Styles */
+.channel-logo {
+    height: 30px;
+    /* Fixed height for logos */
+    width: auto;
+    margin-left: 10px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Specific Colors for Brands (Text Colors) */
+.text-gold {
+    color: #fbbf24;
+}
+
+.text-red {
+    color: #ef4444;
+}
+
+.text-blue {
+    color: #3b82f6;
+}
+
+.text-purple {
+    color: #a855f7;
+}
+
+.text-green {
+    color: #22c55e;
+}
+
+.text-orange {
+    color: #f97316;
+}
+
+.badge-4k {
+    background: linear-gradient(45deg, #fbbf24, #d97706);
+    color: #000;
+    font-weight: 800;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 6px;
+    box-shadow: 0 0 10px rgba(251, 191, 36, 0.4);
+}
+
+.badge-vip {
+    background: linear-gradient(45deg, #a855f7, #7c3aed);
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 6px;
+    box-shadow: 0 0 10px rgba(124, 58, 237, 0.4);
+}
+
+@keyframes scroll-ticker {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .live-ticker-wrapper {
+        padding: 10px 0;
+    }
+
+    .ticker-item {
+        font-size: 0.9rem;
+        margin: 0 15px;
+        padding: 4px 10px;
+    }
+
+    .channel-logo {
+        height: 24px;
+    }
+}

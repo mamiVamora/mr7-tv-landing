@@ -1,0 +1,112 @@
+/* Steps Section Styles */
+.steps-section {
+    padding: 80px 0;
+    background: #1e293b;
+    position: relative;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 50px;
+    position: relative;
+}
+
+/* Connecting Line */
+.steps-container::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, #38bdf8, transparent);
+    z-index: 0;
+}
+
+.step-card {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: #1e293b;
+    /* To hide line behind icon */
+    padding: 0 10px;
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #0f172a, #334155);
+    border: 2px solid #38bdf8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    color: #38bdf8;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.step-card:hover .step-icon {
+    transform: scale(1.1) rotate(10deg);
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+.step-number {
+    position: absolute;
+    top: -10px;
+    right: calc(50% - 50px);
+    width: 30px;
+    height: 30px;
+    background: #fbbf24;
+    color: #0f172a;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #1e293b;
+}
+
+.step-title {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.step-desc {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps-container::before {
+        width: 2px;
+        height: 80%;
+        top: 10%;
+        left: 50%;
+        background: linear-gradient(to bottom, transparent, #38bdf8, transparent);
+    }
+
+    .step-card {
+        width: 100%;
+        max-width: 300px;
+        padding: 20px 0;
+    }
+
+    .step-number {
+        right: calc(50% - 40px);
+    }
+}

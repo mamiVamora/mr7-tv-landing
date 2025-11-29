@@ -1,0 +1,144 @@
+/* Features Section Styles - Creative Horizontal Layout */
+
+.features-premium-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Force 4 columns on desktop */
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.feature-premium {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Creative Accent Colors per Card */
+.feature-premium:nth-child(1) {
+    --accent-color: #22d3ee;
+}
+
+/* Cyan */
+.feature-premium:nth-child(2) {
+    --accent-color: #f472b6;
+}
+
+/* Pink */
+.feature-premium:nth-child(3) {
+    --accent-color: #a78bfa;
+}
+
+/* Purple */
+.feature-premium:nth-child(4) {
+    --accent-color: #fbbf24;
+}
+
+/* Gold */
+
+/* Shiny Border Effect */
+.feature-premium::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    padding: 2px;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+/* Alive Hover Effect */
+.feature-premium:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: rgba(30, 41, 59, 0.9);
+    border-color: var(--accent-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6),
+        0 0 30px var(--accent-color),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.feature-premium:hover::before {
+    opacity: 1;
+    background: linear-gradient(45deg, var(--accent-color), white, var(--accent-color));
+}
+
+/* Neon Icon Container */
+.feature-premium-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--accent-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-premium:hover .feature-premium-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: var(--accent-color);
+    color: #0f172a;
+    /* Dark text on bright bg */
+    box-shadow: 0 0 30px var(--accent-color);
+    border-color: transparent;
+}
+
+/* Holographic Title */
+.feature-premium h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.feature-premium:hover h4 {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color);
+}
+
+/* Description Text */
+.feature-premium p {
+    font-size: 1rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .features-premium-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .features-premium-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .feature-premium {
+        padding: 1.5rem;
+    }
+}

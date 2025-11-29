@@ -1,0 +1,244 @@
+/* Contact Section Styles - Premium Glassmorphism */
+
+.contact-section {
+    padding-bottom: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Info Card (Left Side) */
+.contact-info-card {
+    background: rgba(30, 41, 59, 0.6);
+    border-radius: 24px;
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(124, 58, 237, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.info-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #fff, #e2e8f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info-header p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+    color: #e2e8f0;
+    font-size: 1.1rem;
+}
+
+.icon-box {
+    width: 45px;
+    height: 45px;
+    background: rgba(124, 58, 237, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a78bfa;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.contact-details li:hover .icon-box {
+    background: var(--accent-gradient);
+    color: white;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.4);
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+}
+
+.social-btn.whatsapp:hover {
+    background: #25D366;
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+    border-color: transparent;
+}
+
+.social-btn.telegram:hover {
+    background: #0088cc;
+    box-shadow: 0 0 15px rgba(0, 136, 204, 0.4);
+    border-color: transparent;
+}
+
+.social-btn.instagram:hover {
+    background: #E1306C;
+    box-shadow: 0 0 15px rgba(225, 48, 108, 0.4);
+    border-color: transparent;
+}
+
+/* Form Card (Right Side) */
+.contact-form-card {
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 24px;
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    position: relative;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1rem 1rem 1rem 3rem;
+    /* Space for icon */
+    color: white;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #8b5cf6;
+    background: rgba(15, 23, 42, 0.95);
+    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1);
+}
+
+.input-icon {
+    position: absolute;
+    left: 1rem;
+    /* RTL support check needed, might need right */
+    top: 2.7rem;
+    color: #64748b;
+    transition: color 0.3s ease;
+}
+
+/* RTL Adjustment for Icon */
+[dir="rtl"] .input-icon {
+    left: auto;
+    right: 1rem;
+}
+
+[dir="rtl"] .form-control {
+    padding: 1rem 3rem 1rem 1rem;
+}
+
+.form-control:focus+.input-icon {
+    color: #8b5cf6;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.submit-btn i {
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover i {
+    transform: translateX(-5px);
+    /* RTL arrow direction */
+}
+
+/* Floating Shapes */
+.shape {
+    position: absolute;
+    filter: blur(50px);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.shape-1 {
+    top: -10%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.4) 0%, transparent 70%);
+}
+
+.shape-2 {
+    bottom: -10%;
+    left: -10%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, transparent 70%);
+}
