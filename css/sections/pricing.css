@@ -322,5 +322,12 @@
 @media (max-width: 768px) {
     .pricing-grid {
         grid-template-columns: 1fr;
+        padding: 0 1rem;
+        /* Add padding to prevent edge touching */
+    }
+
+    .pricing-card {
+        padding: 2rem 1.5rem;
+        /* Reduce padding slightly for mobile */
     }
 }

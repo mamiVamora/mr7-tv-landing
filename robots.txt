@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://mr7tv.online/sitemap.xml
+Sitemap: https://mamivamora.github.io/mr7-tv-landing/sitemap.xml

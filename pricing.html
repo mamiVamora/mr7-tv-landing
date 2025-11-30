@@ -2,20 +2,169 @@
 <html lang="ar" dir="rtl">
 
 <head>
+    <meta name="google-site-verification" content="e7dGFRHvoZq3nfhhWjxkF9cUYaNCLtnULGbtYuVCwKk" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="website">
+    <meta name="description"
+        content="MR7 TV - باقات اشتراك IPTV متنوعة تناسب الجميع. اختر من بين باقات شهر، 3 أشهر، 6 أشهر، أو سنة. استمتع بمشاهدة آلاف القنوات والأفلام بجودة عالية وبدون تقطيع.">
+    <meta name="keywords"
+        content="IPTV, اشتراك IPTV, أسعار IPTV, باقات IPTV, قنوات مشفرة, MR7 TV, اشتراك رخيص, تجربة مجانية, قنوات رياضية, أفلام 4K, الدوري الإنجليزي, دوري أبطال أوروبا, مسلسلات رمضان">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mr7tv.online/pricing.html">
+    <title>باقات الاشتراك - MR7 TV</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sections/pricing.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/global-enhancements.css">
     <link rel="icon" href="images/logo.jpg" type="image/jpeg">
-    <meta property="og:title" content="MR7 TV - باقات الاشتراك">
-    <meta property="og:description"
-        content="باقات اشتراك MR7 TV المرنة والمناسبة للجميع. اختر الباقة التي تناسبك واستمتع بمشاهدة غير محدودة بأعلى جودة.">
-    <meta property="og:image" content="https://mr7tv.online/images/logo.jpg">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="product">
     <meta property="og:url" content="https://mr7tv.online/pricing.html">
+    <meta property="og:title" content="باقات اشتراك MR7 TV - أفضل الأسعار">
+    <meta property="og:description"
+        content="اختر الباقة المناسبة لك واستمتع بمشاهدة غير محدودة. باقات تبدأ من شهر واحد وحتى سنة كاملة مع عروض خاصة.">
+    <meta property="og:image" content="https://mr7tv.online/images/logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mr7tv.online/pricing.html">
+    <meta property="twitter:title" content="باقات اشتراك MR7 TV">
+    <meta property="twitter:description"
+        content="اختر الباقة المناسبة لك واستمتع بمشاهدة غير محدودة. باقات تبدأ من شهر واحد وحتى سنة كاملة مع عروض خاصة.">
+    <meta property="twitter:image" content="https://mr7tv.online/images/logo.jpg">
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PriceList",
+      "name": "MR7 TV Subscription Plans",
+      "offer": [
+        { "@type": "Offer", "name": "1 Month Plan", "price": "Contact for Price", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "3 Months Plan", "price": "Contact for Price", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "6 Months Plan", "price": "Contact for Price", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "12 Months Plan", "price": "Contact for Price", "priceCurrency": "USD" }
+      ]
+    }
+    </script>
+
+    <style>
+        /* Toggle Switch Styles */
+        .pricing-toggle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3rem;
+            gap: 1.5rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .toggle-label {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #94a3b8;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toggle-label i {
+            font-size: 1.1rem;
+        }
+
+        .toggle-label.active {
+            color: #fff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            transform: scale(1.05);
+        }
+
+        .toggle-label.active i {
+            color: #fbbf24;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 70px;
+            height: 36px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #1e293b;
+            transition: .4s;
+            border-radius: 34px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 5px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        input:checked+.slider {
+            background-color: #fbbf24;
+            border-color: #fbbf24;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #fbbf24;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(32px);
+        }
+
+        /* Hide/Show logic */
+        .pricing-grid {
+            display: none;
+            /* Hidden by default, JS will show active one */
+        }
+
+        .pricing-grid.active {
+            display: grid;
+            animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -53,97 +202,249 @@
                     اختر الباقة التي تناسب احتياجاتك واستمتع بالمشاهدة
                 </p>
 
-                <div class="pricing-grid">
-                    <!-- 3 Months Plan -->
+                <!-- Toggle Switch -->
+                <div class="pricing-toggle-container" data-aos="fade-up" data-aos-delay="150">
+                    <div class="toggle-label active" id="label-1-device" onclick="setDevice(1)">
+                        <i class="fas fa-mobile-alt"></i> جهاز واحد
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="device-toggle" onchange="toggleDevices()">
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="toggle-label" id="label-2-devices" onclick="setDevice(2)">
+                        <i class="fas fa-users"></i> جهازين
+                    </div>
+                </div>
+
+                <!-- 1 Device Plans -->
+                <div id="pricing-1-device" class="pricing-grid active">
+                    <!-- 1 Month -->
                     <div class="pricing-card" data-aos="flip-left" data-aos-delay="100">
                         <div class="card-header">
-                            <h3>باقة 3 أشهر</h3>
-                            <div class="price">
-                                <span class="currency">€</span>
-                                <span class="amount">15</span>
+                            <h3>باقة شهر واحد</h3>
+                            <div class="price custom-price-text">
+                                احصل على سعرك الخاص
                             </div>
                         </div>
                         <div class="card-body">
-                            <ul class="features-list">
-                                <li><i class="fas fa-check-circle"></i> +18,000 قناة مباشرة</li>
-                                <li><i class="fas fa-check-circle"></i> +85,000 فيلم ومسلسل</li>
-                                <li><i class="fas fa-check-circle"></i> جودة 4K / FHD / HD</li>
-                                <li><i class="fas fa-check-circle"></i> تحديثات يومية</li>
-                                <li><i class="fas fa-check-circle"></i> دعم فني 24/7</li>
-                                <li><i class="fas fa-check-circle"></i> يعمل على جهاز واحد</li>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-tv"></i> <span class="feat-channels">+9500 قناة</span> مباشرة</li>
+                                <li><i class="fas fa-film"></i> <span class="feat-movies">+19800 فيلم</span> مترجم</li>
+                                <li><i class="fas fa-video"></i> <span class="feat-series">+9800 مسلسل</span> مترجم</li>
+                                <li><i class="fas fa-star"></i> جودة <span class="feat-quality">4K / FHD</span></li>
+                                <li><i class="fas fa-sync"></i> تحديثات يومية</li>
+                                <li><i class="fas fa-headset"></i> دعم فني 24/7</li>
                             </ul>
-                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بالاشتراك في باقة 3 أشهر"
-                                class="btn btn-outline btn-block">اشترك الآن</a>
+                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بمعرفة سعر باقة شهر واحد (جهاز واحد)"
+                                class="btn btn-outline btn-block">استفسر الآن</a>
                         </div>
                     </div>
 
-                    <!-- 6 Months Plan -->
+                    <!-- 3 Months -->
                     <div class="pricing-card" data-aos="flip-left" data-aos-delay="200">
                         <div class="card-header">
-                            <h3>باقة 6 أشهر</h3>
-                            <div class="price">
-                                <span class="currency">€</span>
-                                <span class="amount">25</span>
+                            <h3>باقة 3 أشهر</h3>
+                            <div class="price custom-price-text">
+                                احصل على سعرك الخاص
                             </div>
                         </div>
                         <div class="card-body">
-                            <ul class="features-list">
-                                <li><i class="fas fa-check-circle"></i> +18,000 قناة مباشرة</li>
-                                <li><i class="fas fa-check-circle"></i> +85,000 فيلم ومسلسل</li>
-                                <li><i class="fas fa-check-circle"></i> جودة 4K / FHD / HD</li>
-                                <li><i class="fas fa-check-circle"></i> تحديثات يومية</li>
-                                <li><i class="fas fa-check-circle"></i> دعم فني 24/7</li>
-                                <li><i class="fas fa-check-circle"></i> يعمل على جهاز واحد</li>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-tv"></i> <span class="feat-channels">+9500 قناة</span> مباشرة</li>
+                                <li><i class="fas fa-film"></i> <span class="feat-movies">+19800 فيلم</span> مترجم</li>
+                                <li><i class="fas fa-video"></i> <span class="feat-series">+9800 مسلسل</span> مترجم</li>
+                                <li><i class="fas fa-star"></i> جودة <span class="feat-quality">4K / FHD</span></li>
+                                <li><i class="fas fa-sync"></i> تحديثات يومية</li>
+                                <li><i class="fas fa-headset"></i> دعم فني 24/7</li>
                             </ul>
-                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بالاشتراك في باقة 6 أشهر"
-                                class="btn btn-outline btn-block">اشترك الآن</a>
+                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بمعرفة سعر باقة 3 أشهر (جهاز واحد)"
+                                class="btn btn-outline btn-block">استفسر الآن</a>
                         </div>
                     </div>
 
-                    <!-- 12 Months Plan (Featured) -->
-                    <div class="pricing-card featured" data-aos="flip-left" data-aos-delay="300">
-                        <div class="popular-badge">الأكثر طلباً</div>
+                    <!-- 6 Months -->
+                    <div class="pricing-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="card-header">
+                            <h3>باقة 6 أشهر</h3>
+                            <div class="price custom-price-text">
+                                احصل على سعرك الخاص
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-tv"></i> <span class="feat-channels">+9500 قناة</span> مباشرة</li>
+                                <li><i class="fas fa-film"></i> <span class="feat-movies">+19800 فيلم</span> مترجم</li>
+                                <li><i class="fas fa-video"></i> <span class="feat-series">+9800 مسلسل</span> مترجم</li>
+                                <li><i class="fas fa-star"></i> جودة <span class="feat-quality">4K / FHD</span></li>
+                                <li><i class="fas fa-sync"></i> تحديثات يومية</li>
+                                <li><i class="fas fa-headset"></i> دعم فني 24/7</li>
+                            </ul>
+                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بمعرفة سعر باقة 6 أشهر (جهاز واحد)"
+                                class="btn btn-outline btn-block">استفسر الآن</a>
+                        </div>
+                    </div>
+
+                    <!-- 12 Months -->
+                    <div class="pricing-card" data-aos="flip-left" data-aos-delay="400">
+                        <div class="pricing-badge best">الأكثر مبيعاً</div>
                         <div class="card-header">
                             <h3>باقة 12 شهر</h3>
-                            <div class="price">
-                                <span class="currency">€</span>
-                                <span class="amount">40</span>
+                            <div class="price custom-price-text">
+                                احصل على سعرك الخاص
                             </div>
                         </div>
                         <div class="card-body">
-                            <ul class="features-list">
-                                <li><i class="fas fa-check-circle"></i> +18,000 قناة مباشرة</li>
-                                <li><i class="fas fa-check-circle"></i> +85,000 فيلم ومسلسل</li>
-                                <li><i class="fas fa-check-circle"></i> جودة 4K / FHD / HD</li>
-                                <li><i class="fas fa-check-circle"></i> تحديثات يومية</li>
-                                <li><i class="fas fa-check-circle"></i> دعم فني 24/7</li>
-                                <li><i class="fas fa-check-circle"></i> يعمل على جهاز واحد</li>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-tv"></i> <span class="feat-channels">+9500 قناة</span> مباشرة</li>
+                                <li><i class="fas fa-film"></i> <span class="feat-movies">+19800 فيلم</span> مترجم</li>
+                                <li><i class="fas fa-video"></i> <span class="feat-series">+9800 مسلسل</span> مترجم</li>
+                                <li><i class="fas fa-star"></i> جودة <span class="feat-quality">4K / FHD</span></li>
+                                <li><i class="fas fa-sync"></i> تحديثات يومية</li>
+                                <li><i class="fas fa-headset"></i> دعم فني 24/7</li>
                             </ul>
-                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بالاشتراك في باقة 12 شهر"
-                                class="btn btn-primary btn-block">اشترك الآن</a>
+                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بمعرفة سعر باقة 12 شهر (جهاز واحد)"
+                                class="btn btn-primary btn-block">استفسر الآن</a>
                         </div>
                     </div>
 
-                    <!-- 12 Months + 2 Devices -->
-                    <div class="pricing-card" data-aos="flip-left" data-aos-delay="400">
+                    <!-- Special Offer (12+3) -->
+                    <div class="pricing-card featured" data-aos="flip-left" data-aos-delay="500">
+                        <div class="offer-badge pulse-anim">ينتهي قريباً ⏳</div>
                         <div class="card-header">
-                            <h3>باقة 12 شهر (جهازين)</h3>
-                            <div class="price">
-                                <span class="currency">€</span>
-                                <span class="amount">60</span>
+                            <h3>العرض الذهبي 🔥</h3>
+                            <p style="color: #cbd5e1; font-size: 0.9rem; margin-top: -5px;">12 شهر + 3 أشهر مجاناً</p>
+                            <div class="price custom-price-text">
+                                احصل على سعرك الخاص
                             </div>
                         </div>
                         <div class="card-body">
-                            <ul class="features-list">
-                                <li><i class="fas fa-check-circle"></i> +18,000 قناة مباشرة</li>
-                                <li><i class="fas fa-check-circle"></i> +85,000 فيلم ومسلسل</li>
-                                <li><i class="fas fa-check-circle"></i> جودة 4K / FHD / HD</li>
-                                <li><i class="fas fa-check-circle"></i> تحديثات يومية</li>
-                                <li><i class="fas fa-check-circle"></i> دعم فني 24/7</li>
-                                <li><i class="fas fa-check-circle"></i> يعمل على جهازين في نفس الوقت</li>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-gift" style="color: #f472b6;"></i> <span style="color: #f472b6; font-weight: bold;">15 شهر اشتراك</span></li>
+                                <li><i class="fas fa-tv"></i> <span class="feat-channels">+9500 قناة</span> مباشرة</li>
+                                <li><i class="fas fa-film"></i> <span class="feat-movies">+19800 فيلم</span> مترجم</li>
+                                <li><i class="fas fa-video"></i> <span class="feat-series">+9800 مسلسل</span> مترجم</li>
+                                <li><i class="fas fa-star"></i> جودة <span class="feat-quality">4K / FHD</span></li>
+                                <li><i class="fas fa-sync"></i> تحديثات يومية</li>
+                                <li><i class="fas fa-headset"></i> دعم فني 24/7</li>
                             </ul>
-                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بالاشتراك في باقة 12 شهر لجهازين"
-                                class="btn btn-outline btn-block">اشترك الآن</a>
+                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بمعرفة سعر العرض الذهبي (12+3 أشهر) لجهاز واحد"
+                                class="btn btn-primary btn-block" style="background: linear-gradient(90deg, #ec4899, #8b5cf6);">اغتنم الفرصة الآن</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 Devices Plans -->
+                <div id="pricing-2-devices" class="pricing-grid">
+                    <!-- 1 Month -->
+                    <div class="pricing-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="card-header">
+                            <h3>باقة شهر واحد</h3>
+                            <p style="color: #94a3b8; font-size: 0.85rem;">لجهازين في نفس الوقت</p>
+                            <div class="price custom-price-text">
+                                احصل على سعرك الخاص
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-users" style="color: #fbbf24;"></i> <strong style="color: #fbbf24;">يعمل على جهازين</strong></li>
+                                <li><i class="fas fa-tv"></i> <span class="feat-channels">+9500 قناة</span> مباشرة</li>
+                                <li><i class="fas fa-film"></i> <span class="feat-movies">+19800 فيلم</span> مترجم</li>
+                                <li><i class="fas fa-video"></i> <span class="feat-series">+9800 مسلسل</span> مترجم</li>
+                                <li><i class="fas fa-star"></i> جودة <span class="feat-quality">4K / FHD</span></li>
+                            </ul>
+                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بمعرفة سعر باقة شهر واحد (جهازين)"
+                                class="btn btn-outline btn-block">استفسر الآن</a>
+                        </div>
+                    </div>
+
+                    <!-- 3 Months -->
+                    <div class="pricing-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="card-header">
+                            <h3>باقة 3 أشهر</h3>
+                            <p style="color: #94a3b8; font-size: 0.85rem;">لجهازين في نفس الوقت</p>
+                            <div class="price custom-price-text">
+                                احصل على سعرك الخاص
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-users" style="color: #fbbf24;"></i> <strong style="color: #fbbf24;">يعمل على جهازين</strong></li>
+                                <li><i class="fas fa-tv"></i> <span class="feat-channels">+9500 قناة</span> مباشرة</li>
+                                <li><i class="fas fa-film"></i> <span class="feat-movies">+19800 فيلم</span> مترجم</li>
+                                <li><i class="fas fa-video"></i> <span class="feat-series">+9800 مسلسل</span> مترجم</li>
+                                <li><i class="fas fa-star"></i> جودة <span class="feat-quality">4K / FHD</span></li>
+                            </ul>
+                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بمعرفة سعر باقة 3 أشهر (جهازين)"
+                                class="btn btn-outline btn-block">استفسر الآن</a>
+                        </div>
+                    </div>
+
+                    <!-- 6 Months -->
+                    <div class="pricing-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="card-header">
+                            <h3>باقة 6 أشهر</h3>
+                            <p style="color: #94a3b8; font-size: 0.85rem;">لجهازين في نفس الوقت</p>
+                            <div class="price custom-price-text">
+                                احصل على سعرك الخاص
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-users" style="color: #fbbf24;"></i> <strong style="color: #fbbf24;">يعمل على جهازين</strong></li>
+                                <li><i class="fas fa-tv"></i> <span class="feat-channels">+9500 قناة</span> مباشرة</li>
+                                <li><i class="fas fa-film"></i> <span class="feat-movies">+19800 فيلم</span> مترجم</li>
+                                <li><i class="fas fa-video"></i> <span class="feat-series">+9800 مسلسل</span> مترجم</li>
+                                <li><i class="fas fa-star"></i> جودة <span class="feat-quality">4K / FHD</span></li>
+                            </ul>
+                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بمعرفة سعر باقة 6 أشهر (جهازين)"
+                                class="btn btn-outline btn-block">استفسر الآن</a>
+                        </div>
+                    </div>
+
+                    <!-- 12 Months -->
+                    <div class="pricing-card" data-aos="flip-left" data-aos-delay="400">
+                        <div class="pricing-badge best">الأكثر توفيراً</div>
+                        <div class="card-header">
+                            <h3>باقة 12 شهر</h3>
+                            <p style="color: #94a3b8; font-size: 0.85rem;">لجهازين في نفس الوقت</p>
+                            <div class="price custom-price-text">
+                                احصل على سعرك الخاص
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-users" style="color: #fbbf24;"></i> <strong style="color: #fbbf24;">يعمل على جهازين</strong></li>
+                                <li><i class="fas fa-tv"></i> <span class="feat-channels">+9500 قناة</span> مباشرة</li>
+                                <li><i class="fas fa-film"></i> <span class="feat-movies">+19800 فيلم</span> مترجم</li>
+                                <li><i class="fas fa-video"></i> <span class="feat-series">+9800 مسلسل</span> مترجم</li>
+                                <li><i class="fas fa-star"></i> جودة <span class="feat-quality">4K / FHD</span></li>
+                            </ul>
+                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بمعرفة سعر باقة 12 شهر (جهازين)"
+                                class="btn btn-primary btn-block">استفسر الآن</a>
+                        </div>
+                    </div>
+
+                    <!-- Special Offer (12+3) -->
+                    <div class="pricing-card featured" data-aos="flip-left" data-aos-delay="500">
+                        <div class="offer-badge pulse-anim">ينتهي قريباً ⏳</div>
+                        <div class="card-header">
+                            <h3>العرض العائلي 🔥</h3>
+                            <p style="color: #cbd5e1; font-size: 0.9rem; margin-top: -5px;">12 شهر + 3 أشهر مجاناً (جهازين)</p>
+                            <div class="price custom-price-text">
+                                احصل على سعرك الخاص
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-gift" style="color: #f472b6;"></i> <span style="color: #f472b6; font-weight: bold;">15 شهر اشتراك</span></li>
+                                <li><i class="fas fa-users" style="color: #fbbf24;"></i> <strong style="color: #fbbf24;">يعمل على جهازين</strong></li>
+                                <li><i class="fas fa-tv"></i> <span class="feat-channels">+9500 قناة</span> مباشرة</li>
+                                <li><i class="fas fa-film"></i> <span class="feat-movies">+19800 فيلم</span> مترجم</li>
+                                <li><i class="fas fa-video"></i> <span class="feat-series">+9800 مسلسل</span> مترجم</li>
+                                <li><i class="fas fa-star"></i> جودة <span class="feat-quality">4K / FHD</span></li>
+                            </ul>
+                            <a href="https://wa.me/905340218618?text=مرحباً، أرغب بمعرفة سعر العرض العائلي (12+3 أشهر) لجهازين"
+                                class="btn btn-primary btn-block" style="background: linear-gradient(90deg, #ec4899, #8b5cf6);">اغتنم الفرصة الآن</a>
                         </div>
                     </div>
                 </div>
@@ -195,6 +496,50 @@
                     icon.classList.add('fa-bars');
                 }
             });
+        }
+
+        // Pricing Toggle Logic
+        function toggleDevices() {
+            const checkBox = document.getElementById("device-toggle");
+            const grid1 = document.getElementById("pricing-1-device");
+            const grid2 = document.getElementById("pricing-2-devices");
+            const label1 = document.getElementById("label-1-device");
+            const label2 = document.getElementById("label-2-devices");
+
+            if (checkBox.checked) {
+                // Show 2 Devices
+                grid1.classList.remove("active");
+                setTimeout(() => {
+                    grid1.style.display = "none";
+                    grid2.style.display = "grid";
+                    // Small delay to allow display:block to apply before opacity transition
+                    setTimeout(() => grid2.classList.add("active"), 10);
+                }, 300); // Wait for fade out
+                
+                label1.classList.remove("active");
+                label2.classList.add("active");
+            } else {
+                // Show 1 Device
+                grid2.classList.remove("active");
+                setTimeout(() => {
+                    grid2.style.display = "none";
+                    grid1.style.display = "grid";
+                    setTimeout(() => grid1.classList.add("active"), 10);
+                }, 300);
+                
+                label2.classList.remove("active");
+                label1.classList.add("active");
+            }
+        }
+
+        // Helper to click labels
+        function setDevice(num) {
+            const checkBox = document.getElementById("device-toggle");
+            if (num === 1 && checkBox.checked) {
+                checkBox.click();
+            } else if (num === 2 && !checkBox.checked) {
+                checkBox.click();
+            }
         }
     </script>
 </body>

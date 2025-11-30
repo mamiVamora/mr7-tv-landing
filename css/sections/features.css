@@ -1,84 +1,86 @@
-/* Features Section Styles - Creative Horizontal Layout */
+/* Features Section Styles - Horizontal & Colorful */
 
-.features-premium-grid {
+.features-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* Force 4 columns on desktop */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 1rem;
 }
 
-.feature-premium {
-    background: rgba(30, 41, 59, 0.7);
+.feature-card {
+    background: rgba(15, 23, 42, 0.6);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 24px;
-    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
     text-align: center;
     position: relative;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
 
-/* Creative Accent Colors per Card */
-.feature-premium:nth-child(1) {
-    --accent-color: #22d3ee;
+/* Unique Colors for Each Card */
+.feature-card:nth-child(1) {
+    --card-color: #ef4444;
 }
 
-/* Cyan */
-.feature-premium:nth-child(2) {
-    --accent-color: #f472b6;
-}
-
-/* Pink */
-.feature-premium:nth-child(3) {
-    --accent-color: #a78bfa;
-}
-
-/* Purple */
-.feature-premium:nth-child(4) {
-    --accent-color: #fbbf24;
+/* Red */
+.feature-card:nth-child(2) {
+    --card-color: #fbbf24;
 }
 
 /* Gold */
+.feature-card:nth-child(3) {
+    --card-color: #3b82f6;
+}
 
-/* Shiny Border Effect */
-.feature-premium::before {
+/* Blue */
+.feature-card:nth-child(4) {
+    --card-color: #22c55e;
+}
+
+/* Green */
+.feature-card:nth-child(5) {
+    --card-color: #a855f7;
+}
+
+/* Purple */
+.feature-card:nth-child(6) {
+    --card-color: #22d3ee;
+}
+
+/* Cyan */
+
+.feature-card::before {
     content: '';
     position: absolute;
-    inset: 0;
-    border-radius: 24px;
-    padding: 2px;
-    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--card-color);
+    box-shadow: 0 0 15px var(--card-color);
+    transition: height 0.3s ease;
 }
 
-/* Alive Hover Effect */
-.feature-premium:hover {
-    transform: translateY(-10px) scale(1.02);
-    background: rgba(30, 41, 59, 0.9);
-    border-color: var(--accent-color);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6),
-        0 0 30px var(--accent-color),
-        inset 0 0 20px rgba(255, 255, 255, 0.05);
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(var(--card-color), 0.2);
+    border-color: var(--card-color);
 }
 
-.feature-premium:hover::before {
-    opacity: 1;
-    background: linear-gradient(45deg, var(--accent-color), white, var(--accent-color));
+.feature-card:hover::before {
+    height: 100%;
+    opacity: 0.05;
 }
 
-/* Neon Icon Container */
-.feature-premium-icon {
+.icon-box {
     width: 80px;
     height: 80px;
     background: rgba(255, 255, 255, 0.05);
@@ -87,58 +89,48 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
-    font-size: 2rem;
-    color: var(--accent-color);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+    color: var(--card-color);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     transition: all 0.4s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.feature-premium:hover .feature-premium-icon {
-    transform: scale(1.1) rotate(5deg);
-    background: var(--accent-color);
-    color: #0f172a;
-    /* Dark text on bright bg */
-    box-shadow: 0 0 30px var(--accent-color);
+.feature-card:hover .icon-box {
+    background: var(--card-color);
+    color: #000;
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 0 30px var(--card-color);
     border-color: transparent;
 }
 
-/* Holographic Title */
-.feature-premium h4 {
-    font-size: 1.4rem;
+.feature-card h3 {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
-    font-weight: 800;
     color: #fff;
-    transition: all 0.3s ease;
+    font-weight: 700;
 }
 
-.feature-premium:hover h4 {
-    color: var(--accent-color);
-    text-shadow: 0 0 10px var(--accent-color);
-}
-
-/* Description Text */
-.feature-premium p {
-    font-size: 1rem;
+.feature-card p {
     color: #cbd5e1;
     line-height: 1.6;
-    margin: 0;
+    font-size: 1.0rem;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-    .features-premium-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
+/* Horizontal Scroll on Mobile (Optional, if requested specifically for mobile) */
 @media (max-width: 768px) {
-    .features-premium-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    .features-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 2rem;
+        /* Space for scrollbar */
+        gap: 1rem;
     }
 
-    .feature-premium {
-        padding: 1.5rem;
+    .feature-card {
+        min-width: 280px;
+        /* Fixed width for horizontal scroll */
+        scroll-snap-align: center;
     }
 }

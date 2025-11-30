@@ -104,5 +104,15 @@
 @media (max-width: 768px) {
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+        word-break: break-word;
+    }
+
+    .stat-card {
+        padding: 1.5rem 1rem;
     }
 }
