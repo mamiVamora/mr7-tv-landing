@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": 23,
+      "title": "نشر ",
+      "description": "نشر...",
+      "category": "sports",
+      "date": "2025-12-01",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
       "id": 22,
       "title": "نشر ",
       "description": "نشر ...",
@@ -76,15 +85,6 @@
       "id": 14,
       "title": "كريستال بالاس vs مانشستر يونايتد",
       "description": "🏆 الدوري الإنجليزي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
-      "category": "sports",
-      "date": "2025-12-01",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 13,
-      "title": "بيزا كالتشيو vs إنتر ميلان",
-      "description": "🏆 الدوري الإيطالي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
       "category": "sports",
       "date": "2025-12-01",
       "image": "images/logo.jpg",
