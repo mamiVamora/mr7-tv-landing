@@ -121,4 +121,44 @@ document.addEventListener('DOMContentLoaded', () => {
             retina_detect: true
         });
     }
+    // 7. UI Enhancements (Scroll Progress & Floating WhatsApp)
+
+    // Inject Scroll Progress Bar
+    const scrollProgressHTML = `
+        <div id="scroll-progress-container">
+            <div id="scroll-progress-bar"></div>
+        </div>
+    `;
+    document.body.insertAdjacentHTML('afterbegin', scrollProgressHTML);
+
+    // Inject Floating WhatsApp
+    const floatingWhatsappHTML = `
+        <a href="https://wa.me/905340218618" class="floating-whatsapp" target="_blank" title="تواصل معنا عبر واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    `;
+    document.body.insertAdjacentHTML('beforeend', floatingWhatsappHTML);
+
+    // Scroll Progress Logic
+    window.addEventListener('scroll', () => {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollPercentage = (scrollTop / scrollHeight) * 100;
+
+        const progressBar = document.getElementById('scroll-progress-bar');
+        if (progressBar) {
+            progressBar.style.width = scrollPercentage + '%';
+        }
+
+        // Header Glass Effect Toggle
+        const header = document.querySelector('header');
+        if (header) {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }
+    });
+
 });

@@ -1,0 +1,66 @@
+/* Brand Text Styling (Dual Language) */
+.brand-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 12px;
+    line-height: 1.1;
+}
+
+.brand-en {
+    font-size: 1.5rem;
+    font-weight: 900;
+    background: linear-gradient(to right, #fff, #fbbf24);
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Standard property for compatibility */
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 10px rgba(251, 191, 36, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.brand-ar {
+    font-size: 1.5rem;
+    font-weight: 900;
+    background: linear-gradient(to right, #fff, #fbbf24);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0;
+    text-shadow: 0 2px 10px rgba(251, 191, 36, 0.2);
+    text-align: left;
+}
+
+/* Ensure logo container aligns items correctly */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    max-height: 55px;
+    /* Slightly larger to match 2 lines of text */
+    width: auto;
+}
+
+/* Mobile Adjustment */
+@media (max-width: 768px) {
+    .brand-en {
+        font-size: 1.2rem;
+    }
+
+    .brand-ar {
+        font-size: 1.2rem;
+    }
+
+    .logo img {
+        max-height: 45px;
+    }
+
+    .brand-container {
+        margin-right: 8px;
+    }
+}

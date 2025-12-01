@@ -58,11 +58,64 @@ nav {
     font-size: 1.05rem;
     font-weight: 700;
     position: relative;
-    color: #e0f2fe;
-    /* Fixed Bright Cyan-White */
-    text-shadow: 0 0 5px rgba(56, 189, 248, 0.3);
     transition: all 0.3s ease;
 }
+
+/* Individual Link Colors */
+.nav-links li:nth-child(1) a {
+    color: #38bdf8;
+    text-shadow: 0 0 5px rgba(56, 189, 248, 0.3);
+}
+
+/* الرئيسية - أزرق سماوي */
+.nav-links li:nth-child(2) a {
+    color: #a78bfa;
+    text-shadow: 0 0 5px rgba(167, 139, 250, 0.3);
+}
+
+/* الخدمات - بنفسجي */
+.nav-links li:nth-child(3) a {
+    color: #34d399;
+    text-shadow: 0 0 5px rgba(52, 211, 153, 0.3);
+}
+
+/* المميزات - أخضر نعناعي */
+.nav-links li:nth-child(4) a {
+    color: #fbbf24;
+    text-shadow: 0 0 5px rgba(251, 191, 36, 0.3);
+}
+
+/* معرض الصور - ذهبي */
+.nav-links li:nth-child(5) a {
+    color: #fb923c;
+    text-shadow: 0 0 5px rgba(251, 146, 60, 0.3);
+}
+
+/* الأسعار - برتقالي */
+.nav-links li:nth-child(6) a {
+    color: #f472b6;
+    text-shadow: 0 0 5px rgba(244, 114, 182, 0.3);
+}
+
+/* الأسئلة الشائعة - وردي */
+.nav-links li:nth-child(7) a {
+    color: #60a5fa;
+    text-shadow: 0 0 5px rgba(96, 165, 250, 0.3);
+}
+
+/* طريقة التحميل - أزرق ملكي */
+.nav-links li:nth-child(8) a {
+    color: #10b981;
+    text-shadow: 0 0 5px rgba(16, 185, 129, 0.3);
+}
+
+/* كن وكيلاً - أخضر زمردي */
+.nav-links li:nth-child(9) a {
+    color: #c084fc;
+    text-shadow: 0 0 5px rgba(192, 132, 252, 0.3);
+}
+
+/* اتصل بنا - بنفسجي فاتح */
 
 .nav-links a:hover,
 .nav-links a.active {

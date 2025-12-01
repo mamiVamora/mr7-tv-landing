@@ -8,6 +8,7 @@
 
 /* 3. Components (Buttons, Cards) */
 @import 'components.css';
+@import 'components/logo-text.css';
 
 /* 4. Sections */
 @import 'sections/hero.css';
@@ -25,5 +26,6 @@
 @import 'sections/floating-cta.css';
 @import 'sections/devices.css';
 @import 'sections/steps.css';
+@import 'enhancements.css';
 
 /* Contact section uses standard components, no specific extra CSS needed currently */

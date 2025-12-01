@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="آخر أخبار MR7 TV - مباريات، أفلام، مسلسلات، وعروض خاصة">
+    <title>الأخبار - MR7 TV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/footer-premium.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="MR7 TV Logo">
+                    <div class="brand-container">
+                        <span class="brand-en">MR7 TV</span>
+                        <span class="brand-ar">مرح TV</span>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="services.html">الخدمات</a></li>
+                    <li><a href="features.html">المميزات</a></li>
+                    <li><a href="gallery.html">معرض الصور</a></li>
+                    <li><a href="pricing.html">الأسعار</a></li>
+                    <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                    <li><a href="downloads.html">طريقة التحميل</a></li>
+                    <li><a href="agents.html">كن وكيلاً</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="news.html" class="active">الأخبار</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- News Hero Section -->
+        <section class="news-hero">
+            <div class="container">
+                <h1 class="news-title" data-aos="fade-up">
+                    آخر <span class="text-gradient">الأخبار</span>
+                </h1>
+                <p class="news-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    تابع أحدث المباريات، الأفلام، المسلسلات، والعروض الخاصة
+                </p>
+            </div>
+        </section>
+
+        <!-- Filters Section -->
+        <section class="news-filters-section">
+            <div class="container">
+                <div class="news-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-th"></i> الكل
+                    </button>
+                    <button class="filter-btn" data-filter="sports">
+                        <i class="fas fa-futbol"></i> رياضة
+                    </button>
+                    <button class="filter-btn" data-filter="movies">
+                        <i class="fas fa-film"></i> أفلام
+                    </button>
+                    <button class="filter-btn" data-filter="series">
+                        <i class="fas fa-tv"></i> مسلسلات
+                    </button>
+                    <button class="filter-btn" data-filter="offers">
+                        <i class="fas fa-gift"></i> عروض
+                    </button>
+                </div>
+
+                <!-- Search Box -->
+                <div class="news-search" data-aos="fade-up" data-aos-delay="100">
+                    <input type="text" id="searchInput" placeholder="ابحث في الأخبار...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Grid -->
+        <section class="news-grid-section">
+            <div class="container">
+                <div class="news-grid" id="newsGrid">
+                    <!-- News items will be loaded here by JavaScript -->
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>جاري تحميل الأخبار...</p>
+                    </div>
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results" id="noResults" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>لا توجد نتائج</h3>
+                    <p>جرب البحث بكلمات أخرى أو اختر تصنيف مختلف</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSS Feed Link -->
+        <section class="rss-section">
+            <div class="container">
+                <div class="rss-box" data-aos="fade-up">
+                    <i class="fas fa-rss"></i>
+                    <div class="rss-content">
+                        <h3>اشترك في RSS Feed</h3>
+                        <p>احصل على آخر الأخبار مباشرة</p>
+                    </div>
+                    <a href="rss.xml" class="rss-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> اشترك الآن
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Premium Footer -->
+    <footer class="premium-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Brand & Description -->
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <img src="images/logo.jpg" alt="MR7 TV Logo" class="footer-logo">
+                        <div class="brand-container">
+                            <span class="brand-en">MR7 TV</span>
+                            <span class="brand-ar">مرح TV</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        استمتع بأفضل تجربة مشاهدة للقنوات العالمية والعربية بجودة عالية وبدون انقطاع
+                    </p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="features.html">المميزات</a></li>
+                        <li><a href="pricing.html">الأسعار</a></li>
+                        <li><a href="downloads.html">طريقة التحميل</a></li>
+                        <li><a href="news.html">الأخبار</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact & Social -->
+                <div class="footer-column">
+                    <h3 class="footer-title">تواصل معنا</h3>
+                    <div class="footer-contact">
+                        <a href="https://wa.me/905340218618" class="contact-item" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+90 534 021 8618</span>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61583959720349" target="_blank"
+                            class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mr7tv1/" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@mr7tv1" target="_blank" class="social-icon tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/905340218618" target="_blank" class="social-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    جميع الحقوق محفوظة © <span id="current-year"></span> MR7 TV - مرح تي في
+                </p>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script>
+        // Dynamic Year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/news.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#7c3aed' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: '#7c3aed', opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+
+</html>

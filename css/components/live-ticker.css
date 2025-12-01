@@ -9,14 +9,13 @@
     padding: 12px 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
-    margin-top: 70px;
-    /* Keep it below fixed header */
+    margin-top: 100px;
+    /* Keep it below fixed header (Desktop) */
 }
 
 .ticker-track {
     display: inline-block;
     animation: scroll-ticker 40s linear infinite;
-    /* Fast speed as requested */
 }
 
 .ticker-track:hover {
@@ -28,7 +27,6 @@
     align-items: center;
     margin: 0 25px;
     font-size: 1.1rem;
-    /* Larger font */
     color: #e2e8f0;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -49,14 +47,13 @@
 /* Channel Logo Styles */
 .channel-logo {
     height: 30px;
-    /* Fixed height for logos */
     width: auto;
     margin-left: 10px;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
-/* Specific Colors for Brands (Text Colors) */
+/* Specific Colors for Brands */
 .text-gold {
     color: #fbbf24;
 }
@@ -111,12 +108,16 @@
     100% {
         transform: translateX(50%);
     }
+
+    /* Adjusted for infinite scroll loop if content is duplicated */
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .live-ticker-wrapper {
         padding: 10px 0;
+        margin-top: 85px;
+        /* Adjust for mobile header height */
     }
 
     .ticker-item {
