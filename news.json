@@ -1,9 +1,18 @@
 {
   "news": [
     {
+      "id": 20,
+      "title": "حرس الحدود vs الإسماعيلي",
+      "description": "🏆 كأس مصر\n⏰ 00:00\n📺 شاهد المباراة الآن على تطبيق MR7 TV\n\n📥 حمل التطبيق: https://mr7tv.com...",
+      "category": "sports",
+      "date": "2025-12-01",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
       "id": 19,
       "title": "رايو فاييكانو vs فالنسيا",
-      "description": "🏆 الدوري الإسباني\n⏰ 00:00\n📺 شاهد المباراة الآن على تطبيق MR7 TV\n\n📥 حمل التطبيق: https://mr7tv.com...",
+      "description": "🏆 الدوري الإسباني\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV\r\n\r\n📥 حمل التطبيق: https://mr7tv.co...",
       "category": "sports",
       "date": "2025-12-01",
       "image": "images/logo.jpg",
@@ -76,15 +85,6 @@
       "id": 11,
       "title": "مباراة: جيرونا vs ريال مدريد",
       "description": "🔥 بطولة كبرى 🔥\n🏆 الدوري الإسباني\n⏰ 00:00\n📺 بى ان سبورت 1HD...",
-      "category": "sports",
-      "date": "2025-11-30",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 7,
-      "title": "مباراة: تشيلسي vs أرسنال",
-      "description": "🔥 بطولة كبرى 🔥\n🏆 الدوري الإنجليزي\n⏰ 00:00\n📺 بى ان سبورت 1HD...",
       "category": "sports",
       "date": "2025-11-30",
       "image": "images/logo.jpg",
