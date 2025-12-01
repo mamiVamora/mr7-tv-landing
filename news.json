@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": 24,
+      "title": "أروكا vs سبورتينج براجا",
+      "description": "🏆 الدوري البرتغالي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV\r\n\r\n📥 حمل التطبيق: https://mr7tv.c...",
+      "category": "sports",
+      "date": "2025-12-01",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
       "id": 23,
       "title": "نشر ",
       "description": "نشر...",
@@ -76,15 +85,6 @@
       "id": 15,
       "title": "قطر vs فلسطين",
       "description": "🏆 كأس العرب\n⏰ 00:00\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
-      "category": "sports",
-      "date": "2025-12-01",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 14,
-      "title": "كريستال بالاس vs مانشستر يونايتد",
-      "description": "🏆 الدوري الإنجليزي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
       "category": "sports",
       "date": "2025-12-01",
       "image": "images/logo.jpg",
