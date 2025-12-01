@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": 22,
+      "title": "نشر ",
+      "description": "نشر ...",
+      "category": "sports",
+      "date": "2025-12-01",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
       "id": 21,
       "title": "فنربخشة vs جالاتا سراي",
       "description": "🏆 الدوري التركي\n⏰ 00:00\n📺 شاهد المباراة الآن على تطبيق MR7 TV\n\n📥 حمل التطبيق: https://mr7tv.com...",
@@ -78,15 +87,6 @@
       "description": "🏆 الدوري الإيطالي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
       "category": "sports",
       "date": "2025-12-01",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 12,
-      "title": "مباراة: بيزا كالتشيو vs إنتر ميلان",
-      "description": "🔥 مباراة مهمة ⚽\n🏆 الدوري الإيطالي\n⏰ 00:00\n📺 Starz Play App...",
-      "category": "sports",
-      "date": "2025-11-30",
       "image": "images/logo.jpg",
       "featured": false
     }
