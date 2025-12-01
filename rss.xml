@@ -2,8 +2,14 @@
 <rss version="2.0">
 <channel>
 <title>MR7 TV News</title>
-<link>https://mr7tv.com</link>
+<link>https://mamivamora.github.io/mr7-tv-landing/index.html</link>
 <description>Latest updates from MR7 TV</description>
+<item>
+<title>تجربة </title>
+<description>تجربة ...</description>
+<category>sports</category>
+<pubDate>2025-12-01</pubDate>
+</item>
 <item>
 <title>أروكا vs سبورتينج براجا</title>
 <description>🏆 الدوري البرتغالي
@@ -28,10 +34,10 @@
 </item>
 <item>
 <title>فنربخشة vs جالاتا سراي</title>
-<description>🏆 الدوري التركي
-⏰ 00:00
-📺 شاهد المباراة الآن على تطبيق MR7 TV
-
+<description>🏆 الدوري التركي
+⏰ 00:00
+📺 شاهد المباراة الآن على تطبيق MR7 TV
+
 📥 حمل التطبيق: https://mr7tv.com...</description>
 <category>sports</category>
 <pubDate>2025-12-01</pubDate>
@@ -74,14 +80,6 @@
 <title>سامسون سبور vs ألانيا سبور</title>
 <description>🏆 الدوري التركي
 ⏰ 00:00
-📺 شاهد المباراة الآن على تطبيق MR7 TV...</description>
-<category>sports</category>
-<pubDate>2025-12-01</pubDate>
-</item>
-<item>
-<title>قطر vs فلسطين</title>
-<description>🏆 كأس العرب
-⏰ 00:00
 📺 شاهد المباراة الآن على تطبيق MR7 TV...</description>
 <category>sports</category>
 <pubDate>2025-12-01</pubDate>

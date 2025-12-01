@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": 25,
+      "title": "تجربة ",
+      "description": "تجربة ...",
+      "category": "sports",
+      "date": "2025-12-01",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
       "id": 24,
       "title": "أروكا vs سبورتينج براجا",
       "description": "🏆 الدوري البرتغالي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV\r\n\r\n📥 حمل التطبيق: https://mr7tv.c...",
@@ -30,7 +39,7 @@
     {
       "id": 21,
       "title": "فنربخشة vs جالاتا سراي",
-      "description": "🏆 الدوري التركي\n⏰ 00:00\n📺 شاهد المباراة الآن على تطبيق MR7 TV\n\n📥 حمل التطبيق: https://mr7tv.com...",
+      "description": "🏆 الدوري التركي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV\r\n\r\n📥 حمل التطبيق: https://mr7tv.com...",
       "category": "sports",
       "date": "2025-12-01",
       "image": "images/logo.jpg",
@@ -76,15 +85,6 @@
       "id": 16,
       "title": "سامسون سبور vs ألانيا سبور",
       "description": "🏆 الدوري التركي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
-      "category": "sports",
-      "date": "2025-12-01",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 15,
-      "title": "قطر vs فلسطين",
-      "description": "🏆 كأس العرب\n⏰ 00:00\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
       "category": "sports",
       "date": "2025-12-01",
       "image": "images/logo.jpg",
