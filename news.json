@@ -1,0 +1,76 @@
+{
+  "news": [
+    {
+      "id": 18,
+      "title": "تونس الثاني vs سوريا",
+      "description": "🏆 كأس العرب\n⏰ 00:00\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
+      "category": "sports",
+      "date": "2025-12-01",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
+      "id": 17,
+      "title": "النشر للتجربة ",
+      "description": "حياكم الله ...",
+      "category": "offers",
+      "date": "2025-12-01",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
+      "id": 12,
+      "title": "مباراة: بيزا كالتشيو vs إنتر ميلان",
+      "description": "🔥 مباراة مهمة ⚽\n🏆 الدوري الإيطالي\n⏰ 00:00\n📺 Starz Play App...",
+      "category": "sports",
+      "date": "2025-11-30",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
+      "id": 11,
+      "title": "مباراة: جيرونا vs ريال مدريد",
+      "description": "🔥 بطولة كبرى 🔥\n🏆 الدوري الإسباني\n⏰ 00:00\n📺 بى ان سبورت 1HD...",
+      "category": "sports",
+      "date": "2025-11-30",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "title": "مباراة: تشيلسي vs أرسنال",
+      "description": "🔥 بطولة كبرى 🔥\n🏆 الدوري الإنجليزي\n⏰ 00:00\n📺 بى ان سبورت 1HD...",
+      "category": "sports",
+      "date": "2025-11-30",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "مباراة: وست هام يونايتد vs ليفربول",
+      "description": "🔥 بطولة كبرى 🔥\n🏆 الدوري الإنجليزي\n⏰ 00:00\n📺 بى ان سبورت 1HD...",
+      "category": "sports",
+      "date": "2025-11-30",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "مباراة: كريستال بالاس vs مانشستر يونايتد",
+      "description": "🔥 بطولة كبرى 🔥\n🏆 الدوري الإنجليزي\n⏰ 00:00\n📺 بى ان سبورت 1HD...",
+      "category": "sports",
+      "date": "2025-11-30",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
+      "id": 2,
+      "title": "مباراة: سانت إيلوا لوبوبو vs الهلال السوداني",
+      "description": "🔥 مباراة مهمة ⚽\n🏆 دوري أبطال أفريقيا\n⏰ 00:00\n📺 بى ان سبورت 6 HD...",
+      "category": "sports",
+      "date": "2025-11-30",
+      "image": "images/logo.jpg",
+      "featured": false
+    }
+  ]
+}
