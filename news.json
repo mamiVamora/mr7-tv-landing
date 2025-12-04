@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": 26,
+      "title": "🎬 زوتروبوليس ٢",
+      "description": "سهرة الليلة فيلم مميز! 🍿\n\n**زوتروبوليس ٢** 🎬\n\nينطلق المحققان جودي وتيك في مطاردة مشوّقة بعدما يصل إل...",
+      "category": "movies",
+      "date": "2025-12-05",
+      "image": "images/logo.jpg",
+      "featured": false
+    },
+    {
       "id": 25,
       "title": "سوريا 1-1 قطر",
       "description": "🏆 كأس العرب\n⏰ 19:00\n📺 شاهد المباراة الآن على تطبيق MR7 TV\n\n📥 حمل التطبيق: https://mamivamora.github....",
@@ -76,15 +85,6 @@
       "id": 14,
       "title": "كريستال بالاس vs مانشستر يونايتد",
       "description": "🏆 الدوري الإنجليزي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
-      "category": "sports",
-      "date": "2025-12-01",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 13,
-      "title": "بيزا كالتشيو vs إنتر ميلان",
-      "description": "🏆 الدوري الإيطالي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
       "category": "sports",
       "date": "2025-12-01",
       "image": "images/logo.jpg",
