@@ -3,10 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
     let allNews = [];
     let currentFilter = 'all';
 
-    // Load news from JSON
+    // Load news from API
     async function loadNews() {
         try {
-            const response = await fetch('news.json');
+            // Fetch from the live bot API
+            const response = await fetch('https://mr7-tv-bot.onrender.com/api/news');
             const data = await response.json();
             allNews = data.news;
             displayNews(allNews);
