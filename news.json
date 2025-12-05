@@ -1,92 +1,11 @@
 {
   "news": [
     {
-      "id": 26,
-      "title": "🎬 زوتروبوليس ٢",
-      "description": "سهرة الليلة فيلم مميز! 🍿\n\n**زوتروبوليس ٢** 🎬\n\nينطلق المحققان جودي وتيك في مطاردة مشوّقة بعدما يصل إل...",
-      "category": "movies",
-      "date": "2025-12-05",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 25,
-      "title": "سوريا 1-1 قطر",
-      "description": "🏆 كأس العرب\n⏰ 19:00\n📺 شاهد المباراة الآن على تطبيق MR7 TV\n\n📥 حمل التطبيق: https://mamivamora.github....",
+      "id": 1,
+      "title": "جزر القمر --- السعودية",
+      "description": "🏆 كأس العرب\n⏰ 20:30\n\n\nMR7 TV - عالمك الترفيهي\n👉 اشترك الآن\n#MR7_TV #Matches #Movies...",
       "category": "sports",
       "date": "2025-12-05",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 24,
-      "title": "أروكا vs سبورتينج براجا",
-      "description": "🏆 الدوري البرتغالي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV\r\n\r\n📥 حمل التطبيق: https://mr7tv.c...",
-      "category": "sports",
-      "date": "2025-12-01",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 21,
-      "title": "فنربخشة vs جالاتا سراي",
-      "description": "🏆 الدوري التركي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV\r\n\r\n📥 حمل التطبيق: https://mr7tv.com...",
-      "category": "sports",
-      "date": "2025-12-01",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 20,
-      "title": "حرس الحدود vs الإسماعيلي",
-      "description": "🏆 كأس مصر\n⏰ 00:00\n📺 شاهد المباراة الآن على تطبيق MR7 TV\n\n📥 حمل التطبيق: https://mr7tv.com...",
-      "category": "sports",
-      "date": "2025-12-01",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 19,
-      "title": "رايو فاييكانو vs فالنسيا",
-      "description": "🏆 الدوري الإسباني\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV\r\n\r\n📥 حمل التطبيق: https://mr7tv.co...",
-      "category": "sports",
-      "date": "2025-12-01",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 18,
-      "title": "تونس الثاني vs سوريا",
-      "description": "🏆 كأس العرب\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
-      "category": "sports",
-      "date": "2025-12-01",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 16,
-      "title": "سامسون سبور vs ألانيا سبور",
-      "description": "🏆 الدوري التركي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
-      "category": "sports",
-      "date": "2025-12-01",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 15,
-      "title": "قطر vs فلسطين",
-      "description": "🏆 كأس العرب\n⏰ 00:00\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
-      "category": "sports",
-      "date": "2025-12-01",
-      "image": "images/logo.jpg",
-      "featured": false
-    },
-    {
-      "id": 14,
-      "title": "كريستال بالاس vs مانشستر يونايتد",
-      "description": "🏆 الدوري الإنجليزي\r\n⏰ 00:00\r\n📺 شاهد المباراة الآن على تطبيق MR7 TV...",
-      "category": "sports",
-      "date": "2025-12-01",
       "image": "images/logo.jpg",
       "featured": false
     }
