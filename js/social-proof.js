@@ -50,20 +50,40 @@ function initLiveViewers() {
 }
 
 function initRecentSubscriptions() {
-    // قائمة بأسماء ومدن عراقية (الجمهور المستهدف)
-    const names = ['محمد', 'علي', 'حسين', 'أحمد', 'عباس', 'حيدر', 'مصطفى', 'يوسف', 'حسن', 'كرار', 'سجاد', 'زين العابدين', 'عمر', 'عثمان'];
-    const cities = ['بغداد', 'البصرة', 'أربيل', 'الموصل', 'النجف', 'كربلاء', 'كركوك', 'السليمانية', 'الحلة', 'الناصرية', 'الديوانية', 'الكوت', 'العمارة', 'دهوك'];
+    // بيانات واقعية للجمهور العراقي
+    const firstNames = ['محمد', 'علي', 'حسين', 'أحمد', 'عباس', 'حيدر', 'مصطفى', 'يوسف', 'حسن', 'كرار', 'سجاد', 'زين العابدين', 'عمر', 'عثمان', 'عبدالله', 'مرتضى', 'أمير'];
+    const fatherNames = ['كاظم', 'جاسم', 'سعد', 'رحيم', 'فالح', 'حسن', 'حسين', 'علي', 'عبدالزهرة', 'كريم', 'جبار', 'مهدي', 'صادق', 'فاضل', 'محمود'];
+    const cities = ['بغداد', 'البصرة', 'أربيل', 'الموصل', 'النجف', 'كربلاء', 'كركوك', 'السليمانية', 'الحلة', 'الناصرية', 'الديوانية', 'الكوت', 'العمارة', 'دهوك', 'الرمادي'];
+
+    const packages = [
+        'الباقة الذهبية (12 شهر)',
+        'الباقة الملكية (VIP)',
+        'باقة العائلة (جهازين)',
+        'باقة 6 أشهر',
+        'باقة 3 أشهر',
+        'عرض السنة + 3 أشهر مجاناً'
+    ];
 
     // إنشاء حاوية للإشعارات
     const container = document.createElement('div');
     container.className = 'subscription-notification-container';
-    document.body.appendChild(container); // يجب التأكد من وجود css يحدد مكانها
+    document.body.appendChild(container);
+
+    // دالة لتوليد اسم واقعي (اسم + اسم أب)
+    const generateName = () => {
+        const firstName = firstNames[Math.floor(Math.random() * firstNames.length)];
+        const fatherName = fatherNames[Math.floor(Math.random() * fatherNames.length)];
+        return `${firstName} ${fatherName}`;
+    };
 
     // دالة لإظهار إشعار جديد
     const showNotification = () => {
-        const name = names[Math.floor(Math.random() * names.length)];
+        const name = generateName();
         const city = cities[Math.floor(Math.random() * cities.length)];
-        const timeAgo = Math.floor(Math.random() * 5) + 1; // 1-5 minutes ago
+        const pkg = packages[Math.floor(Math.random() * packages.length)];
+
+        // أوقات عشوائية (منذ دقيقة إلى 45 دقيقة) لتبدو واقعية
+        const timeAgo = Math.floor(Math.random() * 45) + 1;
 
         const notification = document.createElement('div');
         notification.className = 'sub-notification slide-in-left';
@@ -71,8 +91,8 @@ function initRecentSubscriptions() {
             <div class="sub-icon">🎉</div>
             <div class="sub-content">
                 <p class="sub-title">اشتراك جديد!</p>
-                <p class="sub-desc"><strong>${name}</strong> من <strong>${city}</strong> اشترك في الباقة الذهبية</p>
-                <span class="sub-time">منذ ${timeAgo} دقائق</span>
+                <p class="sub-desc"><strong>${name}</strong> من <strong>${city}</strong> اشترك في <strong>${pkg}</strong></p>
+                <span class="sub-time">منذ ${timeAgo} دقيقة</span>
             </div>
             <button class="close-sub">&times;</button>
         `;
@@ -85,13 +105,13 @@ function initRecentSubscriptions() {
             setTimeout(() => notification.remove(), 500);
         });
 
-        // إخفاء تلقائي بعد 6 ثواني
+        // إخفاء تلقائي بعد 7 ثواني
         setTimeout(() => {
             if (notification.parentElement) {
                 notification.classList.add('slide-out-left');
                 setTimeout(() => notification.remove(), 500);
             }
-        }, 6000);
+        }, 7000);
     };
 
     // إظهار إشعار أول مرة بعد 5 ثواني
