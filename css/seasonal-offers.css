@@ -5,10 +5,13 @@
     color: #fff;
     padding: 10px 20px;
     position: relative;
-    z-index: 10000;
+    z-index: 900;
+    /* Lower than header (1000) */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     font-family: 'Cairo', sans-serif;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 80px;
+    /* Offset for fixed header */
 }
 
 .offer-content {

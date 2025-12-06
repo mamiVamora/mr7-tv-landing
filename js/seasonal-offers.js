@@ -52,8 +52,13 @@ function initSeasonalBanner() {
         </div>
     `;
 
-    // Insert at the very top of body
-    document.body.prepend(banner);
+    // Insert at the top of MAIN element (to avoid covering fixed header)
+    const main = document.querySelector('main');
+    if (main) {
+        main.prepend(banner);
+    } else {
+        document.body.prepend(banner);
+    }
 
     // 2. Start Countdown
     startCountdown(endDate);
