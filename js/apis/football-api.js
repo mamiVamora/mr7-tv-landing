@@ -55,6 +55,13 @@ class FootballAPI {
             if (s.includes('انتهت') || s.includes('FINISHED') || s.includes('FT')) status = 'FINISHED';
             if (s.includes('استراحة') || s.includes('PAUSED') || s.includes('HT')) status = 'PAUSED';
 
+            // تصحيح ذكي: إذا كانت الحالة "مجدولة" لكن توجد نتيجة (أرقام)، نعتبرها "منتهية"
+            if (status === 'SCHEDULED' && match.score && /\d+/.test(match.score) && match.score !== '- - -') {
+                status = 'FINISHED';
+            }
+
+            // تحويل الصيغة لتطابق الواجهة الحالية
+
             // تحويل الصيغة لتطابق الواجهة الحالية
             return {
                 id: match.id,
