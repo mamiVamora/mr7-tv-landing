@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="يُعرض الآن على MR7 TV - تابع أحدث المباريات، الأفلام، والمسلسلات الحصرية. بث مباشر 4K بدون تقطيع.">
+    <title>MR7 TV - يُعرض الآن</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/now-showing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/global-enhancements.css">
+    <link rel="stylesheet" href="css/tv-remote-styles.css">
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <!-- Open Graph -->
+    <meta property="og:title" content="MR7 TV - يُعرض الآن">
+    <meta property="og:description" content="تابع أحدث المباريات والأفلام والمسلسلات الحصرية على MR7 TV.">
+    <meta property="og:image" content="https://mamivamora.github.io/mr7-tv-landing/images/logo.jpg">
+    <meta property="og:url" content="https://mamivamora.github.io/mr7-tv-landing/now-showing.html">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="MR7 TV Logo">
+                    <div class="brand-container"><span class="brand-en">MR7 TV</span><span class="brand-ar"> TV</span>
+                    </div>
+                </a>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="now-showing.html" class="active blinking-u">🔴 يُعرض الآن</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="pricing.html">الباقات</a></li>
+                    <li><a href="features.html">المميزات</a></li>
+                    <li><a href="gallery.html">المعرض</a></li>
+                    <li><a href="become-agent.html">كن وكيلاً</a></li>
+                    <li><a href="downloads.html">طريقة التحميل</a></li>
+                    <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="now-showing-main">
+        <!-- Hero Section for Now Showing -->
+        <section class="now-showing-hero" data-aos="fade-up">
+            <div class="container center-content">
+                <h1 class="page-title text-glow">ما يُعرض <span class="holographic-text">الآن</span></h1>
+                <p class="page-desc">
+                    تابع أقوى المباريات وأحدث الأفلام والمسلسلات لحظة بلحظة
+                </p>
+                <!-- Live Stats -->
+                <div class="live-stats-bar">
+                    <div class="stat-item">
+                        <i class="fas fa-users text-gold pulse"></i>
+                        <span class="stat-number" id="live-viewers-count">--</span>
+                        <span class="stat-label">مشاهد الآن</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <i class="fas fa-futbol text-green"></i>
+                        <span class="stat-number" id="live-matches-count">--</span>
+                        <span class="stat-label">مباراة مباشرة</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <i class="fas fa-film text-purple"></i>
+                        <span class="stat-number">+20</span>
+                        <span class="stat-label">إضافة جديدة اليوم</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Matches Section -->
+        <section id="live-matches" class="section matches-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-subtitle"><i class="fas fa-futbol"></i> مباريات اليوم</h2>
+                    <div class="live-indicator">
+                        <span class="dot"></span> مباشر
+                    </div>
+                </div>
+
+                <div class="matches-grid" id="matches-grid">
+                    <!-- Matches will be loaded here via JS -->
+                    <div class="loading-spinner">
+                        <i class="fas fa-circle-notch fa-spin"></i> جاري تحميل المباريات...
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Movies Section -->
+        <section id="latest-movies" class="section movies-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-subtitle"><i class="fas fa-film"></i> أحدث الأفلام</h2>
+                    <a href="pricing.html" class="view-all-btn">اشترك للمشاهدة <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <div class="media-carousel-container">
+                    <button class="carousel-btn prev-btn" id="prev-movies"><i class="fas fa-chevron-right"></i></button>
+                    <div class="media-grid" id="movies-grid">
+                        <!-- Movies will be loaded here via JS -->
+                        <div class="loading-spinner">
+                            <i class="fas fa-circle-notch fa-spin"></i> جاري تحميل الأفلام...
+                        </div>
+                    </div>
+                    <button class="carousel-btn next-btn" id="next-movies"><i class="fas fa-chevron-left"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TV Shows Section -->
+        <section id="latest-series" class="section series-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-subtitle"><i class="fas fa-tv"></i> أحدث المسلسلات</h2>
+                    <a href="pricing.html" class="view-all-btn">تصفح الباقات <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <div class="media-carousel-container">
+                    <button class="carousel-btn prev-btn" id="prev-series"><i class="fas fa-chevron-right"></i></button>
+                    <div class="media-grid" id="series-grid">
+                        <!-- Series will be loaded here via JS -->
+                        <div class="loading-spinner">
+                            <i class="fas fa-circle-notch fa-spin"></i> جاري تحميل المسلسلات...
+                        </div>
+                    </div>
+                    <button class="carousel-btn next-btn" id="next-series"><i class="fas fa-chevron-left"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section-mini">
+            <div class="container">
+                <div class="cta-box">
+                    <h3>لا تفوت المتعة!</h3>
+                    <p>اشترك الآن واحصل على وصول فوري لكل هذا المحتوى وأكثر.</p>
+                    <a href="pricing.html" class="btn btn-primary pulse-btn">اشترك الآن (تجربة مجانية)</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MR7 TV. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/global-enhancements.js"></script>
+    <script src="js/tv-remote-navigation.js"></script>
+
+    <!-- API Scripts -->
+    <script src="js/apis/tmdb-api.js"></script>
+    <script src="js/apis/football-api.js"></script>
+    <script src="js/now-showing.js"></script>
+
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // Mobile Menu Toggle logic
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = menuToggle.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+    </script>
+
+    <!-- AI Chatbot -->
+    <script src="bot/env-loader.js"></script>
+    <script src="bot/chatbot.js"></script>
+</body>
+
+</html>

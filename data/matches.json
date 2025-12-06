@@ -1,0 +1,36 @@
+[
+    {
+        "id": "match-1",
+        "homeTeam": {
+            "name": "ريال مدريد",
+            "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_48x48.png"
+        },
+        "awayTeam": {
+            "name": "برشلونة",
+            "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8959Lo8QTE2HjUCw_48x48.png"
+        },
+        "time": "22:00",
+        "date": "2025-12-06",
+        "status": "مباشر",
+        "score": "2 - 1",
+        "championship": "الدوري الإسباني",
+        "channel": "beIN Sports 1"
+    },
+    {
+        "id": "match-2",
+        "homeTeam": {
+            "name": "ليفربول",
+            "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/0iShHhASp5q1SL4JhtwJiw_48x48.png"
+        },
+        "awayTeam": {
+            "name": "مانشستر سيتي",
+            "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/z44l-a0W1v5FmgPnemV6Xw_48x48.png"
+        },
+        "time": "19:30",
+        "date": "2025-12-06",
+        "status": "انتهت",
+        "score": "1 - 1",
+        "championship": "الدوري الإنجليزي",
+        "channel": "beIN Sports 2"
+    }
+]

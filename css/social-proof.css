@@ -1,0 +1,224 @@
+/* Social Proof Styles */
+
+/* 1. Live Viewer Badge (Bottom Left/Right Fixed) */
+.live-viewer-badge {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    /* أو يمين حسب التصميم، هنا يسار ليبتعد عن زر الواتساب */
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 10px 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    direction: rtl;
+}
+
+.viewer-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ef4444;
+    /* لون أحمر للبث المباشر */
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0 0 0 rgba(239, 68, 68, 0.4);
+    animation: live-pulse 2s infinite;
+}
+
+@keyframes live-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    }
+}
+
+.viewer-text {
+    font-size: 0.9rem;
+    color: #e2e8f0;
+}
+
+.viewer-text strong {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* حركة بسيطة للأرقام */
+.count-up .viewer-text strong {
+    color: #4ade80;
+    /* أخضر عند الزيادة */
+    transition: color 0.3s ease;
+}
+
+/* 2. Subscription Notifications (Bottom Right) */
+.subscription-notification-container {
+    position: fixed;
+    bottom: 90px;
+    /* فوق زر الواتساب قليلاً */
+    right: 20px;
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    pointer-events: none;
+    /* يسمح بالنقر خلال الحاوية */
+}
+
+.sub-notification {
+    background: linear-gradient(to right, #1e293b, #0f172a);
+    border-left: 4px solid #7c3aed;
+    /* العلامة المميزة */
+    border-radius: 8px;
+    padding: 15px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    pointer-events: auto;
+    /* إعادة تفعيل النقر للإشعار نفسه */
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-icon {
+    font-size: 1.5rem;
+    background: rgba(124, 58, 237, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-content {
+    flex: 1;
+}
+
+.sub-title {
+    font-size: 0.85rem;
+    color: #a78bfa;
+    margin: 0 0 2px 0;
+    font-weight: 700;
+}
+
+.sub-desc {
+    font-size: 0.85rem;
+    color: #fff;
+    margin: 0 0 2px 0;
+    line-height: 1.4;
+}
+
+.sub-time {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.close-sub {
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0;
+    align-self: flex-start;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.close-sub:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+/* Animations */
+.slide-in-bottom {
+    animation: slideUpFade 0.5s ease forwards;
+}
+
+.slide-in-left {
+    animation: slideInRight 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    /* حركة مرنة */
+}
+
+.slide-out-left {
+    animation: slideOutRight 0.5s ease forwards;
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .live-viewer-badge {
+        bottom: 10px;
+        left: 10px;
+        padding: 8px 15px;
+    }
+
+    .viewer-text {
+        font-size: 0.8rem;
+    }
+
+    .subscription-notification-container {
+        right: 10px;
+        bottom: 80px;
+        width: calc(100% - 20px);
+        align-items: center;
+    }
+
+    .sub-notification {
+        width: 100%;
+        max-width: 350px;
+    }
+}
