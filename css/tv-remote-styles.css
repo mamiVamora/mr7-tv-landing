@@ -1,0 +1,132 @@
+/* ========================================
+   TV Remote Navigation Styles
+   Styles for TV remote control navigation
+   ======================================== */
+
+/* إخفاء outline الافتراضي */
+*:focus {
+    outline: none;
+}
+
+/* Focus style للعناصر عند التنقل بالريموت */
+.tv-focused,
+a.tv-focused,
+button.tv-focused,
+.card.tv-focused,
+.pricing-card.tv-focused,
+.method-card.tv-focused,
+.feature-card.tv-focused,
+.stat-card.tv-focused {
+    outline: 3px solid #7c3aed !important;
+    outline-offset: 4px;
+    box-shadow: 0 0 0 6px rgba(124, 58, 237, 0.3),
+        0 0 30px rgba(124, 58, 237, 0.5) !important;
+    transform: scale(1.05) !important;
+    z-index: 100 !important;
+    position: relative;
+    transition: all 0.2s ease !important;
+}
+
+/* Focus للبطاقات */
+.card.tv-focused,
+.pricing-card.tv-focused,
+.feature-card.tv-focused,
+.stat-card.tv-focused {
+    border-color: #7c3aed !important;
+    background: rgba(124, 58, 237, 0.1) !important;
+}
+
+/* Focus للأزرار */
+button.tv-focused,
+.btn.tv-focused,
+a.btn.tv-focused {
+    box-shadow: 0 0 0 6px rgba(124, 58, 237, 0.4),
+        0 8px 25px rgba(124, 58, 237, 0.6) !important;
+}
+
+/* Focus للروابط في القائمة */
+.nav-links a.tv-focused {
+    transform: scale(1.1) !important;
+    text-shadow: 0 0 10px rgba(124, 58, 237, 0.8);
+}
+
+/* مؤشر التنقل بالريموت */
+.tv-navigation-hint {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: rgba(10, 10, 10, 0.95);
+    border: 2px solid #7c3aed;
+    border-radius: 12px;
+    padding: 15px 20px;
+    color: white;
+    font-size: 14px;
+    z-index: 9998;
+    animation: fadeInUp 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.tv-navigation-hint p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tv-navigation-hint i {
+    color: #7c3aed;
+    font-size: 16px;
+}
+
+.tv-navigation-hint .close-hint {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.tv-navigation-hint .close-hint:hover {
+    color: #fff;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تحسينات للعناصر التفاعلية */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #7c3aed;
+    outline-offset: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tv-navigation-hint {
+        bottom: 20px;
+        right: 10px;
+        left: 10px;
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .tv-focused {
+        transform: scale(1.02) !important;
+    }
+}
