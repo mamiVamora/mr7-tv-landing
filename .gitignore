@@ -11,3 +11,10 @@ Thumbs.db
 # Backup Files
 *.backup
 *.bak
+
+# Environment Variables (contains API keys)
+.env
+.env.local
+
+# Bot Configuration (deprecated - use .env instead)
+bot/config.js

@@ -1,0 +1,65 @@
+<!-- MR7 TV AI Chatbot Widget -->
+<div id="mr7-chatbot-container">
+    <!-- Floating Toggle Button -->
+    <button id="mr7-chatbot-toggle" aria-label="فتح المساعد الذكي">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Chat Window -->
+    <div id="mr7-chatbot-window">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <img src="images/logo.jpg" alt="MR7 TV" class="chatbot-header-logo">
+            <div class="chatbot-header-info">
+                <h3 class="chatbot-header-title">
+                    <i class="fas fa-robot"></i>
+                    مساعد MR7 TV
+                </h3>
+                <p class="chatbot-header-status">
+                    <span class="status-dot"></span>
+                    متصل الآن
+                </p>
+            </div>
+            <button class="chatbot-close" aria-label="إغلاق">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Messages Container -->
+        <div class="chatbot-messages" id="chatbot-messages">
+            <!-- Welcome Message -->
+            <div class="welcome-message">
+                <h3>👋 مرحباً بك!</h3>
+                <p>أنا المساعد الذكي لـ MR7 TV. كيف يمكنني مساعدتك اليوم؟</p>
+                <div class="quick-questions">
+                    <button class="quick-question-btn" data-question="كيف أحمل التطبيق للأندرويد؟">
+                        📱 كيف أحمل التطبيق للأندرويد؟
+                    </button>
+                    <button class="quick-question-btn" data-question="ما هي أسعار الباقات؟">
+                        💰 ما هي أسعار الباقات؟
+                    </button>
+                    <button class="quick-question-btn" data-question="كيف أتواصل معكم؟">
+                        📞 كيف أتواصل معكم؟
+                    </button>
+                    <button class="quick-question-btn" data-question="ما هي ميزات التطبيق؟">
+                        ⭐ ما هي ميزات التطبيق؟
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Container -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                class="chatbot-input" 
+                id="chatbot-input" 
+                placeholder="اكتب سؤالك هنا..."
+                autocomplete="off"
+            >
+            <button class="chatbot-send-btn" id="chatbot-send-btn" aria-label="إرسال">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
