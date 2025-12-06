@@ -49,9 +49,11 @@ class FootballAPI {
 
             // تحديد الحالة (Standardizing status)
             let status = 'SCHEDULED';
-            if (match.status.includes('مباشر')) status = 'IN_PLAY';
-            if (match.status.includes('انتهت')) status = 'FINISHED';
-            if (match.status.includes('استراحة')) status = 'PAUSED';
+            const s = match.status.toUpperCase();
+
+            if (s.includes('مباشر') || s.includes('LIVE') || s.includes('IN_PLAY')) status = 'IN_PLAY';
+            if (s.includes('انتهت') || s.includes('FINISHED') || s.includes('FT')) status = 'FINISHED';
+            if (s.includes('استراحة') || s.includes('PAUSED') || s.includes('HT')) status = 'PAUSED';
 
             // تحويل الصيغة لتطابق الواجهة الحالية
             return {

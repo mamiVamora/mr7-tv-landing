@@ -110,7 +110,7 @@ function createMatchCard(match) {
     const time = footballAPI.formatMatchTime(match.utcDate);
 
     return `
-        <div class="match-card ${isLive ? 'live-match' : ''}" tabindex="0">
+        <div class="match-card ${isLive ? 'live-match' : (match.status === 'FINISHED' ? 'finished-match' : '')}" tabindex="0">
             <div class="match-header">
                 <span class="match-status ${statusClass}">${statusText}</span>
             </div>
@@ -120,8 +120,8 @@ function createMatchCard(match) {
                     <span class="team-name">${match.homeTeam.name}</span>
                 </div>
                 <div class="match-score-time">
-                    ${isLive ?
-            `<span class="match-score pulse-text">${match.score.fullTime.home} - ${match.score.fullTime.away}</span>` :
+                    ${(isLive || match.status === 'FINISHED') ?
+            `<span class="match-score ${isLive ? 'pulse-text' : ''}">${match.score.fullTime.home} - ${match.score.fullTime.away}</span>` :
             `<span class="match-time">${time}</span>`
         }
                 </div>
