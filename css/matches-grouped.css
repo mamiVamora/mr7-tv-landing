@@ -44,16 +44,35 @@
 }
 
 /* Match Card Updates */
-/* Remove Channel specific styles if no longer needed or keep for fallback */
-.match-footer {
-    display: none !important;
-    /* Force hide channel info */
+.match-card {
+    padding-bottom: 1rem;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Adjust card height/padding since footer is gone */
-.match-card {
-    padding-bottom: 1.5rem;
-    min-height: auto;
+.match-footer {
+    margin-top: auto;
+    /* Push footer to bottom */
+}
+
+.channel-tag {
+    font-size: 0.85rem;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.match-card:hover .channel-tag {
+    background: #7c3aed !important;
+    color: #fff !important;
+    border-color: #7c3aed !important;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
 }
 
 /* Responsive Grid for each group */

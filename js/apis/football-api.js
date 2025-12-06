@@ -60,7 +60,7 @@ class FootballAPI {
                 utcDate: this.convertTimeToDate(match.time), // محاولة تحويل الوقت
 
                 competition: {
-                    name: match.championship
+                    name: match.league || match.championship // دعم المفتاحين للاحتياط
                 },
 
                 homeTeam: {

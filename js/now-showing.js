@@ -103,41 +103,6 @@ async function loadLiveMatches() {
 /**
  * إنشاء بطاقة المباراة (بدون اسم القناة)
  */
-function createMatchCard(match) {
-    const isLive = match.status === 'IN_PLAY' || match.status === 'PAUSED';
-    const statusClass = isLive ? 'live' : '';
-    const statusText = footballAPI.getMatchStatus(match.status);
-    const time = footballAPI.formatMatchTime(match.utcDate);
-
-    // تم إزالة جزء القناة (match-footer) بالكامل بناءً على طلبك
-    return `
-        <div class="match-card ${isLive ? 'live-match' : ''}" tabindex="0">
-            <div class="match-header">
-                <span class="match-status ${statusClass}">${statusText}</span>
-                <!-- اسم البطولة موجود بالفعل في العنوان الرئيسي للقسم، لا داعي لتكراره هنا -->
-            </div>
-            <div class="teams-container">
-                <div class="team home">
-                    <img src="${match.homeTeam.crest}" alt="${match.homeTeam.name}" class="team-logo" onerror="this.src='images/logo.jpg'">
-                    <span class="team-name">${match.homeTeam.name}</span>
-                </div>
-                <div class="match-score-time">
-                    ${isLive ?
-            `<span class="match-score pulse-text">${match.score.fullTime.home} - ${match.score.fullTime.away}</span>` :
-            `<span class="match-time">${time}</span>`
-        }
-                </div>
-                <div class="team away">
-                    <img src="${match.awayTeam.crest}" alt="${match.awayTeam.name}" class="team-logo" onerror="this.src='images/logo.jpg'">
-                    <span class="team-name">${match.awayTeam.name}</span>
-                </div>
-            </div>
-        </div>
-    `;
-}
-
-/**
- * تحميل وعرض أحدث الأفلام
  */
 async function loadLatestMovies() {
     const container = document.getElementById('movies-grid');
