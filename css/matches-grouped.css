@@ -1,0 +1,75 @@
+/* Grouped Matches Layout */
+
+.competition-group {
+    margin-bottom: 3rem;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.competition-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(124, 58, 237, 0.3);
+}
+
+.competition-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.competition-title::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 25px;
+    background: #fbbf24;
+    /* Gold accent */
+    border-radius: 3px;
+}
+
+.competition-count {
+    background: rgba(124, 58, 237, 0.2);
+    color: #a78bfa;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Match Card Updates */
+/* Remove Channel specific styles if no longer needed or keep for fallback */
+.match-footer {
+    display: none !important;
+    /* Force hide channel info */
+}
+
+/* Adjust card height/padding since footer is gone */
+.match-card {
+    padding-bottom: 1.5rem;
+    min-height: auto;
+}
+
+/* Responsive Grid for each group */
+.competition-matches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .competition-matches-grid {
+        grid-template-columns: 1fr;
+        /* Stack on mobile */
+    }
+
+    .competition-title {
+        font-size: 1.3rem;
+    }
+}

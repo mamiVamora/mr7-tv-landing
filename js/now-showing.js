@@ -41,68 +41,99 @@ document.addEventListener('DOMContentLoaded', () => {
 /**
  * تحميل وعرض المباريات المباشرة
  */
+/**
+ * تحميل وعرض المباريات المباشرة (مجمعة حسب البطولة)
+ */
 async function loadLiveMatches() {
     const container = document.getElementById('matches-grid');
     if (!container) return;
 
     try {
         const matches = await footballAPI.getTodayMatches();
-
-        container.innerHTML = ''; // مسح الـ spinner
+        container.innerHTML = ''; // مسح المحتوى القديم
 
         if (matches.length === 0) {
             container.innerHTML = '<div class="no-matches">لا توجد مباريات مباشرة حالياً.</div>';
             return;
         }
 
-        matches.forEach((match, index) => {
-            const isLive = match.status === 'IN_PLAY' || match.status === 'PAUSED';
-            const statusClass = isLive ? 'live' : '';
-            const statusText = footballAPI.getMatchStatus(match.status);
-            const time = footballAPI.formatMatchTime(match.utcDate);
+        // 1. تجميع المباريات حسب البطولة
+        const matchesByLeague = {};
+        matches.forEach(match => {
+            const leagueName = match.competition.name || 'بطولات أخرى';
+            if (!matchesByLeague[leagueName]) {
+                matchesByLeague[leagueName] = [];
+            }
+            matchesByLeague[leagueName].push(match);
+        });
 
-            // تحديد القناة (محاكاة)
-            const channel = match.channel || 'beIN Sports';
+        // 2. عرض كل بطولة في قسم منفصل
+        Object.keys(matchesByLeague).forEach((leagueName, groupIndex) => {
+            const leagueMatches = matchesByLeague[leagueName];
 
-            const matchCard = `
-                <div class="match-card ${isLive ? 'live-match' : ''}" tabindex="0" data-aos="fade-up" data-aos-delay="${index * 100}">
-                    <div class="match-header">
-                        <span class="match-status ${statusClass}">${statusText}</span>
-                        <span class="competition-name">${match.competition.name}</span>
+            // إنشاء هيكل القسم (Header + Grid)
+            const groupHTML = `
+                <div class="competition-group" data-aos="fade-up" data-aos-delay="${groupIndex * 100}">
+                    <div class="competition-header">
+                        <h3 class="competition-title">
+                            ${leagueName}
+                            <span class="competition-count">${leagueMatches.length} مباريات</span>
+                        </h3>
                     </div>
-                    <div class="teams-container">
-                        <div class="team home">
-                            <img src="${match.homeTeam.crest}" alt="${match.homeTeam.name}" class="team-logo" onerror="this.src='images/logo.jpg'">
-                            <span class="team-name">${match.homeTeam.name}</span>
-                        </div>
-                        <div class="match-score-time">
-                            ${isLive ?
-                    `<span class="match-score pulse-text">${match.score.fullTime.home} - ${match.score.fullTime.away}</span>` :
-                    `<span class="match-time">${time}</span>`
-                }
-                        </div>
-                        <div class="team away">
-                            <img src="${match.awayTeam.crest}" alt="${match.awayTeam.name}" class="team-logo" onerror="this.src='images/logo.jpg'">
-                            <span class="team-name">${match.awayTeam.name}</span>
-                        </div>
-                    </div>
-                    <div class="match-footer">
-                        <span class="channel-tag"><i class="fas fa-tv"></i> ${channel}</span>
+                    <div class="competition-matches-grid">
+                        ${leagueMatches.map(match => createMatchCard(match)).join('')}
                     </div>
                 </div>
             `;
-            container.insertAdjacentHTML('beforeend', matchCard);
+
+            container.insertAdjacentHTML('beforeend', groupHTML);
         });
 
-        // تحديث إحصائية عدد المباريات
+        // تحديث إحصائية العدد الإجمالي
         const liveCount = matches.filter(m => m.status === 'IN_PLAY').length;
-        const scheduledCount = matches.filter(m => m.status === 'SCHEDULED').length;
-        document.getElementById('live-matches-count').innerText = liveCount > 0 ? liveCount : scheduledCount;
+        const totalCount = matches.length;
+        document.getElementById('live-matches-count').innerText = liveCount > 0 ? liveCount : totalCount;
 
     } catch (error) {
         console.error('Error loading matches:', error);
         container.innerHTML = '<div class="error-msg">حدث خطأ في تحميل المباريات.</div>';
     }
+}
+
+/**
+ * إنشاء بطاقة المباراة (بدون اسم القناة)
+ */
+function createMatchCard(match) {
+    const isLive = match.status === 'IN_PLAY' || match.status === 'PAUSED';
+    const statusClass = isLive ? 'live' : '';
+    const statusText = footballAPI.getMatchStatus(match.status);
+    const time = footballAPI.formatMatchTime(match.utcDate);
+
+    // تم إزالة جزء القناة (match-footer) بالكامل بناءً على طلبك
+    return `
+        <div class="match-card ${isLive ? 'live-match' : ''}" tabindex="0">
+            <div class="match-header">
+                <span class="match-status ${statusClass}">${statusText}</span>
+                <!-- اسم البطولة موجود بالفعل في العنوان الرئيسي للقسم، لا داعي لتكراره هنا -->
+            </div>
+            <div class="teams-container">
+                <div class="team home">
+                    <img src="${match.homeTeam.crest}" alt="${match.homeTeam.name}" class="team-logo" onerror="this.src='images/logo.jpg'">
+                    <span class="team-name">${match.homeTeam.name}</span>
+                </div>
+                <div class="match-score-time">
+                    ${isLive ?
+            `<span class="match-score pulse-text">${match.score.fullTime.home} - ${match.score.fullTime.away}</span>` :
+            `<span class="match-time">${time}</span>`
+        }
+                </div>
+                <div class="team away">
+                    <img src="${match.awayTeam.crest}" alt="${match.awayTeam.name}" class="team-logo" onerror="this.src='images/logo.jpg'">
+                    <span class="team-name">${match.awayTeam.name}</span>
+                </div>
+            </div>
+        </div>
+    `;
 }
 
 /**
