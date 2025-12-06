@@ -103,7 +103,40 @@ async function loadLiveMatches() {
 /**
  * إنشاء بطاقة المباراة (بدون اسم القناة)
  */
- */
+function createMatchCard(match) {
+    const isLive = match.status === 'IN_PLAY' || match.status === 'PAUSED';
+    const statusClass = isLive ? 'live' : '';
+    const statusText = footballAPI.getMatchStatus(match.status);
+    const time = footballAPI.formatMatchTime(match.utcDate);
+
+    return `
+        <div class="match-card ${isLive ? 'live-match' : ''}" tabindex="0">
+            <div class="match-header">
+                <span class="match-status ${statusClass}">${statusText}</span>
+            </div>
+            <div class="teams-container">
+                <div class="team home">
+                    <img src="${match.homeTeam.crest}" alt="${match.homeTeam.name}" class="team-logo" onerror="this.src='images/logo.jpg'">
+                    <span class="team-name">${match.homeTeam.name}</span>
+                </div>
+                <div class="match-score-time">
+                    ${isLive ?
+            `<span class="match-score pulse-text">${match.score.fullTime.home} - ${match.score.fullTime.away}</span>` :
+            `<span class="match-time">${time}</span>`
+        }
+                </div>
+                <div class="team away">
+                    <img src="${match.awayTeam.crest}" alt="${match.awayTeam.name}" class="team-logo" onerror="this.src='images/logo.jpg'">
+                    <span class="team-name">${match.awayTeam.name}</span>
+                </div>
+            </div>
+            <div class="match-footer" style="display: flex !important; justify-content: center; margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;">
+                <span class="channel-tag" style="background: rgba(124, 58, 237, 0.2); color: #a78bfa; border: 1px solid rgba(124, 58, 237, 0.3);"><i class="fas fa-mobile-alt"></i> شاهدها على MR7 TV</span>
+            </div>
+        </div>
+    `;
+}
+
 async function loadLatestMovies() {
     const container = document.getElementById('movies-grid');
     if (!container) return;
