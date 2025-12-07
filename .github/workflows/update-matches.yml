@@ -1,0 +1,39 @@
+name: Update Match Data
+
+on:
+  schedule:
+    # Run every day at 00:00 UTC (3:00 AM Baghdad time)
+    - cron: '0 0 * * *'
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Important: Allows the action to push changes
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: Run Scraper Script
+        run: python scripts/scrape_matches.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/matches.json
+          # Check if there are changes before committing to avoid errors
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated match data update ⚽" && git push)
