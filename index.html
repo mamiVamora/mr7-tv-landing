@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/global-enhancements.css">
         <link rel="stylesheet" href="css/components/live-ticker.css">
         <link rel="stylesheet" href="css/tv-remote-styles.css">
+        <link rel="stylesheet" href="css/mobile-enhancements.css">
         <link rel="icon" href="images/logo.jpg" type="image/jpeg">
 
         <!-- Open Graph / Facebook -->
@@ -112,8 +113,11 @@
                                 </div>
                                 <ul class="nav-links">
                                         <li><a href="index.html" class="active">الرئيسية</a></li>
-                                        <li><a href="now-showing.html" style="color: #ef4444; font-weight: bold;">يُعرض
-                                                        الآن 🔴</a></li>
+                                        <li>
+                                                <a href="now-showing.html" class="nav-item-live">
+                                                        يُعرض الآن <span class="live-dot"></span>
+                                                </a>
+                                        </li>
                                         <li><a href="services.html">خدماتنا</a></li>
                                         <li><a href="pricing.html">الباقات</a></li>
                                         <li><a href="features.html">المميزات</a></li>
@@ -521,31 +525,7 @@
                 </section>
 
                 <!-- Countdown Timer Section -->
-                <section class="countdown-section" data-aos="zoom-in">
-                        <div class="container countdown-content">
-                                <h2 class="countdown-title">عرض خاص لفترة محدودة!</h2>
-                                <p class="countdown-subtitle">احصل على خصم 50% على الاشتراك السنوي. ينتهي العرض في:</p>
-
-                                <div class="countdown-timer" id="countdown">
-                                        <div class="timer-item">
-                                                <span class="timer-number" id="days">00</span>
-                                                <span class="timer-label">يوم</span>
-                                        </div>
-                                        <div class="timer-item">
-                                                <span class="timer-number" id="hours">00</span>
-                                                <span class="timer-label">ساعة</span>
-                                        </div>
-                                        <div class="timer-item">
-                                                <span class="timer-number" id="minutes">00</span>
-                                                <span class="timer-label">دقيقة</span>
-                                        </div>
-                                        <div class="timer-item">
-                                                <span class="timer-number" id="seconds">00</span>
-                                                <span class="timer-label">ثانية</span>
-                                        </div>
-                                </div>
-                        </div>
-                </section>
+                <!-- Countdown Section REMOVED -->
 
                 <!-- Pricing Section -->
                 <section id="pricing" class="section">
@@ -963,6 +943,16 @@
                 </button>
         </footer>
 
+        <!-- Mobile Enhancements -->
+        <div class="mobile-sticky-bar">
+                <a href="downloads.html" class="sticky-btn download">
+                        <i class="fas fa-download"></i> حمل التطبيق
+                </a>
+                <a href="https://wa.me/905340218618" class="sticky-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i> تواصل معنا
+                </a>
+        </div>
+
         <script>
                 // Dynamic Year
                 document.getElementById('current-year').textContent = new Date().getFullYear();
@@ -985,25 +975,35 @@
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/global-enhancements.js"></script>
-        <script src="js/countdown.js"></script>
+
+        <!-- REMOVED: seasonal-offers.js (Clutter) -->
+        <!-- REMOVED: fomo.js (Countdown Logic) -->
+        <!-- We will keep social-proof.js but restrict it in CSS -->
+        <script src="js/social-proof.js"></script>
+        <script src="js/exit-intent.js"></script>
+
         <script>
                 AOS.init({ duration: 1000, once: true });
-                particlesJS('particles-js', {
-                        particles: {
-                                number: { value: 80, density: { enable: true, value_area: 800 } },
-                                color: { value: '#7c3aed' },
-                                shape: { type: 'circle' },
-                                opacity: { value: 0.5, random: false },
-                                size: { value: 3, random: true },
-                                line_linked: { enable: true, distance: 150, color: '#7c3aed', opacity: 0.4, width: 1 },
-                                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
-                        },
-                        interactivity: {
-                                detect_on: 'canvas',
-                                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true }
-                        },
-                        retina_detect: true
-                });
+
+                // Mobile Particle Check
+                if (window.innerWidth > 768) {
+                        particlesJS('particles-js', {
+                                particles: {
+                                        number: { value: 80, density: { enable: true, value_area: 800 } },
+                                        color: { value: '#7c3aed' },
+                                        shape: { type: 'circle' },
+                                        opacity: { value: 0.5, random: false },
+                                        size: { value: 3, random: true },
+                                        line_linked: { enable: true, distance: 150, color: '#7c3aed', opacity: 0.4, width: 1 },
+                                        move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+                                },
+                                interactivity: {
+                                        detect_on: 'canvas',
+                                        events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true }
+                                },
+                                retina_detect: true
+                        });
+                }
 
                 // Mobile Menu Toggle
                 const menuToggle = document.querySelector('.menu-toggle');
@@ -1028,26 +1028,6 @@
 
         <!-- TV Remote Navigation -->
         <script src="js/tv-remote-navigation.js"></script>
-
-        <!-- AI Chatbot -->
-        <script src="bot/env-loader.js"></script>
-        <script src="bot/chatbot.js"></script>
-
-        <!-- Social Proof -->
-        <link rel="stylesheet" href="css/social-proof.css">
-        <script src="js/social-proof.js"></script>
-
-        <!-- Seasonal Offers -->
-        <link rel="stylesheet" href="css/seasonal-offers.css">
-        <script src="js/seasonal-offers.js"></script>
-
-        <!-- FOMO Elements -->
-        <link rel="stylesheet" href="css/fomo-elements.css">
-        <script src="js/fomo.js"></script>
-
-        <!-- Exit Intent Popup -->
-        <link rel="stylesheet" href="css/exit-popup.css">
-        <script src="js/exit-intent.js"></script>
 
         <!-- Analytics -->
         <script src="js/analytics.js"></script>
