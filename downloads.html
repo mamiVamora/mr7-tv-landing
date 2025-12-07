@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/global-enhancements.css">
+    <link rel="stylesheet" href="css/mobile-enhancements.css">
+    <link rel="stylesheet" href="css/footer-premium.css">
+    <link rel="stylesheet" href="css/tv-remote-styles.css">
     <link rel="icon" href="images/logo.jpg" type="image/jpeg">
     <meta property="og:title" content="MR7 TV - طريقة التحميل">
     <meta property="og:description"
@@ -19,32 +22,7 @@
     <meta property="og:image" content="https://mamivamora.github.io/mr7-tv-landing/images/logo.jpg">
     <meta property="og:url" content="https://mamivamora.github.io/mr7-tv-landing/downloads.html">
     <meta property="og:type" content="website">
-        <link rel="stylesheet" href="css/tv-remote-styles.css">
-
 </head>
-<style>
-    /* TV Remote Navigation Styles */
-    :focus {
-        outline: none;
-        /* Remove default browser outline */
-    }
-
-    .nav-focusable:focus,
-    .nav-focusable.focused {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px rgba(124, 58, 237, 0.8) !important;
-        border: 3px solid #fff !important;
-        z-index: 100;
-        position: relative;
-        transition: all 0.2s ease;
-    }
-
-    /* Specific adjustments for cards */
-    .method-card:focus-within {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
-    }
-</style>
 
 <body>
     <div id="particles-js"></div>
@@ -55,21 +33,28 @@
                 <a href="index.html" class="logo">
                     <img src="images/logo.jpg" alt="MR7 TV Logo">
                     <div class="brand-container"><span class="brand-en">MR7 TV</span><span class="brand-ar">مرح
-                            TV</span></div>
+                            TV</span>
+                    </div>
                 </a>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul class="nav-links">
                     <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="services.html">خدماتنا</a></li>
-                    <li><a href="pricing.html">الباقات</a></li>
-                    <li><a href="features.html">المميزات</a></li>
-                    <li><a href="gallery.html">المعرض</a></li>
-                    <li><a href="become-agent.html">كن وكيلاً</a></li>
-                    <li><a href="downloads.html" class="active">طريقة التحميل</a></li>
-                    <li><a href="faq.html">الأسئلة الشائعة</a></li>
-                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li>
+                        <a href="now-showing.html" class="nav-item-live">
+                            مباشر <span class="live-dot"></span>
+                        </a>
+                    </li>
+                    <li><a href="services.html">الخدمات</a></li>
+                    <li><a href="pricing.html">باقات</a></li>
+                    <li><a href="features.html">مميزات</a></li>
+                    <li><a href="gallery.html">معرض</a></li>
+                    <li><a href="become-agent.html">وكلاء</a></li>
+                    <li><a href="downloads.html" class="active">التحميل</a></li>
+                    <li><a href="faq.html">الأسئلة</a></li>
+                    <li><a href="news.html">أخبار</a></li>
+                    <li><a href="contact.html">تواصل</a></li>
                 </ul>
             </nav>
         </div>
@@ -211,93 +196,133 @@
         </section>
     </main>
 
-    <footer>
+    <!-- Premium Footer Section -->
+    <footer class="premium-footer">
         <div class="container">
-            <p>&copy; 2025 MR7 TV. جميع الحقوق محفوظة.</p>
+            <div class="footer-content">
+                <!-- Column 1: Brand & Description -->
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <img src="images/logo.jpg" alt="MR7 TV Logo" class="footer-logo">
+                        <div class="brand-container">
+                            <span class="brand-en">MR7 TV</span>
+                            <span class="brand-ar">مرح TV</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        استمتع بأفضل تجربة مشاهدة للقنوات العالمية والعربية بجودة عالية وبدون
+                        انقطاع
+                    </p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="features.html">المميزات</a></li>
+                        <li><a href="pricing.html">الأسعار</a></li>
+                        <li><a href="downloads.html">طريقة التحميل</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact & Social -->
+                <div class="footer-column">
+                    <h3 class="footer-title">تواصل معنا</h3>
+                    <div class="footer-contact">
+                        <a href="https://wa.me/905340218618" class="contact-item" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+90 534 021 8618</span>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61583959720349" target="_blank"
+                            class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mr7tv1/" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@mr7tv1" target="_blank" class="social-icon tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/905340218618" target="_blank" class="social-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    جميع الحقوق محفوظة © <span id="current-year"></span> MR7 TV - مرح تي في
+                </p>
+            </div>
         </div>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </footer>
+
+    <!-- Mobile Enhancements -->
+    <div class="mobile-sticky-bar">
+        <a href="downloads.html" class="sticky-btn download">
+            <i class="fas fa-download"></i> حمل التطبيق
+        </a>
+        <a href="https://wa.me/905340218618" class="sticky-btn whatsapp">
+            <i class="fab fa-whatsapp"></i> تواصل معنا
+        </a>
+    </div>
+
+    <script>
+        // Dynamic Year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/global-enhancements.js"></script>
+    <script src="js/tv-remote-navigation.js"></script>
     <script>
-        // TV Remote Navigation Logic
-        document.addEventListener('DOMContentLoaded', () => {
-            const focusableElements = document.querySelectorAll('a, button, .method-card');
-
-            // Add identifying class to all focusable elements
-            focusableElements.forEach(el => el.classList.add('nav-focusable'));
-
-            let currentFocusIndex = -1;
-
-            function updateFocus(index) {
-                // Remove focus from all
-                focusableElements.forEach(el => el.classList.remove('focused'));
-
-                // Add focus to new target
-                if (index >= 0 && index < focusableElements.length) {
-                    const el = focusableElements[index];
-                    el.classList.add('focused');
-                    el.focus();
-
-                    // Smooth scroll to element
-                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    currentFocusIndex = index;
-                }
-            }
-
-            // Handle Key Events
-            document.addEventListener('keydown', (e) => {
-                const key = e.key;
-
-                if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(key)) {
-                    e.preventDefault();
-
-                    if (currentFocusIndex === -1 && focusableElements.length > 0) {
-                        updateFocus(0);
-                        return;
-                    }
-
-                    if (key === 'ArrowDown' || key === 'ArrowRight') {
-                        // Move forward
-                        if (currentFocusIndex < focusableElements.length - 1) {
-                            updateFocus(currentFocusIndex + 1);
-                        }
-                    } else if (key === 'ArrowUp' || key === 'ArrowLeft') {
-                        // Move backward
-                        if (currentFocusIndex > 0) {
-                            updateFocus(currentFocusIndex - 1);
-                        }
-                    }
-                } else if (key === 'Enter') {
-                    // Simulate click on Enter
-                    if (currentFocusIndex >= 0) {
-                        focusableElements[currentFocusIndex].click();
-                    }
-                }
-            });
-
-            // Initial focus check (optional)
-            // updateFocus(0); 
-        });
-
         AOS.init({ duration: 1000, once: true });
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: '#7c3aed' },
-                shape: { type: 'circle' },
-                opacity: { value: 0.5, random: false },
-                size: { value: 3, random: true },
-                line_linked: { enable: true, distance: 150, color: '#7c3aed', opacity: 0.4, width: 1 },
-                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
-            },
-            interactivity: {
-                detect_on: 'canvas',
-                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true }
-            },
-            retina_detect: true
-        });
+
+        // Disable Particles on Mobile
+        if (window.innerWidth > 768) {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: '#7c3aed' },
+                    shape: { type: 'circle' },
+                    opacity: { value: 0.5, random: false },
+                    size: { value: 3, random: true },
+                    line_linked: { enable: true, distance: 150, color: '#7c3aed', opacity: 0.4, width: 1 },
+                    move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+                },
+                interactivity: {
+                    detect_on: 'canvas',
+                    events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true }
+                },
+                retina_detect: true
+            });
+        }
 
         // Mobile Menu Toggle
         const menuToggle = document.querySelector('.menu-toggle');
@@ -316,15 +341,7 @@
                 }
             });
         }
-    </script>        <!-- TV Remote Navigation -->
-        <script src="js/tv-remote-navigation.js"></script>
-
-
-
-    
-    <!-- AI Chatbot -->
-    <script src="bot/env-loader.js"></script>
-    <script src="bot/chatbot.js"></script>
+    </script>
 </body>
 
 </html>

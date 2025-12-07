@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/footer-premium.css">
+    <link rel="stylesheet" href="css/mobile-enhancements.css">
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/tv-remote-styles.css">
-
+    <link rel="stylesheet" href="css/tv-remote-styles.css">
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
 </head>
 
 <body>
@@ -30,17 +31,25 @@
                         <span class="brand-ar">مرح TV</span>
                     </div>
                 </a>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <ul class="nav-links">
                     <li><a href="index.html">الرئيسية</a></li>
+                    <li>
+                        <a href="now-showing.html" class="nav-item-live">
+                            مباشر <span class="live-dot"></span>
+                        </a>
+                    </li>
                     <li><a href="services.html">الخدمات</a></li>
-                    <li><a href="features.html">المميزات</a></li>
-                    <li><a href="gallery.html">معرض الصور</a></li>
-                    <li><a href="pricing.html">الأسعار</a></li>
-                    <li><a href="faq.html">الأسئلة الشائعة</a></li>
-                    <li><a href="downloads.html">طريقة التحميل</a></li>
-                    <li><a href="agents.html">كن وكيلاً</a></li>
-                    <li><a href="contact.html">اتصل بنا</a></li>
-                    <li><a href="news.html" class="active">الأخبار</a></li>
+                    <li><a href="pricing.html">باقات</a></li>
+                    <li><a href="features.html">مميزات</a></li>
+                    <li><a href="gallery.html">معرض</a></li>
+                    <li><a href="become-agent.html">وكلاء</a></li>
+                    <li><a href="downloads.html">التحميل</a></li>
+                    <li><a href="faq.html">الأسئلة</a></li>
+                    <li><a href="news.html" class="active">أخبار</a></li>
+                    <li><a href="contact.html">تواصل</a></li>
                 </ul>
             </nav>
         </div>
@@ -197,6 +206,16 @@
         </button>
     </footer>
 
+    <!-- Mobile Enhancements -->
+    <div class="mobile-sticky-bar">
+        <a href="downloads.html" class="sticky-btn download">
+            <i class="fas fa-download"></i> حمل التطبيق
+        </a>
+        <a href="https://wa.me/905340218618" class="sticky-btn whatsapp">
+            <i class="fab fa-whatsapp"></i> تواصل معنا
+        </a>
+    </div>
+
     <script>
         // Dynamic Year
         document.getElementById('current-year').textContent = new Date().getFullYear();
@@ -214,38 +233,53 @@
         backToTop.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = menuToggle.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
     </script>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/news.js"></script>
+    <script src="js/tv-remote-navigation.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: '#7c3aed' },
-                shape: { type: 'circle' },
-                opacity: { value: 0.5, random: false },
-                size: { value: 3, random: true },
-                line_linked: { enable: true, distance: 150, color: '#7c3aed', opacity: 0.4, width: 1 },
-                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
-            },
-            interactivity: {
-                detect_on: 'canvas',
-                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true }
-            },
-            retina_detect: true
-        });
-    </script>        <!-- TV Remote Navigation -->
-        <script src="js/tv-remote-navigation.js"></script>
 
-
-
-    
-    <!-- AI Chatbot -->
-    <script src="bot/env-loader.js"></script>
-    <script src="bot/chatbot.js"></script>
+        // Disable Particles on Mobile
+        if (window.innerWidth > 768) {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: '#7c3aed' },
+                    shape: { type: 'circle' },
+                    opacity: { value: 0.5, random: false },
+                    size: { value: 3, random: true },
+                    line_linked: { enable: true, distance: 150, color: '#7c3aed', opacity: 0.4, width: 1 },
+                    move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+                },
+                interactivity: {
+                    detect_on: 'canvas',
+                    events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true }
+                },
+                retina_detect: true
+            });
+        }
+    </script>
 </body>
 
 </html>
