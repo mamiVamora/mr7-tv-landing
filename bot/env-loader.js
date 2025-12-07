@@ -1,18 +1,23 @@
 /**
- * Simple .env file loader for browser
- * يقرأ ملف .env ويحمل المتغيرات
+ * Simple .env file loader for local development
+ * Fetches .env file and parses key-value pairs
  */
-
-class EnvLoader {
-    constructor() {
-        this.env = {};
-    }
+const envLoader = {
+    env: {},
 
     async load() {
         try {
-            const response = await fetch('../.env');
+            // Check if we are on localhost or file protocol
+            const isLocal = window.location.hostname === 'localhost' ||
+                window.location.hostname === '127.0.0.1' ||
+                window.location.protocol === 'file:';
+
+            // Only try to load .env if we suspect we can access it (mostly useful for local servers)
+            // But we will try anyway as fallback
+            const response = await fetch('.env');
+
             if (!response.ok) {
-                console.warn('⚠️ ملف .env غير موجود. يرجى إنشاؤه من .env.example');
+                console.warn('⚠️ Could not load .env file. Using config fallback.');
                 return false;
             }
 
@@ -20,46 +25,28 @@ class EnvLoader {
             this.parse(text);
             return true;
         } catch (error) {
-            console.error('خطأ في تحميل ملف .env:', error);
+            console.warn('⚠️ Error loading .env file:', error);
             return false;
         }
-    }
+    },
 
-    parse(text) {
-        const lines = text.split('\n');
+    parse(content) {
+        content.split('\n').forEach(line => {
+            // Skip comments and empty lines
+            if (line.startsWith('#') || !line.trim()) return;
 
-        for (const line of lines) {
-            // تجاهل التعليقات والأسطر الفارغة
-            const trimmed = line.trim();
-            if (!trimmed || trimmed.startsWith('#')) {
-                continue;
+            const [key, ...valueParts] = line.split('=');
+            if (key) {
+                const value = valueParts.join('=').trim().replace(/^['"]|['"]$/g, ''); // Remove quotes
+                this.env[key.trim()] = value;
             }
+        });
+    },
 
-            // تحليل السطر (KEY=VALUE)
-            const match = trimmed.match(/^([^=]+)=(.*)$/);
-            if (match) {
-                const key = match[1].trim();
-                let value = match[2].trim();
-
-                // إزالة علامات الاقتباس إن وجدت
-                if ((value.startsWith('"') && value.endsWith('"')) ||
-                    (value.startsWith("'") && value.endsWith("'"))) {
-                    value = value.slice(1, -1);
-                }
-
-                this.env[key] = value;
-            }
-        }
+    get(key) {
+        return this.env[key];
     }
+};
 
-    get(key, defaultValue = null) {
-        return this.env[key] || defaultValue;
-    }
-
-    getAll() {
-        return { ...this.env };
-    }
-}
-
-// تصدير instance واحد
-const envLoader = new EnvLoader();
+// Make it globally available
+window.envLoader = envLoader;
