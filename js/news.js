@@ -12,13 +12,22 @@ document.addEventListener('DOMContentLoaded', function () {
             allNews = data.news;
             displayNews(allNews);
         } catch (error) {
-            console.error('Error loading news:', error);
-            document.getElementById('newsGrid').innerHTML = `
-                <div class="error-message">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <p>حدث خطأ في تحميل الأخبار</p>
-                </div>
-            `;
+            console.warn('API connection failed, falling back to local news.json');
+            try {
+                // Fallback: Load local JSON file
+                const localResponse = await fetch('news.json');
+                const localData = await localResponse.json();
+                allNews = localData.news;
+                displayNews(allNews);
+            } catch (localError) {
+                console.error('Error loading local news:', localError);
+                document.getElementById('newsGrid').innerHTML = `
+                    <div class="error-message">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>حدث خطأ في تحميل الأخبار</p>
+                    </div>
+                `;
+            }
         }
     }
 
