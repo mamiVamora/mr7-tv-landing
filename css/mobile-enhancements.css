@@ -21,14 +21,23 @@
 }
 
 @keyframes livePulse {
-    0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
-    70% { box-shadow: 0 0 0 6px rgba(239, 68, 68, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+    0% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 6px rgba(239, 68, 68, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    }
 }
 
 /* 2. Mobile Bottom Sticky Bar */
 .mobile-sticky-bar {
-    display: none; /* Hidden on Desktop */
+    display: none;
+    /* Hidden on Desktop */
     position: fixed;
     bottom: 0;
     left: 0;
@@ -38,7 +47,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 12px 15px;
     z-index: 9999;
-    box-shadow: 0 -5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
     justify-content: space-between;
     gap: 10px;
 }
@@ -73,14 +82,15 @@
 
 /* 3. Full Screen Mobile Menu Overlay */
 @media (max-width: 768px) {
+
     /* Show Sticky Bar */
     .mobile-sticky-bar {
         display: flex;
     }
-    
+
     /* Adjust footer padding so sticky bar doesn't cover content */
     body {
-        padding-bottom: 70px; 
+        padding-bottom: 70px;
     }
 
     /* Redesigned Nav Menu */
@@ -90,21 +100,46 @@
         left: 0;
         right: 0;
         width: 100%;
-        height: auto;
+        max-height: calc(100vh - 80px);
+        /* ارتفاع الشاشة - ارتفاع الهيدر */
         background: rgba(10, 10, 10, 0.98);
         backdrop-filter: blur(15px);
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 20px 0;
+        padding: 15px 0;
         transform: translateY(-20px);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 999;
-        gap: 1rem;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        gap: 0.5rem;
+        /* تقليل المسافة بين العناصر */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        overflow-y: auto;
+        /* السماح بالتمرير العمودي */
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        /* تمرير سلس على iOS */
+    }
+
+    /* تنسيق شريط التمرير */
+    .nav-links::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .nav-links::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-links::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+        border-radius: 2px;
+    }
+
+    .nav-links::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
     }
 
     .nav-links.active {
@@ -124,22 +159,50 @@
         transform: translateY(0);
         /* Staggered animation */
     }
-    .nav-links.active li:nth-child(1) { transition-delay: 0.1s; }
-    .nav-links.active li:nth-child(2) { transition-delay: 0.15s; }
-    .nav-links.active li:nth-child(3) { transition-delay: 0.2s; }
-    .nav-links.active li:nth-child(4) { transition-delay: 0.25s; }
-    .nav-links.active li:nth-child(5) { transition-delay: 0.3s; }
-    .nav-links.active li:nth-child(6) { transition-delay: 0.35s; }
-    .nav-links.active li:nth-child(7) { transition-delay: 0.4s; }
-    .nav-links.active li:nth-child(8) { transition-delay: 0.45s; }
+
+    .nav-links.active li:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    .nav-links.active li:nth-child(2) {
+        transition-delay: 0.15s;
+    }
+
+    .nav-links.active li:nth-child(3) {
+        transition-delay: 0.2s;
+    }
+
+    .nav-links.active li:nth-child(4) {
+        transition-delay: 0.25s;
+    }
+
+    .nav-links.active li:nth-child(5) {
+        transition-delay: 0.3s;
+    }
+
+    .nav-links.active li:nth-child(6) {
+        transition-delay: 0.35s;
+    }
+
+    .nav-links.active li:nth-child(7) {
+        transition-delay: 0.4s;
+    }
+
+    .nav-links.active li:nth-child(8) {
+        transition-delay: 0.45s;
+    }
 
     .nav-links a {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        /* تقليل حجم الخط */
         font-weight: 600;
         color: white;
+        padding: 12px 20px;
+        /* تقليل المسافة الداخلية */
     }
-    
-    .nav-links a:hover, .nav-links a.active {
+
+    .nav-links a:hover,
+    .nav-links a.active {
         color: #7c3aed;
     }
 
@@ -150,9 +213,27 @@
 }
 
 /* 4. Utility Classes for Consistency (Replacing Inline Styles) */
-.text-gold { color: #fbbf24 !important; }
-.text-red { color: #ef4444 !important; }
-.text-purple { color: #7c3aed !important; }
-.bg-trans-border-purple { background: transparent; border: 2px solid #7c3aed; }
-.font-bold { font-weight: bold; }
-.mt-neg-5 { margin-top: -5px; }
+.text-gold {
+    color: #fbbf24 !important;
+}
+
+.text-red {
+    color: #ef4444 !important;
+}
+
+.text-purple {
+    color: #7c3aed !important;
+}
+
+.bg-trans-border-purple {
+    background: transparent;
+    border: 2px solid #7c3aed;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.mt-neg-5 {
+    margin-top: -5px;
+}
