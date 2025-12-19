@@ -218,6 +218,9 @@ footer::before {
         z-index: 9999;
         /* Force Top Layer */
         /* Removed backdrop-filter to prevent rendering issues */
+        max-height: calc(100vh - 90px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav-links.active {
