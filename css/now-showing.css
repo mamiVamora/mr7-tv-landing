@@ -503,7 +503,7 @@
 /*       NEW FEATURES (Ticker, Accordion)    */
 /* ========================================= */
 
-/* Smart News Ticker - FIXED VISIBILITY */
+/* Smart News Ticker - SEAMLESS INFINITE LOOP */
 .news-ticker-container {
     background: #0f172a;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -511,16 +511,12 @@
     display: flex;
     align-items: center;
     position: fixed;
-    /* Make it fixed */
     top: 80px;
-    /* Position it below the header (assuming 80px height) */
     left: 0;
     right: 0;
     width: 100%;
     overflow: hidden;
     z-index: 1001;
-    /* HIGHER THAN HEADER (1000) */
-    /* HIGH Z-INDEX TO ENSURE VISIBILITY */
 }
 
 .ticker-label {
@@ -533,26 +529,27 @@
     font-weight: bold;
     font-size: 0.9rem;
     position: relative;
-    z-index: 2;
-    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    white-space: nowrap;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .ticker-wrapper {
     flex: 1;
     overflow: hidden;
-    white-space: nowrap;
-    position: relative;
+    display: flex;
 }
 
 .ticker-content {
-    display: inline-block;
-    animation: ticker-move 30s linear infinite;
-    padding-left: 100%;
+    display: flex;
+    white-space: nowrap;
+    animation: ticker-seamless-rtl 45s linear infinite;
 }
 
 .ticker-item {
-    display: inline-block;
-    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
     color: #e2e8f0;
     font-size: 0.9rem;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -560,9 +557,9 @@
 
 .ticker-tag {
     font-size: 0.75rem;
-    padding: 2px 6px;
+    padding: 2px 8px;
     border-radius: 4px;
-    margin-left: 5px;
+    margin-left: 10px;
     font-weight: bold;
 }
 
@@ -582,6 +579,24 @@
     background: rgba(168, 85, 247, 0.2);
     color: #a855f7;
     border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+@keyframes ticker-seamless-rtl {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(33.33%);
+    }
+
+    /* Move right for RTL */
+}
+
+/* Ensure body has space for fixed elements */
+.now-showing-main {
+    padding-top: 140px;
+    /* Header 80px + Ticker 40px + Gap 20px */
 }
 
 @keyframes ticker-move {
@@ -621,11 +636,22 @@
 
 .competition-title {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
     color: #fff;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+}
+
+.competition-title::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 24px;
+    background: #fbbf24;
+    /* Gold accent from original */
+    border-radius: 3px;
 }
 
 .toggle-icon {
@@ -649,9 +675,8 @@
 
 .competition-group.open .competition-matches-grid {
     display: grid !important;
-    /* Force grid when open */
-    /* Show when open class is present */
-    animation: slideDown 0.3s ease;
+    animation: slideDown 0.4s ease-out;
+    /* Slightly slower and smoother */
 }
 
 @keyframes slideDown {

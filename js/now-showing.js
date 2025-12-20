@@ -279,7 +279,12 @@ function updateTickerUI() {
     }).join('');
 
     // Duplicate content for smooth infinite scroll
-    tickerEl.innerHTML = tickerHTML + tickerHTML;
+    // For a truly seamless loop:
+    // 1. We need enough content to cover the screen width.
+    // 2. We duplicate the content.
+    // 3. CSS animation moves from 0 to 50% (RTL).
+    const tickerItemsHTML = tickerHTML;
+    tickerEl.innerHTML = tickerItemsHTML + tickerItemsHTML + tickerItemsHTML; // Triple to be safe
 }
 
 /**
