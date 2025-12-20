@@ -123,6 +123,18 @@ header.scrolled {
     }
 }
 
+/* Fix Navbar Links Color */
+.nav-links a {
+    color: white !important;
+    /* Force white color for all links */
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: #fbbf24 !important;
+    /* Gold on hover/active */
+}
+
 /* 5. Live Viewer Pill (Top Left) */
 .live-viewer-pill {
     position: fixed;
