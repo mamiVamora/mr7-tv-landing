@@ -10,8 +10,8 @@
 
 /* Page Specific Overrides */
 .now-showing-main {
-    padding-top: 20px;
-    /* Reduced padding because Ticker is above */
+    padding-top: 140px;
+    /* Header (80px) + Ticker (40px) + Gap (20px) */
     padding-bottom: 60px;
 }
 
@@ -510,11 +510,17 @@
     height: 40px;
     display: flex;
     align-items: center;
-    position: relative;
+    position: fixed;
+    /* Make it fixed */
+    top: 80px;
+    /* Position it below the header (assuming 80px height) */
+    left: 0;
+    right: 0;
+    width: 100%;
     overflow: hidden;
-    z-index: 900;
+    z-index: 1001;
+    /* HIGHER THAN HEADER (1000) */
     /* HIGH Z-INDEX TO ENSURE VISIBILITY */
-    margin-top: 0;
 }
 
 .ticker-label {
@@ -632,7 +638,7 @@
     transform: rotate(180deg);
 }
 
-/* CRITICAL FIX FOR ACCORDION: Use !important to override grid display if needed */
+/* CRITICAL FIX FOR ACCORDION */
 .competition-matches-grid {
     display: none;
     /* Default hidden */
@@ -642,7 +648,8 @@
 }
 
 .competition-group.open .competition-matches-grid {
-    display: grid;
+    display: grid !important;
+    /* Force grid when open */
     /* Show when open class is present */
     animation: slideDown 0.3s ease;
 }
