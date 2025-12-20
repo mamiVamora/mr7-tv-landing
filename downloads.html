@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!-- Version: 1.0.2 - CSS UI Prototype -->
+<!-- Version: 1.0.4 - UI & Content Final Polish -->
 <html lang="ar" dir="rtl">
 
 <head>
@@ -49,31 +49,31 @@
             margin-bottom: 1rem;
         }
 
-        /* CSS-Based UI Reconstruction (Prototype) */
+        /* Smarters UI Replica Enhancements */
         .smarters-ui-replica {
             width: 100%;
             max-width: 500px;
             aspect-ratio: 16/9;
             background: linear-gradient(135deg, #2d1b4e 0%, #1a0b2e 100%);
-            margin: 2rem auto;
+            margin: 2.5rem auto 4.5rem;
+            /* Increased to 4.5rem for better clearance */
             border-radius: 12px;
             position: relative;
-            padding: 20px;
+            padding: 2.5rem 1.5rem;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             border: 4px solid #3d2b5e;
             overflow: visible;
             direction: ltr;
-            /* App UI is usually English */
         }
 
         .ui-input {
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 10px;
+            padding: 12px;
             border-radius: 6px;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             color: rgba(255, 255, 255, 0.5);
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             text-align: left;
             position: relative;
         }
@@ -88,27 +88,27 @@
             background: #e21c60;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 12px;
             border-radius: 6px;
             font-weight: bold;
-            margin-top: 10px;
-            font-size: 0.8rem;
+            margin-top: 15px;
+            font-size: 0.9rem;
         }
 
         .ui-pointer {
             position: absolute;
-            right: -160px;
+            right: -130px;
+            top: 4px;
             background: #fbbf24;
             color: #000;
-            padding: 6px 12px;
+            padding: 6px 14px;
             border-radius: 6px;
-            font-weight: bold;
+            font-weight: 800;
             font-size: 0.8rem;
             white-space: nowrap;
-            box-shadow: 0 5px 15px rgba(251, 191, 36, 0.4);
+            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.5);
             z-index: 10;
             direction: rtl;
-            /* Explanation in Arabic */
         }
 
         .ui-pointer::before {
@@ -121,12 +121,13 @@
             background: #fbbf24;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             .ui-pointer {
                 position: relative;
                 right: 0;
-                margin-top: 5px;
-                display: inline-block;
+                top: 0;
+                margin: 5px 0 10px;
+                display: table;
             }
 
             .ui-pointer::before {
@@ -136,6 +137,8 @@
             .smarters-ui-replica {
                 height: auto;
                 aspect-ratio: auto;
+                padding: 1.5rem;
+                margin-bottom: 3rem;
             }
         }
     </style>
@@ -168,7 +171,7 @@
         <section id="downloads" class="section downloads-section">
             <div class="container">
                 <h2 class="section-title text-glow" data-aos="fade-up">طريقة <span class="holographic-text">التحميل
-                        والتفعيل</span></h2>
+                        والتشغيل</span></h2>
 
                 <!-- Android Platform -->
                 <div class="platform-section android-glow" data-aos="fade-up">
@@ -177,7 +180,7 @@
                         <h3>أجهزة الأندرويد & TV Box</h3>
                     </div>
 
-                    <!-- Method 1: APK -->
+                    <!-- Android: APK -->
                     <div class="method-card">
                         <div class="method-header">
                             <div class="method-number">1</div>
@@ -199,11 +202,11 @@
                         </div>
                     </div>
 
-                    <!-- Method 2: Google Play -->
+                    <!-- Android: Google Play -->
                     <div class="method-card">
                         <div class="method-header">
                             <div class="method-number">2</div>
-                            <div class="method-title">تحميل تطبيق 000 Player (المتجر)</div>
+                            <div class="method-title">تحميل تطبيق 000 Player للأندرويد</div>
                         </div>
                         <div class="method-body">
                             <a href="https://play.google.com/store/apps/details?id=com.player.iptv" target="_blank"
@@ -212,13 +215,17 @@
                             </a>
                             <div class="text-center">
                                 <span class="step-label">شرح إدخال البيانات</span>
-                                <img src="images/guide-ios-twin-1.png" alt="000 Player Step 1" class="guide-step-img"
-                                    loading="lazy">
+                                <img src="images/guide-ios-twin-1.png" alt="000 Player Android Guide"
+                                    class="guide-step-img" loading="lazy">
+                                <span class="step-label">أدخل رقم السيرفر: 55555</span>
+                                <div class="activation-box">
+                                    <p>سيطلب منك التطبيق رقم السيرفر، أدخل: <span class="code-badge">55555</span></p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Method 3: Downloader -->
+                    <!-- Android: Downloader -->
                     <div class="method-card">
                         <div class="method-header">
                             <div class="method-number">3</div>
@@ -235,22 +242,47 @@
                     </div>
                 </div>
 
+                <!-- iOS Platform -->
+                <div class="platform-section ios-glow" data-aos="fade-up">
+                    <div class="platform-header">
+                        <i class="fab fa-apple"></i>
+                        <h3>أجهزة آيفون & آيباد (iOS)</h3>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-header">
+                            <div class="method-number">1</div>
+                            <div class="method-title">تحميل تطبيق 000 Player للآيفون</div>
+                        </div>
+                        <div class="method-body">
+                            <a href="https://apps.apple.com/us/app/000-player/id1665441224" target="_blank"
+                                class="btn btn-outline" style="margin-bottom: 2rem; width: 100%;">
+                                <i class="fab fa-apple"></i> تحميل من App Store
+                            </a>
+                            <div class="text-center">
+                                <span class="step-label">طريقة التفعيل للآيفون</span>
+                                <img src="images/guide-ios-twin-1.png" alt="000 Player iOS Guide" class="guide-step-img"
+                                    loading="lazy">
+                                <span class="step-label">أدخل رقم السيرفر: 55555</span>
+                                <div class="activation-box">
+                                    <p>سيطلب منك التطبيق رقم السيرفر، أدخل: <span class="code-badge">55555</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Smart TV -->
                 <div class="platform-section tv-glow" data-aos="fade-up">
                     <div class="platform-header">
                         <i class="fas fa-tv"></i>
-                        <h3>Smart TV (تجربة الشرح المبرمج)</h3>
+                        <h3>Smart TV (سامسونج، LG، والشاشات الذكية)</h3>
                     </div>
                     <div class="method-card">
                         <div class="method-body">
-                            <p class="text-center">هذا النموذج مبرمج بالكود (Pure CSS) لضمان دقة وضوح 100% وسرعة تحميل
-                                فورية:</p>
-
                             <div class="smarters-ui-replica">
                                 <div
-                                    style="color: #fff; font-weight: bold; margin-bottom: 15px; text-align: center; font-size: 0.9rem;">
+                                    style="color: #fff; font-weight: bold; margin-bottom: 20px; text-align: center; font-size: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px;">
                                     ADD USER (Xtream Codes)</div>
-
                                 <div class="ui-input">Any Name <div class="ui-pointer">ضع أي اسم للمشغل</div>
                                 </div>
                                 <div class="ui-input active-field">Username <div class="ui-pointer">اسم المستخدم الخاص
@@ -259,15 +291,13 @@
                                 <div class="ui-input active-field">Password <div class="ui-pointer">كلمة المرور</div>
                                 </div>
                                 <div class="ui-input active-field">http://mr7tv.vip:80 <div class="ui-pointer">رابط
-                                        السيرفر</div>
+                                        السيرفر بدقة</div>
                                 </div>
-
                                 <div class="ui-button">ADD USER</div>
                             </div>
-
-                            <div class="activation-box" style="margin-top: 2rem;">
-                                <p><strong>لماذا هذا أفضل؟</strong> بدلاً من تحميل صورة ثقيلة، يظهر هذا الشرح فوراً
-                                    وبوضوح تام على أي شاشة، مع الحفاظ على نفس شكل التطبيق الحقيقي.</p>
+                            <div class="activation-box" style="margin-top: 2.5rem;">
+                                <p class="text-center">استخدم تطبيق <strong>IPTV Smarters Pro</strong> المتاح في متجر
+                                    شاشتك، واتبع الخطوات أعلاه بدقة.</p>
                             </div>
                         </div>
                     </div>
@@ -278,17 +308,109 @@
 
     <footer class="premium-footer">
         <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Brand & Description -->
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <img src="images/logo-new.jpg" alt="MR7 TV Logo" class="footer-logo">
+                        <div class="brand-container">
+                            <span class="brand-en">MR7 TV</span>
+                            <span class="brand-ar">مرح TV</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        استمتع بأفضل تجربة مشاهدة للقنوات العالمية والعربية بجودة عالية وبدون انقطاع
+                    </p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="features.html">المميزات</a></li>
+                        <li><a href="pricing.html">الأسعار</a></li>
+                        <li><a href="gallery.html">المعرض</a></li>
+                        <li><a href="become-agent.html">كن وكيلاً</a></li>
+                        <li><a href="news.html">الأخبار</a></li>
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="downloads.html">طريقة التحميل</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact & Social -->
+                <div class="footer-column">
+                    <h3 class="footer-title">تواصل معنا</h3>
+                    <div class="footer-contact">
+                        <a href="https://wa.me/9647777842422" class="contact-item" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>077 7784 2422</span>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61583959720349" target="_blank"
+                            class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mr7tv1/" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@mr7tv1" target="_blank" class="social-icon tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/9647777842422" target="_blank" class="social-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Methods Section -->
+            <div class="footer-payments text-center"
+                style="margin: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
+                <p style="color: #cbd5e1; margin-bottom: 1rem; font-weight: bold;">طرق الدفع المتاحة:</p>
+                <div class="payment-icons" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <span class="pay-badge"
+                        style="background: #000; color: #fff; padding: 5px 15px; border-radius: 5px; border: 1px solid #333;">Zain
+                        Cash</span>
+                    <span class="pay-badge"
+                        style="background: #e30613; color: #fff; padding: 5px 15px; border-radius: 5px;">Asia
+                        Hawala</span>
+                    <span class="pay-badge"
+                        style="background: #0a3d7c; color: #fff; padding: 5px 15px; border-radius: 5px;">Mastercard</span>
+                    <span class="pay-badge"
+                        style="background: #fdb913; color: #000; padding: 5px 15px; border-radius: 5px;">Qi
+                        Card</span>
+                    <span class="pay-badge"
+                        style="background: #22c55e; color: #fff; padding: 5px 15px; border-radius: 5px; border: 1px solid #16a34a;"><i
+                            class="fas fa-hand-holding-usd" style="margin-left:5px;"></i> دفع كاش
+                        (وكلاء)</span>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
             <div class="footer-bottom">
-                <p class="copyright">جميع الحقوق محفوظة © <span id="current-year"></span> MR7 TV</p>
+                <p class="copyright">
+                    جميع الحقوق محفوظة © <span id="current-year"></span> MR7 TV - مرح تي في
+                </p>
             </div>
         </div>
     </footer>
 
+    <div class="mobile-sticky-bar">
+        <a href="downloads.html" class="sticky-btn download"><i class="fas fa-download"></i> حمل التطبيق</a>
+        <a href="https://wa.me/9647777842422" class="sticky-btn whatsapp"><i class="fab fa-whatsapp"></i> تواصل معنا</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/global-enhancements.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+    <script src="js/tv-remote-navigation.js"></script>
 </body>
 
 </html>
