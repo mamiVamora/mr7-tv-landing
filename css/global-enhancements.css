@@ -200,3 +200,12 @@ body.loaded #preloader {
         opacity: 1;
     }
 }
+
+.holographic-text {
+    background: linear-gradient(135deg, #fff 0%, #fbbf24 50%, #fff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(251, 191, 36, 0.5);
+    font-weight: 900;
+}

@@ -22,36 +22,40 @@
 
 /* Info Card (Left Side) */
 .contact-info-card {
-    background: rgba(30, 41, 59, 0.6);
+    background: rgba(15, 23, 42, 0.4);
     border-radius: 24px;
     padding: 2.5rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .contact-info-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(124, 58, 237, 0.3);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    border-color: rgba(251, 191, 36, 0.4);
+    box-shadow: 0 20px 50px rgba(251, 191, 36, 0.15);
 }
 
 .info-header h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    background: linear-gradient(to right, #fff, #e2e8f0);
+    background: linear-gradient(135deg, #fff 0%, #fbbf24 50%, #fff 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
 }
 
 .info-header p {
     color: #cbd5e1;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-bottom: 2rem;
+    font-size: 0.95rem;
 }
 
 .contact-details {
@@ -66,157 +70,206 @@
     gap: 15px;
     margin-bottom: 1.5rem;
     color: #e2e8f0;
-    font-size: 1.1rem;
+    /* Silver/white for readability */
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+[dir="ltr"] {
+    color: #fbbf24;
+    /* Make phone number gold for emphasis */
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
 }
 
 .icon-box {
     width: 45px;
     height: 45px;
-    background: rgba(124, 58, 237, 0.1);
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(251, 191, 36, 0.1));
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #a78bfa;
+    /* Purple icons */
     font-size: 1.2rem;
     transition: all 0.3s ease;
     border: 1px solid rgba(124, 58, 237, 0.2);
 }
 
 .contact-details li:hover .icon-box {
-    background: var(--accent-gradient);
+    background: linear-gradient(135deg, #7c3aed, #fbbf24);
     color: white;
     transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 0 15px rgba(124, 58, 237, 0.4);
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.5);
 }
 
-/* Social Links */
+/* Social Links - Always colored for mobile users */
 .social-links {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: auto;
 }
 
 .social-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.3rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
     color: white;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+/* Permanently colored for mobile - Facebook */
+.social-btn.facebook {
+    background: linear-gradient(135deg, #1877F2, #0d5dbf);
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
+}
+
+/* Instagram */
+.social-btn.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
+}
+
+/* TikTok */
+.social-btn.tiktok {
+    background: linear-gradient(135deg, #000000, #333333);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* WhatsApp */
+.social-btn.whatsapp {
+    background: linear-gradient(135deg, #25D366, #1ea952);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 .social-btn:hover {
-    transform: translateY(-3px);
-}
-
-.social-btn.whatsapp:hover {
-    background: #25D366;
-    box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
-    border-color: transparent;
-}
-
-.social-btn.telegram:hover {
-    background: #0088cc;
-    box-shadow: 0 0 15px rgba(0, 136, 204, 0.4);
-    border-color: transparent;
-}
-
-.social-btn.instagram:hover {
-    background: #E1306C;
-    box-shadow: 0 0 15px rgba(225, 48, 108, 0.4);
-    border-color: transparent;
+    transform: translateY(-5px) scale(1.1);
 }
 
 /* Form Card (Right Side) */
 .contact-form-card {
-    background: rgba(15, 23, 42, 0.6);
+    background: rgba(15, 23, 42, 0.4);
     border-radius: 24px;
     padding: 2.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(12px);
+    border: 2px solid rgba(251, 191, 36, 0.1);
+    /* Gold-tinted border */
+    backdrop-filter: blur(20px);
     position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
     position: relative;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 0.5rem;
-    color: #94a3b8;
-    font-size: 0.9rem;
-    font-weight: 500;
+    margin-bottom: 0.7rem;
+    color: #a78bfa;
+    /* Purple labels */
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(124, 58, 237, 0.3);
 }
 
 .form-control {
     width: 100%;
-    background: rgba(15, 23, 42, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(15, 23, 42, 0.6));
+    border: 1.5px solid rgba(124, 58, 237, 0.3);
     border-radius: 12px;
-    padding: 1rem 1rem 1rem 3rem;
-    /* Space for icon */
-    color: white;
+    padding: 1rem 1rem 1rem 3.5rem;
+    color: #e2e8f0;
     font-family: inherit;
+    font-size: 0.95rem;
     transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
 }
 
 .form-control:focus {
     outline: none;
-    border-color: #8b5cf6;
-    background: rgba(15, 23, 42, 0.95);
-    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1);
+    border-color: #7c3aed;
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(15, 23, 42, 0.7));
+    box-shadow: 0 0 25px rgba(124, 58, 237, 0.4), 0 0 10px rgba(251, 191, 36, 0.2);
 }
 
-.input-icon {
-    position: absolute;
-    left: 1rem;
-    /* RTL support check needed, might need right */
-    top: 2.7rem;
-    color: #64748b;
-    transition: color 0.3s ease;
+.form-control:focus+.input-icon {
+    color: #fbbf24;
 }
 
 /* RTL Adjustment for Icon */
 [dir="rtl"] .input-icon {
     left: auto;
-    right: 1rem;
+    right: 1.2rem;
+    color: #fbbf24;
+    /* Ensure gold even in RTL */
 }
 
 [dir="rtl"] .form-control {
-    padding: 1rem 3rem 1rem 1rem;
+    padding: 1rem 3.5rem 1rem 1rem;
+}
+
+.input-icon {
+    position: absolute;
+    left: 1.2rem;
+    top: 3.1rem;
+    color: #a78bfa;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
 }
 
 .form-control:focus+.input-icon {
-    color: #8b5cf6;
+    color: #7c3aed;
+    transform: scale(1.15);
+    text-shadow: 0 0 12px rgba(124, 58, 237, 0.6);
 }
 
 .submit-btn {
     width: 100%;
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: 12px;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 800;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-top: 1rem;
+    gap: 12px;
+    margin-top: 1.5rem;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+    animation: pulse-green 2s infinite;
 }
 
-.submit-btn i {
-    transition: transform 0.3s ease;
+.submit-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
 }
 
-.submit-btn:hover i {
-    transform: translateX(-5px);
-    /* RTL arrow direction */
+@keyframes pulse-green {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
 }
 
 /* Floating Shapes */
