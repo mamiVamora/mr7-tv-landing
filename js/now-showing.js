@@ -116,7 +116,7 @@ function createMatchCard(match) {
             </div>
             <div class="teams-container">
                 <div class="team home">
-                    <img src="${match.homeTeam.crest}" alt="${match.homeTeam.name}" class="team-logo" onerror="this.src='images/logo.jpg'">
+                    <img src="${match.homeTeam.crest}" alt="${match.homeTeam.name}" class="team-logo" onerror="this.src='images/logo-new.jpg'">
                     <span class="team-name">${match.homeTeam.name}</span>
                 </div>
                 <div class="match-score-time">
@@ -126,7 +126,7 @@ function createMatchCard(match) {
         }
                 </div>
                 <div class="team away">
-                    <img src="${match.awayTeam.crest}" alt="${match.awayTeam.name}" class="team-logo" onerror="this.src='images/logo.jpg'">
+                    <img src="${match.awayTeam.crest}" alt="${match.awayTeam.name}" class="team-logo" onerror="this.src='images/logo-new.jpg'">
                     <span class="team-name">${match.awayTeam.name}</span>
                 </div>
             </div>

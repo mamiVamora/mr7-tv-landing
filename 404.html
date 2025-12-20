@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/mobile-enhancements.css">
     <link rel="stylesheet" href="css/footer-premium.css">
     <link rel="stylesheet" href="css/tv-remote-styles.css">
-    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <link rel="icon" href="images/logo-new.jpg" type="image/jpeg">
     <style>
         .error-section {
             min-height: 80vh;
@@ -29,6 +29,7 @@
             font-size: 8rem;
             font-weight: 900;
             background: linear-gradient(to right, #7c3aed, #a855f7);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 1rem;
@@ -56,7 +57,7 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo">
-                    <img src="images/logo.jpg" alt="MR7 TV Logo">
+                    <img src="images/logo-new.jpg" alt="MR7 TV Logo" style="border-radius: 50%;">
                     <div class="brand-container"><span class="brand-en">MR7 TV</span><span class="brand-ar">مرح
                             TV</span>
                     </div>
@@ -71,15 +72,14 @@
                             مباشر <span class="live-dot"></span>
                         </a>
                     </li>
-                    <li><a href="services.html">الخدمات</a></li>
                     <li><a href="pricing.html">باقات</a></li>
-                    <li><a href="features.html">مميزات</a></li>
-                    <li><a href="gallery.html">معرض</a></li>
-                    <li><a href="become-agent.html">وكلاء</a></li>
                     <li><a href="downloads.html">التحميل</a></li>
-                    <li><a href="faq.html">الأسئلة</a></li>
-                    <li><a href="news.html">أخبار</a></li>
                     <li><a href="contact.html">تواصل</a></li>
+                    <li><a href="#"
+                            onclick="event.preventDefault(); document.getElementById('speed-test-modal').style.display='flex';"
+                            class="nav-item-speed">
+                            <i class="fas fa-tachometer-alt"></i> فحص السرعة
+                        </a></li>
                 </ul>
             </nav>
         </div>
@@ -106,7 +106,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <div class="footer-brand">
-                        <img src="images/logo.jpg" alt="MR7 TV Logo" class="footer-logo">
+                        <img src="images/logo-new.jpg" alt="MR7 TV Logo" class="footer-logo">
                         <div class="brand-container">
                             <span class="brand-en">MR7 TV</span>
                             <span class="brand-ar">مرح TV</span>
@@ -117,13 +117,17 @@
                     </p>
                 </div>
                 <div class="footer-column">
-                    <h3 class="footer-title">روابط سريعة</h3>
+                    <h3 class="footer-title">روابط هامة</h3>
                     <ul class="footer-links">
                         <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="features.html">المميزات</a></li>
-                        <li><a href="pricing.html">الأسعار</a></li>
+                        <li><a href="pricing.html">الباقات</a></li>
                         <li><a href="downloads.html">طريقة التحميل</a></li>
+                        <li><a href="features.html">المميزات</a></li>
+                        <li><a href="gallery.html">معرض الصور</a></li>
+                        <li><a href="become-agent.html">كن وكيلاً</a></li>
+                        <li><a href="news.html">الأخبار</a></li>
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">

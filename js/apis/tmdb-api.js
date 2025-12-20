@@ -64,7 +64,7 @@ class TMDB_API {
      * @returns {string} - رابط الصورة الكامل
      */
     getImageURL(path, size = 'w500') {
-        if (!path) return 'images/logo.jpg'; // صورة افتراضية
+        if (!path) return 'images/logo-new.jpg'; // صورة افتراضية
         return `${this.imageBaseURL}/${size}${path}`;
     }
 

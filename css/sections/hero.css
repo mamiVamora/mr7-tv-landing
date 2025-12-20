@@ -127,23 +127,44 @@ h1 {
     line-height: 1.2;
     margin-bottom: 1.5rem;
     color: white;
+    /* Deep shadow for maximum readability */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .text-glow {
+    /* Keeping the glow but ensuring readability underneath */
     color: transparent;
     background: linear-gradient(to right, #fff, #a78bfa, #fff);
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 200% auto;
     animation: shine 3s linear infinite;
-    text-shadow: 0 0 30px rgba(167, 139, 250, 0.5);
+    text-shadow: 0 0 30px rgba(124, 58, 237, 0.6);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.8));
 }
 
 .hero-features-text {
     font-size: 1.3rem;
-    color: #cbd5e1;
+    color: #f1f5f9;
+    /* Lighter white for contrast */
     margin-bottom: 3rem;
     line-height: 1.8;
+
+    /* Luxury Glass Effect Background */
+    background: rgba(15, 23, 42, 0.6);
+    /* Darker backdrop */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 20px 30px;
+    border-radius: 20px;
+    display: inline-block;
+    /* Wrap text only */
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    /* Subtle Gold Border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    /* Text Shadow inside the box */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .highlight-text {

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/global-enhancements.css">
     <link rel="stylesheet" href="css/mobile-enhancements.css">
     <link rel="stylesheet" href="css/footer-premium.css">
-    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <link rel="icon" href="images/logo-new.jpg" type="image/jpeg">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="product">
@@ -29,7 +29,7 @@
     <meta property="og:title" content="باقات اشتراك MR7 TV - أفضل الأسعار">
     <meta property="og:description"
         content="اختر الباقة المناسبة لك واستمتع بمشاهدة غير محدودة. باقات تبدأ من شهر واحد وحتى سنة كاملة مع عروض خاصة.">
-    <meta property="og:image" content="https://mamivamora.github.io/mr7-tv-landing/images/logo.jpg">
+    <meta property="og:image" content="https://mamivamora.github.io/mr7-tv-landing/images/logo-new.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -37,7 +37,7 @@
     <meta property="twitter:title" content="باقات اشتراك MR7 TV">
     <meta property="twitter:description"
         content="اختر الباقة المناسبة لك واستمتع بمشاهدة غير محدودة. باقات تبدأ من شهر واحد وحتى سنة كاملة مع عروض خاصة.">
-    <meta property="twitter:image" content="https://mamivamora.github.io/mr7-tv-landing/images/logo.jpg">
+    <meta property="twitter:image" content="https://mamivamora.github.io/mr7-tv-landing/images/logo-new.jpg">
 
     <!-- Schema -->
     <script type="application/ld+json">
@@ -178,7 +178,7 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo">
-                    <img src="images/logo.jpg" alt="MR7 TV Logo">
+                    <img src="images/logo-new.jpg" alt="MR7 TV Logo" style="border-radius: 50%;">
                     <div class="brand-container"><span class="brand-en">MR7 TV</span><span class="brand-ar">مرح
                             TV</span></div>
                 </a>
@@ -192,15 +192,14 @@
                             مباشر <span class="live-dot"></span>
                         </a>
                     </li>
-                    <li><a href="services.html">الخدمات</a></li>
                     <li><a href="pricing.html" class="active">باقات</a></li>
-                    <li><a href="features.html">مميزات</a></li>
-                    <li><a href="gallery.html">معرض</a></li>
-                    <li><a href="become-agent.html">وكلاء</a></li>
                     <li><a href="downloads.html">التحميل</a></li>
-                    <li><a href="faq.html">الأسئلة</a></li>
-                    <li><a href="news.html">أخبار</a></li>
                     <li><a href="contact.html">تواصل</a></li>
+                    <li><a href="#"
+                            onclick="event.preventDefault(); document.getElementById('speed-test-modal').style.display='flex';"
+                            class="nav-item-speed">
+                            <i class="fas fa-tachometer-alt"></i> فحص السرعة
+                        </a></li>
                 </ul>
             </nav>
         </div>
@@ -679,7 +678,7 @@
                 <!-- Column 1: Brand & Description -->
                 <div class="footer-column">
                     <div class="footer-brand">
-                        <img src="images/logo.jpg" alt="MR7 TV Logo" class="footer-logo">
+                        <img src="images/logo-new.jpg" alt="MR7 TV Logo" class="footer-logo">
                         <div class="brand-container">
                             <span class="brand-en">MR7 TV</span>
                             <span class="brand-ar">مرح TV</span>
@@ -691,15 +690,19 @@
                     </p>
                 </div>
 
-                <!-- Column 2: Quick Links -->
-                <div class="footer-column">
-                    <h3 class="footer-title">روابط سريعة</h3>
+                <!-- Quick Links -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3>روابط هامة</h3>
                     <ul class="footer-links">
                         <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="features.html">المميزات</a></li>
-                        <li><a href="pricing.html">الأسعار</a></li>
+                        <li><a href="pricing.html">الباقات</a></li>
                         <li><a href="downloads.html">طريقة التحميل</a></li>
+                        <li><a href="features.html">المميزات</a></li>
+                        <li><a href="gallery.html">معرض الصور</a></li>
+                        <li><a href="become-agent.html">كن وكيلاً</a></li>
+                        <li><a href="news.html">الأخبار</a></li>
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
                     </ul>
                 </div>
 
@@ -738,10 +741,7 @@
             </div>
         </div>
 
-        <!-- Back to Top Button -->
-        <button class="back-to-top" id="backToTop">
-            <i class="fas fa-arrow-up"></i>
-        </button>
+        <!-- Back to Top Button (Handled by global-enhancements.js) -->
     </footer>
 
     <!-- Mobile Enhancements -->
@@ -758,62 +758,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/global-enhancements.js"></script>
     <script>
-        // Dynamic Year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Back to Top Button
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('show');
-            } else {
-                backToTop.classList.remove('show');
-            }
-        });
-
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
         AOS.init({ duration: 1000, once: true });
-
-        // Mobile Particle Check
-        if (window.innerWidth > 768) {
-            particlesJS('particles-js', {
-                particles: {
-                    number: { value: 80, density: { enable: true, value_area: 800 } },
-                    color: { value: '#7c3aed' },
-                    shape: { type: 'circle' },
-                    opacity: { value: 0.5, random: false },
-                    size: { value: 3, random: true },
-                    line_linked: { enable: true, distance: 150, color: '#7c3aed', opacity: 0.4, width: 1 },
-                    move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
-                },
-                interactivity: {
-                    detect_on: 'canvas',
-                    events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true }
-                },
-                retina_detect: true
-            });
-        }
-
-        // Mobile Menu Toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-                const icon = menuToggle.querySelector('i');
-                if (navLinks.classList.contains('active')) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-times');
-                } else {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-            });
-        }
 
         // Pricing Toggle Logic
         function toggleDevices() {

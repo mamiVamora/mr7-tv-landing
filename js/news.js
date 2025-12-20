@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <article class="news-card" data-category="${item.category}" data-aos="fade-up">
                 ${item.featured ? '<div class="featured-badge"><i class="fas fa-star"></i> مميز</div>' : ''}
                 <div class="news-image">
-                    <img src="${item.image}" alt="${item.title}" onerror="this.src='images/logo.jpg'">
+                    <img src="${item.image}" alt="${item.title}" onerror="this.src='images/logo-new.jpg'">
                     <div class="category-badge ${item.category}">
                         ${getCategoryIcon(item.category)} ${getCategoryName(item.category)}
                     </div>

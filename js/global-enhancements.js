@@ -16,6 +16,30 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.body.insertAdjacentHTML('beforeend', scrollToTopHTML);
 
+    // 2.2 Dynamic Year
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+
+    // 2.5 Inject Speed Test Modal
+    const speedTestModalHTML = `
+        <div id="speed-test-modal" class="modal-overlay" onclick="if(event.target === this) this.style.display='none'">
+            <div class="modal-content speed-test-content">
+                <button class="modal-close" onclick="document.getElementById('speed-test-modal').style.display='none'"><i class="fas fa-times"></i></button>
+                <div class="speed-test-header">
+                    <i class="fas fa-tachometer-alt speed-icon"></i>
+                    <h2>فحص سرعة الانترنت</h2>
+                    <p>تأكد من جودة اتصالك للحصول على أفضل تجربة مشاهدة</p>
+                </div>
+                <div class="speed-test-frame-container">
+                    <iframe src="https://fast.com/ar/" frameborder="0" title="Speed Test" allow="autoplay; encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+    `;
+    document.body.insertAdjacentHTML('beforeend', speedTestModalHTML);
+
     // 3. Preloader Logic
     window.addEventListener('load', () => {
         setTimeout(() => {
@@ -160,5 +184,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // 8. Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        });
+    }
 
 });
