@@ -16,146 +16,36 @@
     <link rel="stylesheet" href="css/footer-premium.css">
     <link rel="stylesheet" href="css/tv-remote-styles.css">
     <link rel="icon" href="images/logo-new.jpg" type="image/jpeg">
-    <meta property="og:title" content="MR7 TV - طريقة التحميل">
-    <meta property="og:description"
-        content="طريقة تحميل وتشغيل تطبيق MR7 TV على جميع الأجهزة: أندرويد، آيفون، وشاشات سمارت. خطوات سهلة وبسيطة.">
-    <meta property="og:image" content="https://mamivamora.github.io/mr7-tv-landing/images/logo-new.jpg">
-    <meta property="og:url" content="https://mamivamora.github.io/mr7-tv-landing/downloads.html">
-    <meta property="og:type" content="website">
-
     <style>
-        /* Interactive Guide Overlays */
-        .guide-container {
-            position: relative;
-            max-width: 500px;
-            margin: 2rem auto;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .guide-image {
+        .guide-step-img {
             width: 100%;
-            height: auto;
+            max-width: 600px;
+            margin: 1.5rem auto;
+            border-radius: 15px;
             display: block;
-            transition: transform 0.5s ease;
-        }
-
-        .guide-overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(15, 23, 42, 0.2);
-            pointer-events: none;
-        }
-
-        .instruction-tag {
-            position: absolute;
-            background: rgba(30, 41, 59, 0.9);
-            backdrop-filter: blur(5px);
-            padding: 8px 15px;
-            border-radius: 12px;
-            border: 1px solid rgba(251, 191, 36, 0.5);
-            color: #fff;
-            font-size: 0.9rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            animation: floatTag 3s ease-in-out infinite;
-            z-index: 5;
-            white-space: nowrap;
-        }
-
-        .instruction-tag::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 2px;
-            background: #fbbf24;
-            top: 50%;
-        }
-
-        /* Tag Positions for Android login guide-android.png */
-        .tag-android-user {
-            top: 46%;
-            right: 10%;
-        }
-
-        .tag-android-user::after {
-            right: -20px;
-            width: 40px;
-        }
-
-        .tag-android-pass {
-            top: 54%;
-            right: 10%;
-        }
-
-        .tag-android-pass::after {
-            right: -20px;
-            width: 40px;
-        }
-
-        .tag-android-code {
-            top: 62%;
-            right: 10%;
-        }
-
-        .tag-android-code::after {
-            right: -20px;
-            width: 40px;
-        }
-
-        .tag-android-login {
-            top: 69%;
-            left: 10%;
-        }
-
-        .tag-android-login::after {
-            left: -20px;
-            width: 40px;
-        }
-
-        /* Tag Positions for TV login guide-tv.png */
-        .tag-tv-user {
-            top: 38%;
-            right: -5%;
-        }
-
-        .tag-tv-pass {
-            top: 48%;
-            right: -5%;
-        }
-
-        .tag-tv-host {
-            top: 58%;
-            right: -5%;
-        }
-
-        @keyframes floatTag {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-5px);
-            }
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .platform-section {
             background: rgba(15, 23, 42, 0.4) !important;
-            backdrop-filter: blur(25px) !important;
-            -webkit-backdrop-filter: blur(25px) !important;
+            backdrop-filter: blur(20px) !important;
             border: 1px solid rgba(255, 255, 255, 0.1) !important;
         }
 
         .method-card {
-            background: rgba(15, 23, 42, 0.6) !important;
-            border: 1px solid rgba(255, 255, 255, 0.05) !important;
+            background: rgba(15, 23, 42, 0.5) !important;
+            margin-bottom: 2rem;
+        }
+
+        .step-label {
+            display: inline-block;
+            background: var(--accent-gradient);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -169,27 +59,15 @@
                 <a href="index.html" class="logo">
                     <img src="images/logo-new.jpg" alt="MR7 TV Logo" style="border-radius: 50%;">
                     <div class="brand-container"><span class="brand-en">MR7 TV</span><span class="brand-ar">مرح
-                            TV</span>
-                    </div>
+                            TV</span></div>
                 </a>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
                 <ul class="nav-links">
                     <li><a href="index.html">الرئيسية</a></li>
-                    <li>
-                        <a href="now-showing.html" class="nav-item-live">
-                            مباشر <span class="live-dot"></span>
-                        </a>
-                    </li>
+                    <li><a href="now-showing.html" class="nav-item-live">مباشر <span class="live-dot"></span></a></li>
                     <li><a href="pricing.html">باقات</a></li>
                     <li><a href="downloads.html" class="active">التحميل</a></li>
                     <li><a href="contact.html">تواصل</a></li>
-                    <li><a href="#"
-                            onclick="event.preventDefault(); document.getElementById('speed-test-modal').style.display='flex';"
-                            class="nav-item-speed">
-                            <i class="fas fa-tachometer-alt"></i> فحص السرعة
-                        </a></li>
                 </ul>
             </nav>
         </div>
@@ -197,19 +75,9 @@
 
     <main>
         <section id="downloads" class="section downloads-section">
-            <div class="floating-icons" style="z-index: 0;">
-                <i class="fab fa-android icon-float icon-1"></i>
-                <i class="fab fa-apple icon-float icon-2"></i>
-                <i class="fas fa-tv icon-float icon-3"></i>
-                <i class="fas fa-cloud-download-alt icon-float icon-4"></i>
-            </div>
-
-            <div class="container" style="position: relative; z-index: 2;">
+            <div class="container">
                 <h2 class="section-title text-glow" data-aos="fade-up">طريقة <span class="holographic-text">التحميل
                         والتفعيل</span></h2>
-                <p class="section-desc" data-aos="fade-up" data-aos-delay="100">
-                    دليل شامل لتحميل التطبيق وتفعيله على كافة أجهزتك
-                </p>
 
                 <!-- Android Platform -->
                 <div class="platform-section android-glow" data-aos="fade-up">
@@ -218,51 +86,62 @@
                         <h3>أجهزة الأندرويد & TV Box</h3>
                     </div>
 
-                    <div class="methods-grid">
-                        <div class="method-card">
-                            <div class="method-header">
-                                <div class="method-number">1</div>
-                                <div class="method-title">تحميل التطبيق الرسمي</div>
-                            </div>
-                            <div class="method-body">
-                                <p>حمل تطبيق MR7 TV مصف APK مباشرة على هاتفك أو شاشتك.</p>
-                                <div class="download-btn-wrapper">
-                                    <a href="https://mr7tv.online/MR7TV.apk" class="btn btn-primary pulse-btn" download>
-                                        <i class="fas fa-download"></i> تحميل تطبيق MR7 TV
-                                    </a>
-                                </div>
+                    <!-- Method 1: APK -->
+                    <div class="method-card">
+                        <div class="method-header">
+                            <div class="method-number">1</div>
+                            <div class="method-title">تحميل التطبيق الرسمي (APK)</div>
+                        </div>
+                        <div class="method-body">
+                            <a href="https://mr7tv.online/MR7TV.apk" class="btn btn-primary pulse-btn"
+                                style="margin-bottom: 2rem; width: 100%;">
+                                <i class="fas fa-download"></i> تحميل تطبيق MR7 TV
+                            </a>
+                            <div class="text-center">
+                                <span class="step-label">خطوة 1: أدخل بياناتك</span>
+                                <img src="images/1To1JUSlAHVVJylQgG1MpSVpbafEON7BaXMHlTEd.webp" alt="Android Step 1"
+                                    class="guide-step-img" loading="lazy">
+                                <span class="step-label">خطوة 2: احفظ القائمة</span>
+                                <img src="images/9179f6OVj9cRwYeYPeKgmUGAlp5YWRUP6w6d1qjZ.webp" alt="Android Step 2"
+                                    class="guide-step-img" loading="lazy">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="method-card">
-                            <div class="method-header">
-                                <div class="method-number">2</div>
-                                <div class="method-title">طريقة التفعيل بالصور</div>
+                    <!-- Method 2: Google Play -->
+                    <div class="method-card">
+                        <div class="method-header">
+                            <div class="method-number">2</div>
+                            <div class="method-title">تحميل تطبيق 000 Player (المتجر)</div>
+                        </div>
+                        <div class="method-body">
+                            <a href="https://play.google.com/store/apps/details?id=com.player.iptv" target="_blank"
+                                class="btn btn-outline" style="margin-bottom: 2rem; width: 100%;">
+                                <i class="fab fa-google-play"></i> تحميل من Google Play
+                            </a>
+                            <div class="text-center">
+                                <span class="step-label">شرح إدخال البيانات</span>
+                                <img src="images/0oeVz5G2j4ZMCbixDyjaGfhcphyqZ4vAXRAKYmMC.webp" alt="000 Player Step 1"
+                                    class="guide-step-img" loading="lazy">
+                                <span class="step-label">أدخل رقم السيرفر: 55555</span>
+                                <img src="images/uPJY1chpqn1iM5K3aweOLxTCmu97teSo8F2QSzrH.webp" alt="000 Player Step 2"
+                                    class="guide-step-img" loading="lazy">
                             </div>
-                            <div class="method-body">
-                                <div class="guide-container">
-                                    <img src="images/guide-android.png" alt="Android Activation Guide"
-                                        class="guide-image" loading="lazy">
-                                    <div class="guide-overlay">
-                                        <div class="instruction-tag tag-android-user">
-                                            <i class="fas fa-user-circle"></i> اسم المستخدم الخاص بك
-                                        </div>
-                                        <div class="instruction-tag tag-android-pass">
-                                            <i class="fas fa-lock"></i> كلمة المرور
-                                        </div>
-                                        <div class="instruction-tag tag-android-code">
-                                            <i class="fas fa-link"></i> ضع الكود: 55555
-                                        </div>
-                                        <div class="instruction-tag tag-android-login">
-                                            اضغط دخول <i class="fas fa-sign-in-alt"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="step-list">
-                                    <li>افتح التطبيق بعد التثبيت</li>
-                                    <li>أدخل بيانات اشتراكك كما هو موضح بالصورة</li>
-                                    <li>استمتع بأفضل تجربة مشاهدة</li>
-                                </ul>
+                        </div>
+                    </div>
+
+                    <!-- Method 3: Downloader -->
+                    <div class="method-card">
+                        <div class="method-header">
+                            <div class="method-number">3</div>
+                            <div class="method-title">تطبيق Downloader (للشاشات)</div>
+                        </div>
+                        <div class="method-body">
+                            <div class="text-center">
+                                <img src="images/9eEi4ZRRppCkJsJkbjZLm6s8ujHH3Qa7IDaoTzSY.webp" alt="Downloader Logo"
+                                    style="width: 100px; margin-bottom: 1rem;">
+                                <p>أدخل الكود التالي في تطبيق Downloader لتحميل تطبيقنا فوراً:</p>
+                                <div class="code-badge" style="font-size: 2rem; padding: 10px 30px;">6021421</div>
                             </div>
                         </div>
                     </div>
@@ -274,36 +153,18 @@
                         <i class="fab fa-apple"></i>
                         <h3>iPhone & iPad</h3>
                     </div>
-                    <div class="methods-grid">
-                        <div class="method-card">
-                            <div class="method-header">
-                                <div class="method-number"><i class="fas fa-download"></i></div>
-                                <div class="method-title">تطبيق 000 Player</div>
-                            </div>
-                            <div class="method-body">
-                                <div class="download-btn-wrapper">
-                                    <a href="https://apps.apple.com/us/app/000-player/id1665441224" target="_blank"
-                                        class="btn btn-primary">
-                                        <i class="fab fa-app-store"></i> المتوفر في متجر آبل
-                                    </a>
-                                </div>
-                                <div class="guide-container" style="max-width: 400px;">
-                                    <img src="images/guide-ios.png" alt="iOS Activation" class="guide-image"
-                                        loading="lazy">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="method-card">
-                            <div class="activation-box">
-                                <span class="activation-title"><i class="fas fa-key"></i> بيانات الدخول المطلوبة:</span>
-                                <ul class="step-list">
-                                    <li><i class="fas fa-tag"></i> <strong>الاسم:</strong> MR7 TV</li>
-                                    <li><i class="fas fa-user"></i> <strong>المستخدم:</strong> (يصلك بعد الاشتراك)</li>
-                                    <li><i class="fas fa-key"></i> <strong>كلمة المرور:</strong> (تصلك بعد الاشتراك)
-                                    </li>
-                                    <li><i class="fas fa-server"></i> <strong>السيرفر / الكود:</strong> <span
-                                            class="code-badge">55555</span></li>
-                                </ul>
+                    <div class="method-card">
+                        <div class="method-body">
+                            <a href="https://apps.apple.com/us/app/000-player/id1665441224" target="_blank"
+                                class="btn btn-primary" style="margin-bottom: 2rem; width: 100%;">
+                                <i class="fab fa-app-store"></i> تحميل من App Store
+                            </a>
+                            <div class="text-center">
+                                <span class="step-label">طريقة التفعيل للآيفون</span>
+                                <img src="images/0oeVz5G2j4ZMCbixDyjaGfhcphyqZ4vAXRAKYmMC.webp" alt="iOS Guide 1"
+                                    class="guide-step-img" loading="lazy">
+                                <img src="images/uPJY1chpqn1iM5K3aweOLxTCmu97teSo8F2QSzrH.webp" alt="iOS Guide 2"
+                                    class="guide-step-img" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -313,35 +174,23 @@
                 <div class="platform-section tv-glow" data-aos="fade-up">
                     <div class="platform-header">
                         <i class="fas fa-tv"></i>
-                        <h3>Smart TV (LG, Samsung, Sony)</h3>
+                        <h3>Smart TV (LG, Samsung)</h3>
                     </div>
-                    <div class="methods-grid">
-                        <div class="method-card">
-                            <div class="method-title" style="margin-bottom: 1.5rem; text-align: center;">شرح تفعيل IPTV
-                                Smarters</div>
-                            <div class="guide-container">
-                                <img src="images/guide-tv.png" alt="Smart TV Guide" class="guide-image" loading="lazy">
-                                <div class="guide-overlay">
-                                    <div class="instruction-tag tag-tv-user">
-                                        اكتب اسم المستخدم هنا
-                                    </div>
-                                    <div class="instruction-tag tag-tv-pass">
-                                        اكتب كلمة المرور هنا
-                                    </div>
-                                    <div class="instruction-tag tag-tv-host">
-                                        اكتب الرابط: http://mr7tv.vip:80
-                                    </div>
+                    <div class="method-card">
+                        <div class="method-body">
+                            <p class="text-center">استخدم تطبيق <strong>IPTV Smarters Pro</strong> المتوفر في متجر شاشتك
+                            </p>
+                            <div class="text-center">
+                                <span class="step-label">خطوة 1: اختر XTREME CODES</span>
+                                <img src="images/yBH9ptvbmCVCRM0UuamCL3ph4fgWUcH5N3sTktWJ.webp" alt="Smart TV Step 1"
+                                    class="guide-step-img" loading="lazy">
+                                <span class="step-label">خطوة 2: أدخل الرابط والبيانات</span>
+                                <img src="images/u2QlZ6zlaJEyYPMCkeppavHJ4s4Ivsw0vF3KiLdc.webp" alt="Smart TV Step 2"
+                                    class="guide-step-img" loading="lazy">
+                                <div class="activation-box" style="margin-top: 2rem;">
+                                    <p><strong>رابط السيرفر:</strong> <span
+                                            class="code-badge">http://mr7tv.vip:80</span></p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="method-card">
-                            <div class="activation-box">
-                                <span class="activation-title"><i class="fas fa-info-circle"></i> ملاحظات هامة:</span>
-                                <ul class="step-list">
-                                    <li>ابحث عن <strong>IPTV Smarters Pro</strong> في متجر التطبيقات</li>
-                                    <li>اختر <strong>Add User</strong> ثم <strong>Login with Xtream Codes</strong></li>
-                                    <li>تأكد من كتابة رابط السيرفر بدقة</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -352,49 +201,13 @@
 
     <footer class="premium-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <div class="footer-brand">
-                        <img src="images/logo-new.jpg" alt="MR7 TV Logo" class="footer-logo">
-                        <div class="brand-container">
-                            <span class="brand-en">MR7 TV</span>
-                            <span class="brand-ar">مرح TV</span>
-                        </div>
-                    </div>
-                    <p class="footer-description">استمتع بأفضل تجربة مشاهدة للقنوات العالمية والعربية بجودة عالية وبدون
-                        انقطاع</p>
-                </div>
-                <div class="footer-column">
-                    <h3 class="footer-title">روابط هامة</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="pricing.html">الباقات</a></li>
-                        <li><a href="downloads.html">التحميل</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3 class="footer-title">تواصل معنا</h3>
-                    <div class="footer-contact">
-                        <a href="https://wa.me/9647777842422" class="contact-item" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>077 7784 2422</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
             <div class="footer-bottom">
-                <p class="copyright">جميع الحقوق محفوظة © <span id="current-year"></span> MR7 TV - مرح تي في</p>
+                <p class="copyright">جميع الحقوق محفوظة © <span id="current-year"></span> MR7 TV</p>
             </div>
         </div>
     </footer>
 
-    <div class="mobile-sticky-bar">
-        <a href="https://wa.me/9647777842422" class="sticky-btn whatsapp"><i class="fab fa-whatsapp"></i> تواصل معنا</a>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/global-enhancements.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
         document.getElementById('current-year').textContent = new Date().getFullYear();
