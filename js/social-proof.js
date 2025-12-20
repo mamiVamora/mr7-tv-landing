@@ -9,50 +9,42 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initLiveViewers() {
-    // إنشاء عنصر العداد العائم
-    const viewerBadge = document.createElement('div');
-    viewerBadge.className = 'live-viewer-pill slide-in-left'; // Changed class for new styling
-    viewerBadge.innerHTML = `
-        <div class="viewer-content">
-            <span class="pulse-dot"></span>
-            <span class="viewer-text">
-                <strong id="live-count">2,845</strong> شخص يشاهدون الآن
-            </span>
-        </div>
-    `;
-    document.body.appendChild(viewerBadge);
+    // Check if embedded element exists (we will add it to HTML), if not create a subtle one
+    let viewerContainer = document.getElementById('hero-viewer-count');
 
-    // تحديث الرقم بشكل عشوائي للواقعية
-    setInterval(() => {
-        const countEl = document.getElementById('live-count');
+    // If not found in HTML, we might need to insert it JS-side, but plan is to have it in HTML.
+    // implementing a fallback just in case, but styled to be embedded
+    if (!viewerContainer) {
+        // Fallback: This part should ideally not run if HTML is updated correctly
+        return;
+    }
+
+    // Function to update count
+    const updateCount = () => {
+        const countEl = document.getElementById('live-count-number');
         if (!countEl) return;
 
-        // إزالة الفواصل لتحويله لرقم
         let text = countEl.innerText.replace(/,/g, '').trim();
         let current = parseInt(text);
 
-        // Safety check to prevent NaN
-        if (isNaN(current)) {
-            current = 2845; // Reset to default if broken
-        }
+        if (isNaN(current)) current = 12450; // Base realistic number
 
-        // تغيير عشوائي بين -5 و +8
-        const change = Math.floor(Math.random() * 14) - 5;
+        const change = Math.floor(Math.random() * 15) - 5; // -5 to +9
         let newCount = current + change;
 
-        // الحفاظ على نطاق منطقي (مثلاً بين 2500 و 3500)
-        if (newCount < 2500) newCount = 2500 + Math.floor(Math.random() * 100);
-        if (newCount > 3500) newCount = 3500 - Math.floor(Math.random() * 100);
+        // Keep it realistic range
+        if (newCount < 11000) newCount = 11000 + Math.floor(Math.random() * 100);
+        if (newCount > 13500) newCount = 13500 - Math.floor(Math.random() * 100);
 
         countEl.innerText = newCount.toLocaleString();
 
-        // تأثير وميض أخضر عند الزيادة وأحمر عند النقصان (اختياري)
-        const parent = countEl.parentElement;
-        if (change > 0) {
-            parent.classList.add('count-up');
-            setTimeout(() => parent.classList.remove('count-up'), 500);
-        }
-    }, 4000);
+        // Optional pulse effect on the number only
+        countEl.style.color = change > 0 ? '#4ade80' : (change < 0 ? '#f87171' : '#fbbf24');
+        setTimeout(() => countEl.style.color = '#fbbf24', 1000);
+    };
+
+    // Initial update
+    setInterval(updateCount, 4000);
 }
 
 function initRecentSubscriptions() {

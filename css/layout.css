@@ -52,6 +52,12 @@ nav {
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
+    margin: 0 auto;
+    /* Center the links */
+    position: absolute;
+    /* Absolute positioning to center relative to screen */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-links a {
