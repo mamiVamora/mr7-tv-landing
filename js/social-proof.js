@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function initLiveViewers() {
     // إنشاء عنصر العداد العائم
     const viewerBadge = document.createElement('div');
-    viewerBadge.className = 'live-viewer-badge slide-in-bottom';
+    viewerBadge.className = 'live-viewer-pill slide-in-left'; // Changed class for new styling
     viewerBadge.innerHTML = `
         <div class="viewer-content">
             <span class="pulse-dot"></span>
@@ -28,7 +28,13 @@ function initLiveViewers() {
         if (!countEl) return;
 
         // إزالة الفواصل لتحويله لرقم
-        let current = parseInt(countEl.innerText.replace(/,/g, ''));
+        let text = countEl.innerText.replace(/,/g, '').trim();
+        let current = parseInt(text);
+
+        // Safety check to prevent NaN
+        if (isNaN(current)) {
+            current = 2845; // Reset to default if broken
+        }
 
         // تغيير عشوائي بين -5 و +8
         const change = Math.floor(Math.random() * 14) - 5;

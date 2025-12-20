@@ -122,3 +122,85 @@ header.scrolled {
         font-size: 24px;
     }
 }
+
+/* 5. Live Viewer Pill (Top Left) */
+.live-viewer-pill {
+    position: fixed;
+    top: 90px;
+    /* Below header */
+    left: 20px;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(124, 58, 237, 0.5);
+    border-radius: 50px;
+    padding: 8px 16px;
+    z-index: 998;
+    /* Below modal overlay but above content */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    /* Arabic support */
+}
+
+.live-viewer-pill:hover {
+    transform: translateY(-2px);
+    border-color: #fbbf24;
+    box-shadow: 0 8px 25px rgba(251, 191, 36, 0.2);
+}
+
+.viewer-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ef4444;
+    /* Red for LIVE */
+    border-radius: 50%;
+    animation: livePulse 1.5s infinite;
+    box-shadow: 0 0 5px #ef4444;
+}
+
+@keyframes livePulse {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+}
+
+.viewer-text strong {
+    color: #fbbf24;
+    font-family: 'Outfit', sans-serif;
+    margin-left: 3px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .live-viewer-pill {
+        top: auto;
+        bottom: 85px;
+        /* Above bottom bar */
+        left: 10px;
+        font-size: 0.75rem;
+        padding: 6px 12px;
+        background: rgba(15, 23, 42, 0.95);
+    }
+}

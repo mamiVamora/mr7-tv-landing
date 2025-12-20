@@ -128,30 +128,26 @@
                         <div class="shape shape-1"></div>
                         <div class="shape shape-2"></div>
 
-                        <form action="mailto:onlintv4@gmail.com" method="post" enctype="text/plain">
+                        <form id="contactForm" onsubmit="event.preventDefault(); sendContactWhatsapp();">
                             <div class="form-group">
                                 <label for="name">الاسم الكامل</label>
-                                <input type="text" id="name" class="form-control" placeholder="أدخل اسمك هنا">
+                                <input type="text" id="name" class="form-control" placeholder="أدخل اسمك هنا" required>
                                 <i class="fas fa-user input-icon"></i>
                             </div>
 
                             <div class="form-group">
-                                <label for="email">البريد الإلكتروني</label>
-                                <input type="email" id="email" class="form-control" placeholder="example@domain.com">
-                                <i class="fas fa-envelope input-icon"></i>
-                            </div>
-
-                            <div class="form-group">
                                 <label for="message">الرسالة</label>
-                                <textarea id="message" rows="4" class="form-control"
-                                    placeholder="كيف يمكننا مساعدتك؟"></textarea>
+                                <textarea id="message" rows="4" class="form-control" placeholder="كيف يمكننا مساعدتك؟"
+                                    required></textarea>
                                 <i class="fas fa-comment-alt input-icon" style="top: 2.7rem;"></i>
                             </div>
 
-                            <button type="submit" class="btn btn-primary submit-btn">
-                                إرسال الرسالة <i class="fas fa-paper-plane"></i>
+                            <button type="submit" class="btn-submit">
+                                إرسال عبر واتساب <i class="fab fa-whatsapp"></i>
                             </button>
                         </form>
+
+
                     </div>
                 </div>
             </div>
@@ -303,6 +299,8 @@
     </script>
     <!-- TV Remote Navigation -->
     <script src="js/tv-remote-navigation.js"></script>
+    <!-- Enhanced functionality -->
+    <script src="js/contact-utils.js"></script>
 </body>
 
 </html>
