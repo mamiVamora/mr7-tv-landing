@@ -51,7 +51,7 @@ function createPopup() {
                     
                     <div class="popup-timer" id="popup-timer">05:00</div>
                     
-                    <a href="https://wa.me/905340218618?text=مرحباً، أريد الاستفادة من عرض الشهر الإضافي المجاني قبل المغادرة!" class="btn-claim pulse-btn" target="_blank">
+                    <a href="https://wa.me/9647777842422?text=مرحباً، أريد الاستفادة من عرض الشهر الإضافي المجاني قبل المغادرة!" class="btn-claim pulse-btn" target="_blank">
                         <i class="fab fa-whatsapp"></i> احصل على العرض الآن
                     </a>
                     

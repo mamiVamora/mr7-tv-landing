@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Inject Floating WhatsApp
     const floatingWhatsappHTML = `
-        <a href="https://wa.me/905340218618" class="floating-whatsapp" target="_blank" title="تواصل معنا عبر واتساب">
+        <a href="https://wa.me/9647777842422" class="floating-whatsapp" target="_blank" title="تواصل معنا عبر واتساب">
             <i class="fab fa-whatsapp"></i>
         </a>
     `;
