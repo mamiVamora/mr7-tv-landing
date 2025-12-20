@@ -124,16 +124,7 @@ header.scrolled {
 }
 
 /* Fix Navbar Links Color */
-.nav-links a {
-    color: white !important;
-    /* Force white color for all links */
-}
 
-.nav-links a.active,
-.nav-links a:hover {
-    color: #fbbf24 !important;
-    /* Gold on hover/active */
-}
 
 /* 5. Live Viewer Pill (Top Left) */
 .live-viewer-pill {
@@ -207,12 +198,15 @@ header.scrolled {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .live-viewer-pill {
-        top: auto;
-        bottom: 85px;
-        /* Above bottom bar */
+        top: 80px;
+        /* Below header on mobile */
+        bottom: auto;
+        /* Remove bottom positioning */
         left: 10px;
         font-size: 0.75rem;
-        padding: 6px 12px;
+        padding: 5px 12px;
         background: rgba(15, 23, 42, 0.95);
+        z-index: 1001;
+        /* High z-index to ensure visibility */
     }
 }

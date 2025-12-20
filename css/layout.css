@@ -115,7 +115,24 @@ nav {
     text-shadow: 0 0 5px rgba(192, 132, 252, 0.3);
 }
 
-/* اتصل بنا - بنفسجي فاتح */
+
+/* أخبار - لون أحمر ياقوتي */
+.nav-links li:nth-child(10) a {
+    color: #f43f5e;
+    text-shadow: 0 0 5px rgba(244, 63, 94, 0.3);
+}
+
+/* تواصل - لون أزرق سماوي مشرق */
+.nav-links li:nth-child(11) a {
+    color: #38bdf8;
+    text-shadow: 0 0 5px rgba(56, 189, 248, 0.3);
+}
+
+/* فحص السرعة - لون أخضر فسفوري للطاقة */
+.nav-links li:nth-child(12) a {
+    color: #4ade80;
+    text-shadow: 0 0 5px rgba(74, 222, 128, 0.3);
+}
 
 .nav-links a:hover,
 .nav-links a.active {
