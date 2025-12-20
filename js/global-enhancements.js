@@ -205,4 +205,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // 9. Consistent Viewer Count Logic (Max 3000)
+    initConsistentViewers();
+    setInterval(updateViewerCount, 5000); // Small updates every 5s
+
+    function initConsistentViewers() {
+        // Range: 2200 - 2950 (Realistic)
+        let count = localStorage.getItem('mr7_viewer_count');
+        if (!count) {
+            count = Math.floor(Math.random() * (2950 - 2200 + 1) + 2200);
+            localStorage.setItem('mr7_viewer_count', count);
+        }
+        updateDOMViewers(count);
+    }
+
+    function updateViewerCount() {
+        let current = parseInt(localStorage.getItem('mr7_viewer_count')) || 2450;
+        // Small fluctuation ±15
+        const change = Math.floor(Math.random() * 31) - 15;
+        let newCount = current + change;
+
+        // Keep within logical bounds
+        if (newCount < 1800) newCount = 1800; // Min floor
+        if (newCount > 3200) newCount = 3200; // Max ceiling (slightly elastic)
+
+        localStorage.setItem('mr7_viewer_count', newCount);
+        updateDOMViewers(newCount);
+    }
+
+    function updateDOMViewers(count) {
+        // Update both ID variants used in pages
+        const ids = ['live-count-number', 'live-viewers-count'];
+        ids.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.innerText = count.toLocaleString();
+            }
+        });
+    }
+
 });
