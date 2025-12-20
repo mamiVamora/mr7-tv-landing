@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!-- Version: 1.0.1 - Force Deploy -->
+<!-- Version: 1.0.2 - CSS UI Prototype -->
 <html lang="ar" dir="rtl">
 
 <head>
@@ -47,6 +47,96 @@
             font-size: 0.9rem;
             font-weight: bold;
             margin-bottom: 1rem;
+        }
+
+        /* CSS-Based UI Reconstruction (Prototype) */
+        .smarters-ui-replica {
+            width: 100%;
+            max-width: 500px;
+            aspect-ratio: 16/9;
+            background: linear-gradient(135deg, #2d1b4e 0%, #1a0b2e 100%);
+            margin: 2rem auto;
+            border-radius: 12px;
+            position: relative;
+            padding: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            border: 4px solid #3d2b5e;
+            overflow: visible;
+            direction: ltr;
+            /* App UI is usually English */
+        }
+
+        .ui-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.75rem;
+            text-align: left;
+            position: relative;
+        }
+
+        .ui-input.active-field {
+            border-color: #fbbf24;
+            border-width: 2px;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .ui-button {
+            background: #e21c60;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 0.8rem;
+        }
+
+        .ui-pointer {
+            position: absolute;
+            right: -160px;
+            background: #fbbf24;
+            color: #000;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            box-shadow: 0 5px 15px rgba(251, 191, 36, 0.4);
+            z-index: 10;
+            direction: rtl;
+            /* Explanation in Arabic */
+        }
+
+        .ui-pointer::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            width: 20px;
+            height: 2px;
+            background: #fbbf24;
+        }
+
+        @media (max-width: 768px) {
+            .ui-pointer {
+                position: relative;
+                right: 0;
+                margin-top: 5px;
+                display: inline-block;
+            }
+
+            .ui-pointer::before {
+                display: none;
+            }
+
+            .smarters-ui-replica {
+                height: auto;
+                aspect-ratio: auto;
+            }
         }
     </style>
 </head>
@@ -100,11 +190,11 @@
                             </a>
                             <div class="text-center">
                                 <span class="step-label">خطوة 1: أدخل بياناتك</span>
-                                <img src="images/1To1JUSlAHVVJylQgG1MpSVpbafEON7BaXMHlTEd.webp" alt="Android Step 1"
-                                    class="guide-step-img" loading="lazy">
+                                <img src="images/guide-android-twin-1.png" alt="Android Step 1" class="guide-step-img"
+                                    loading="lazy">
                                 <span class="step-label">خطوة 2: احفظ القائمة</span>
-                                <img src="images/9179f6OVj9cRwYeYPeKgmUGAlp5YWRUP6w6d1qjZ.webp" alt="Android Step 2"
-                                    class="guide-step-img" loading="lazy">
+                                <img src="images/guide-android-twin-2.png" alt="Android Step 2" class="guide-step-img"
+                                    loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -122,11 +212,8 @@
                             </a>
                             <div class="text-center">
                                 <span class="step-label">شرح إدخال البيانات</span>
-                                <img src="images/0oeVz5G2j4ZMCbixDyjaGfhcphyqZ4vAXRAKYmMC.webp" alt="000 Player Step 1"
-                                    class="guide-step-img" loading="lazy">
-                                <span class="step-label">أدخل رقم السيرفر: 55555</span>
-                                <img src="images/uPJY1chpqn1iM5K3aweOLxTCmu97teSo8F2QSzrH.webp" alt="000 Player Step 2"
-                                    class="guide-step-img" loading="lazy">
+                                <img src="images/guide-ios-twin-1.png" alt="000 Player Step 1" class="guide-step-img"
+                                    loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -139,33 +226,10 @@
                         </div>
                         <div class="method-body">
                             <div class="text-center">
-                                <img src="images/9eEi4ZRRppCkJsJkbjZLm6s8ujHH3Qa7IDaoTzSY.webp" alt="Downloader Logo"
-                                    style="width: 100px; margin-bottom: 1rem;">
+                                <img src="images/guide-downloader-twin.png" alt="Downloader Guide"
+                                    class="guide-step-img" loading="lazy">
                                 <p>أدخل الكود التالي في تطبيق Downloader لتحميل تطبيقنا فوراً:</p>
                                 <div class="code-badge" style="font-size: 2rem; padding: 10px 30px;">6021421</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- iOS Platform -->
-                <div class="platform-section ios-glow" data-aos="fade-up">
-                    <div class="platform-header">
-                        <i class="fab fa-apple"></i>
-                        <h3>iPhone & iPad</h3>
-                    </div>
-                    <div class="method-card">
-                        <div class="method-body">
-                            <a href="https://apps.apple.com/us/app/000-player/id1665441224" target="_blank"
-                                class="btn btn-primary" style="margin-bottom: 2rem; width: 100%;">
-                                <i class="fab fa-app-store"></i> تحميل من App Store
-                            </a>
-                            <div class="text-center">
-                                <span class="step-label">طريقة التفعيل للآيفون</span>
-                                <img src="images/0oeVz5G2j4ZMCbixDyjaGfhcphyqZ4vAXRAKYmMC.webp" alt="iOS Guide 1"
-                                    class="guide-step-img" loading="lazy">
-                                <img src="images/uPJY1chpqn1iM5K3aweOLxTCmu97teSo8F2QSzrH.webp" alt="iOS Guide 2"
-                                    class="guide-step-img" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -175,23 +239,35 @@
                 <div class="platform-section tv-glow" data-aos="fade-up">
                     <div class="platform-header">
                         <i class="fas fa-tv"></i>
-                        <h3>Smart TV (LG, Samsung)</h3>
+                        <h3>Smart TV (تجربة الشرح المبرمج)</h3>
                     </div>
                     <div class="method-card">
                         <div class="method-body">
-                            <p class="text-center">استخدم تطبيق <strong>IPTV Smarters Pro</strong> المتوفر في متجر شاشتك
-                            </p>
-                            <div class="text-center">
-                                <span class="step-label">خطوة 1: اختر XTREME CODES</span>
-                                <img src="images/yBH9ptvbmCVCRM0UuamCL3ph4fgWUcH5N3sTktWJ.webp" alt="Smart TV Step 1"
-                                    class="guide-step-img" loading="lazy">
-                                <span class="step-label">خطوة 2: أدخل الرابط والبيانات</span>
-                                <img src="images/u2QlZ6zlaJEyYPMCkeppavHJ4s4Ivsw0vF3KiLdc.webp" alt="Smart TV Step 2"
-                                    class="guide-step-img" loading="lazy">
-                                <div class="activation-box" style="margin-top: 2rem;">
-                                    <p><strong>رابط السيرفر:</strong> <span
-                                            class="code-badge">http://mr7tv.vip:80</span></p>
+                            <p class="text-center">هذا النموذج مبرمج بالكود (Pure CSS) لضمان دقة وضوح 100% وسرعة تحميل
+                                فورية:</p>
+
+                            <div class="smarters-ui-replica">
+                                <div
+                                    style="color: #fff; font-weight: bold; margin-bottom: 15px; text-align: center; font-size: 0.9rem;">
+                                    ADD USER (Xtream Codes)</div>
+
+                                <div class="ui-input">Any Name <div class="ui-pointer">ضع أي اسم للمشغل</div>
                                 </div>
+                                <div class="ui-input active-field">Username <div class="ui-pointer">اسم المستخدم الخاص
+                                        بك</div>
+                                </div>
+                                <div class="ui-input active-field">Password <div class="ui-pointer">كلمة المرور</div>
+                                </div>
+                                <div class="ui-input active-field">http://mr7tv.vip:80 <div class="ui-pointer">رابط
+                                        السيرفر</div>
+                                </div>
+
+                                <div class="ui-button">ADD USER</div>
+                            </div>
+
+                            <div class="activation-box" style="margin-top: 2rem;">
+                                <p><strong>لماذا هذا أفضل؟</strong> بدلاً من تحميل صورة ثقيلة، يظهر هذا الشرح فوراً
+                                    وبوضوح تام على أي شاشة، مع الحفاظ على نفس شكل التطبيق الحقيقي.</p>
                             </div>
                         </div>
                     </div>
