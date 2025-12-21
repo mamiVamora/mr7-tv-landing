@@ -1,0 +1,50 @@
+/* إصلاحات حذرة للصفحات الفرعية - بدون تخريب */
+
+/* 1. إصلاح تداخل العناوين مع Header */
+section:first-of-type,
+.section:first-of-type,
+main>section:first-child {
+    padding-top: 120px !important;
+}
+
+.page-title,
+.section-title {
+    margin-top: 20px;
+}
+
+/* 2. إصلاح Grid للموبايل فقط */
+@media (max-width: 768px) {
+
+    .features-grid,
+    .services-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    .feature-card,
+    .service-card,
+    .gallery-item {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* 3. تحسينات بصرية خفيفة (اختيارية) */
+.page-title {
+    background: linear-gradient(135deg, #fff 0%, #fbbf24 50%, #fff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+}
+
+/* 4. تحسين الأزرار (خفيف جداً) */
+.btn:not(.btn-enhanced):not(.btn-speed-test) {
+    transition: all 0.3s ease;
+}
+
+.btn:not(.btn-enhanced):not(.btn-speed-test):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+}
