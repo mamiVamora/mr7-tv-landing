@@ -51,6 +51,18 @@
     display: block;
     transition: transform 0.5s ease;
     border-radius: 20px;
+    
+    /* قص الصور لإخفاء شريط المهام والإطارات */
+    object-fit: cover;
+    object-position: center center;
+    min-height: 300px;
+}
+
+/* قص خاص للصور المعيبة (app-*.png) */
+.gallery-item a[href*="app-"] img {
+    object-fit: cover;
+    object-position: center 45%; /* قص من الأعلى والأسفل */
+    transform: scale(1.15); /* تكبير خفيف لإخفاء الحواف */
 }
 
 /* Auto-Shine Effect Overlay */
