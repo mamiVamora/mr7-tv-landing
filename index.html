@@ -1054,39 +1054,6 @@
                         });
                 }
 
-                // Mobile Menu Toggle
-                const menuToggle = document.querySelector('.menu-toggle');
-                const navLinks = document.querySelector('.nav-links');
-
-                if (menuToggle) {
-                        menuToggle.addEventListener('click', () => {
-                                navLinks.classList.toggle('active');
-                                const icon = menuToggle.querySelector('i');
-                                if (navLinks.classList.contains('active')) {
-                                        icon.classList.remove('fa-bars');
-                                        icon.classList.add('fa-times');
-                                        // منع تمرير الصفحة الرئيسية عند فتح القائمة
-                                        document.body.style.overflow = 'hidden';
-                                } else {
-                                        icon.classList.remove('fa-times');
-                                        icon.classList.add('fa-bars');
-                                        // إعادة تفعيل التمرير عند إغلاق القائمة
-                                        document.body.style.overflow = '';
-                                }
-                        });
-
-                        // إغلاق القائمة عند النقر على أي رابط
-                        const navLinksItems = navLinks.querySelectorAll('a');
-                        navLinksItems.forEach(link => {
-                                link.addEventListener('click', () => {
-                                        navLinks.classList.remove('active');
-                                        const icon = menuToggle.querySelector('i');
-                                        icon.classList.remove('fa-times');
-                                        icon.classList.add('fa-bars');
-                                        document.body.style.overflow = '';
-                                });
-                        });
-                }
         </script>
         <!-- Analytics Tracking -->
         <script src="js/tracking.js"></script>
