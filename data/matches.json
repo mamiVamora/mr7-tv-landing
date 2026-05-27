@@ -1,42 +1,36 @@
 [
   {
-    "id": "1",
-    "homeTeam": "ليفربول",
-    "awayTeam": "مانشستر سيتي",
-    "homeLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png",
-    "awayLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png",
+    "id": "match-0",
+    "homeTeam": {
+      "name": "كريستال بالاس",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\8\\19\\CrystalPalace2021_8_19_15_7.jpg"
+    },
+    "awayTeam": {
+      "name": "رايو فاييكانو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\5\\RayoVallecano2021_9_5_14_18.jpg"
+    },
     "time": "22:00",
-    "score": "– –",
     "date": "اليوم",
-    "league": "الدوري الإنجليزي",
+    "league": "دوري المؤتمر الأوروبي",
     "status": "UPCOMING",
-    "channel": "beIN Sports 1"
+    "score": "- - -",
+    "channel": "غير محدد"
   },
   {
-    "id": "2",
-    "homeTeam": "ريال مدريد",
-    "awayTeam": "برشلونة",
-    "homeLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png",
-    "awayLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png",
-    "time": "Direct",
-    "score": "2 – 1",
+    "id": "match-1",
+    "homeTeam": {
+      "name": "الأهلي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\6\\7\\ahly19072024_6_7_1_12.jpg"
+    },
+    "awayTeam": {
+      "name": "نادي تايجرز",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\3\\22\\Tigers_BBC_logo2026_3_22_22_45.webp"
+    },
+    "time": "20:00",
     "date": "اليوم",
-    "league": "الكلاسيكو - مباشر 🔥",
-    "status": "LIVE",
-    "minute": "75'",
-    "channel": "beIN Sports 4K"
-  },
-  {
-    "id": "3",
-    "homeTeam": "العراق",
-    "awayTeam": "اليابان",
-    "homeLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Iraq_Football_Association_Logo.svg/1200px-Iraq_Football_Association_Logo.svg.png",
-    "awayLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Japan_national_football_team_crest.svg/1200px-Japan_national_football_team_crest.svg.png",
-    "time": "انتهت",
-    "score": "2 – 1",
-    "date": "اليوم",
-    "league": "تصفيات كأس العالم",
-    "status": "FINISHED",
-    "channel": "الرابعة الرياضية"
+    "league": "الدوري الأفريقي لكرة السلة",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
   }
 ]
