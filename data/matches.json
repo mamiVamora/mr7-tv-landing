@@ -2,16 +2,16 @@
   {
     "id": "match-0",
     "homeTeam": {
-      "name": "زد",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\8\\27\\470102024_8_27_17_31.jpg"
+      "name": "باريس سان جيرمان",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\PSG2018_7_29_17_12.jpg"
     },
     "awayTeam": {
-      "name": "كهرباء الإسماعيلية",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2025\\8\\10\\kahraba2025_8_10_16_41.webp"
+      "name": "أرسنال",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\5\\Arsenal2021_9_5_14_15.jpg"
     },
-    "time": "17:00",
+    "time": "19:00",
     "date": "اليوم",
-    "league": "الدوري المصري",
+    "league": "دوري أبطال أوروبا",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -19,16 +19,16 @@
   {
     "id": "match-1",
     "homeTeam": {
-      "name": "المقاولون العرب",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Almokawloon2018_7_24_13_31.jpg"
+      "name": "إسكتلندا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\Scotland2018_9_10_18_27.jpg"
     },
     "awayTeam": {
-      "name": "مودرن سبورت",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\7\\3\\modern-12024_7_3_22_17.jpg"
+      "name": "كوراساو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\4\\13\\22026_4_13_20_52.webp"
     },
-    "time": "17:00",
+    "time": "15:00",
     "date": "اليوم",
-    "league": "الدوري المصري",
+    "league": "مباريات ودية - منتخبات",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -36,33 +36,16 @@
   {
     "id": "match-2",
     "homeTeam": {
-      "name": "البنك الأهلي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\31\\AhlyBank2018_7_31_17_33.jpg"
+      "name": "الفتح الرباطي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\ElfathAlrabaty2018_7_24_17_51.jpg"
     },
     "awayTeam": {
-      "name": "الاتحاد السكندري",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Alittihad2018_7_24_13_30.jpg"
+      "name": "الجيش الملكي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\AlgaishElmalaky2018_7_24_17_49.jpg"
     },
-    "time": "20:00",
+    "time": "22:00",
     "date": "اليوم",
-    "league": "الدوري المصري",
-    "status": "UPCOMING",
-    "score": "- - -",
-    "channel": "غير محدد"
-  },
-  {
-    "id": "match-3",
-    "homeTeam": {
-      "name": "غزل المحلة",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\9\\11\\ghazel12024_9_11_21_58.jpg"
-    },
-    "awayTeam": {
-      "name": "حرس الحدود",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\11\\5\\harras-el-hodoud12022_11_5_0_8.jpg"
-    },
-    "time": "20:00",
-    "date": "اليوم",
-    "league": "الدوري المصري",
+    "league": "الدوري المغربي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
