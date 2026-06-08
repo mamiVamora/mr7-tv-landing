@@ -2,65 +2,48 @@
   {
     "id": "match-0",
     "homeTeam": {
-      "name": "مصر",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Egypt2018_7_24_14_37.jpg"
+      "name": "زد",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\8\\27\\470102024_8_27_17_31.jpg"
     },
     "awayTeam": {
-      "name": "البرازيل",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Brazil2018_7_24_14_44.jpg"
+      "name": "وادي دجلة",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2019\\2\\18\\WadiDegla2019_2_18_10_17.jpg"
     },
-    "time": "01:00",
+    "time": "17:00",
     "date": "اليوم",
-    "league": "مباريات ودية - منتخبات",
+    "league": "كأس رابطة الأندية",
     "status": "UPCOMING",
-    "score": "1 - 2",
+    "score": "- - -",
     "channel": "غير محدد"
   },
   {
     "id": "match-1",
     "homeTeam": {
-      "name": "فنزويلا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2019\\3\\20\\Venezuela2019_3_20_18_45.jpg"
+      "name": "إنبي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Enppi2018_7_24_13_29.jpg"
     },
     "awayTeam": {
-      "name": "تركيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\Turkey2018_9_10_18_33.jpg"
+      "name": "المصري",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\elmasry2018_7_24_13_30.jpg"
     },
-    "time": "01:00",
+    "time": "20:30",
     "date": "اليوم",
-    "league": "مباريات ودية - منتخبات",
+    "league": "كأس رابطة الأندية",
     "status": "UPCOMING",
-    "score": "1 - 2",
+    "score": "- - -",
     "channel": "غير محدد"
   },
   {
     "id": "match-2",
     "homeTeam": {
-      "name": "الأرجنتين",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Argentina2018_7_24_14_45.jpg"
+      "name": "كولومبيا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Colombia2018_7_24_14_38.jpg"
     },
     "awayTeam": {
-      "name": "هندوراس",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\Honduras2018_9_10_18_33.jpg"
+      "name": "الأردن",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\26\\Jordan2018_7_26_19_15.jpg"
     },
-    "time": "03:00",
-    "date": "اليوم",
-    "league": "مباريات ودية - منتخبات",
-    "status": "UPCOMING",
-    "score": "2 - 0",
-    "channel": "غير محدد"
-  },
-  {
-    "id": "match-3",
-    "homeTeam": {
-      "name": "الدنمارك",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Denmark2018_7_24_14_41.jpg"
-    },
-    "awayTeam": {
-      "name": "أوكرانيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\Ukraine2018_9_10_18_28.jpg"
-    },
-    "time": "19:30",
+    "time": "02:00",
     "date": "اليوم",
     "league": "مباريات ودية - منتخبات",
     "status": "UPCOMING",
@@ -68,14 +51,14 @@
     "channel": "غير محدد"
   },
   {
-    "id": "match-4",
+    "id": "match-3",
     "homeTeam": {
-      "name": "كرواتيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Croatia2018_7_24_14_39.jpg"
+      "name": "هولندا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\Netherlands2018_9_10_18_32.jpg"
     },
     "awayTeam": {
-      "name": "سلوفينيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\12\\Slovenia2018_9_12_12_38.jpg"
+      "name": "أوزبكستان",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\26\\Uzbekistan2018_7_26_19_14.jpg"
     },
     "time": "21:45",
     "date": "اليوم",
@@ -85,18 +68,35 @@
     "channel": "غير محدد"
   },
   {
-    "id": "match-5",
+    "id": "match-4",
     "homeTeam": {
-      "name": "المغرب",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Morocco2018_7_24_14_48.jpg"
+      "name": "فرنسا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\France2018_7_24_14_43.jpg"
     },
     "awayTeam": {
-      "name": "النرويج",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\Norway2018_9_10_18_32.jpg"
+      "name": "إيرلندا الشمالية",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\NorthernIreland2018_9_10_18_30.jpg"
     },
-    "time": "22:00",
+    "time": "22:10",
     "date": "اليوم",
     "league": "مباريات ودية - منتخبات",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-5",
+    "homeTeam": {
+      "name": "الفتح الرباطي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\ElfathAlrabaty2018_7_24_17_51.jpg"
+    },
+    "awayTeam": {
+      "name": "الدفاع الجديدي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\8\\18\\ElDifaaElJadidi2018_8_18_23_13.jpg"
+    },
+    "time": "19:00",
+    "date": "اليوم",
+    "league": "الدوري المغربي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -104,16 +104,16 @@
   {
     "id": "match-6",
     "homeTeam": {
-      "name": "اليونان",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\Greece2018_9_10_18_35.jpg"
+      "name": "الوداد البيضاوي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\8\\18\\Wydad2018_8_18_21_18.jpg"
     },
     "awayTeam": {
-      "name": "إيطاليا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\Italy2018_9_10_18_23.jpg"
+      "name": "أولمبيك آسفي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\OlympicAsfi2018_7_24_17_51.jpg"
     },
-    "time": "22:00",
+    "time": "21:00",
     "date": "اليوم",
-    "league": "مباريات ودية - منتخبات",
+    "league": "الدوري المغربي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -121,16 +121,33 @@
   {
     "id": "match-7",
     "homeTeam": {
-      "name": "إكوادور",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2019\\3\\20\\Ecuador2019_3_20_18_44.jpg"
+      "name": "نهضة بركان",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\23\\NahdetBourkan2021_9_23_16_20.jpg"
     },
     "awayTeam": {
-      "name": "جواتيمالا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\3\\27\\guatemala_square_icon_6402026_3_27_1_2.webp"
+      "name": "اتحاد طنجة",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\7\\5\\EtihadTanga2018_7_24_17_562022_7_5_18_36.jpg"
+    },
+    "time": "21:00",
+    "date": "اليوم",
+    "league": "الدوري المغربي",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-8",
+    "homeTeam": {
+      "name": "أولمبيك الدشيرة",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/YK-Generic-team-logo.png"
+    },
+    "awayTeam": {
+      "name": "حسنية اغادير",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\HassaniaAgadir2018_7_24_17_51.jpg"
     },
     "time": "23:00",
     "date": "اليوم",
-    "league": "مباريات ودية - منتخبات",
+    "league": "الدوري المغربي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
