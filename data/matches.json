@@ -2,63 +2,46 @@
   {
     "id": "match-0",
     "homeTeam": {
-      "name": "كوت ديفوار",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\26\\CoteD'Ivoire2018_7_26_19_23.jpg"
+      "name": "السعودية",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Saudi2018_7_24_14_46.jpg"
     },
     "awayTeam": {
-      "name": "إكوادور",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2019\\3\\20\\Ecuador2019_3_20_18_44.jpg"
+      "name": "أوروجواي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Uruguay2018_7_24_14_42.jpg"
     },
-    "time": "02:00",
+    "time": "01:00",
     "date": "اليوم",
     "league": "كأس العالم",
     "status": "UPCOMING",
-    "score": "1 - 0",
+    "score": "1 - 1",
     "channel": "غير محدد"
   },
   {
     "id": "match-1",
     "homeTeam": {
-      "name": "السويد",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Sweden2018_7_24_14_43.jpg"
+      "name": "إيران",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\6\\11\\iran_square_icon_6402026_6_11_0_25.webp"
     },
     "awayTeam": {
-      "name": "تونس",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Tunis2018_7_24_14_48.jpg"
+      "name": "نيوزيلندا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\NewZealand2018_9_10_18_34.jpg"
     },
-    "time": "05:00",
+    "time": "04:00",
     "date": "اليوم",
     "league": "كأس العالم",
     "status": "UPCOMING",
-    "score": "5 - 1",
+    "score": "2 - 2",
     "channel": "غير محدد"
   },
   {
     "id": "match-2",
     "homeTeam": {
-      "name": "إسبانيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Spain2018_7_24_14_42.jpg"
+      "name": "فرنسا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\France2018_7_24_14_43.jpg"
     },
     "awayTeam": {
-      "name": "كاب فيردي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\26\\CapeVerde2018_7_26_19_22.jpg"
-    },
-    "time": "19:00",
-    "date": "اليوم",
-    "league": "كأس العالم",
-    "status": "UPCOMING",
-    "score": "- - -",
-    "channel": "غير محدد"
-  },
-  {
-    "id": "match-3",
-    "homeTeam": {
-      "name": "بلجيكا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Belgium2018_7_24_14_44.jpg"
-    },
-    "awayTeam": {
-      "name": "مصر",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Egypt2018_7_24_14_37.jpg"
+      "name": "السنغال",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Senegal2018_7_24_14_48.jpg"
     },
     "time": "22:00",
     "date": "اليوم",
