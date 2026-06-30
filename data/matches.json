@@ -2,31 +2,31 @@
   {
     "id": "match-0",
     "homeTeam": {
-      "name": "البرازيل",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Brazil2018_7_24_14_44.jpg"
+      "name": "هولندا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\6\\26\\netherlands_square_icon_6402026_6_26_0_38.webp"
     },
     "awayTeam": {
-      "name": "اليابان",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Japan2018_7_24_14_46.jpg"
+      "name": "المغرب",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Morocco2018_7_24_14_48.jpg"
     },
-    "time": "20:00",
+    "time": "04:00",
     "date": "اليوم",
     "league": "كأس العالم",
     "status": "UPCOMING",
-    "score": "- - -",
+    "score": "1 - 1",
     "channel": "غير محدد"
   },
   {
     "id": "match-1",
     "homeTeam": {
-      "name": "ألمانيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Germany2018_7_24_14_43.jpg"
+      "name": "كوت ديفوار",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\26\\CoteD'Ivoire2018_7_26_19_23.jpg"
     },
     "awayTeam": {
-      "name": "باراجواي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\Paraguay2018_9_10_18_34.jpg"
+      "name": "النرويج",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\Norway2018_9_10_18_32.jpg"
     },
-    "time": "23:30",
+    "time": "20:00",
     "date": "اليوم",
     "league": "كأس العالم",
     "status": "UPCOMING",
