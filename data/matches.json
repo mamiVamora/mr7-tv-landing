@@ -2,48 +2,48 @@
   {
     "id": "match-0",
     "homeTeam": {
-      "name": "البرتغال",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Portugal2018_7_24_14_41.jpg"
+      "name": "الأرجنتين",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Argentina2018_7_24_14_45.jpg"
     },
     "awayTeam": {
-      "name": "كرواتيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Croatia2018_7_24_14_39.jpg"
+      "name": "كاب فيردي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\26\\CapeVerde2018_7_26_19_22.jpg"
     },
-    "time": "02:00",
+    "time": "01:00",
     "date": "اليوم",
     "league": "كأس العالم",
     "status": "UPCOMING",
-    "score": "2 - 1",
+    "score": "3 - 2",
     "channel": "غير محدد"
   },
   {
     "id": "match-1",
     "homeTeam": {
-      "name": "سويسرا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Switherland2018_7_24_14_36.jpg"
+      "name": "كولومبيا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Colombia2018_7_24_14_38.jpg"
     },
     "awayTeam": {
-      "name": "الجزائر",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\26\\Algeria2018_7_26_19_30.jpg"
+      "name": "غانا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\26\\Ghana2018_7_26_19_26.jpg"
     },
-    "time": "06:00",
+    "time": "04:30",
     "date": "اليوم",
     "league": "كأس العالم",
     "status": "UPCOMING",
-    "score": "- - -",
+    "score": "1 - 0",
     "channel": "غير محدد"
   },
   {
     "id": "match-2",
     "homeTeam": {
-      "name": "أستراليا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Australia2018_7_24_14_46.jpg"
+      "name": "كندا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\6\\12\\canada_square_icon_6402026_6_12_0_32.webp"
     },
     "awayTeam": {
-      "name": "مصر",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Egypt2018_7_24_14_37.jpg"
+      "name": "المغرب",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Morocco2018_7_24_14_48.jpg"
     },
-    "time": "21:00",
+    "time": "20:00",
     "date": "اليوم",
     "league": "كأس العالم",
     "status": "UPCOMING",
@@ -53,14 +53,14 @@
   {
     "id": "match-3",
     "homeTeam": {
-      "name": "نيجيريا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\3\\nigeria12022_8_3_17_30.jpg"
+      "name": "جنوب السودان",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\3\\south_sudan12022_8_3_17_59.jpg"
     },
     "awayTeam": {
-      "name": "غينيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\3\\guinea12022_8_3_19_51.jpg"
+      "name": "كاب فيردي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\3\\cape_verde12022_8_3_17_24.jpg"
     },
-    "time": "18:00",
+    "time": "17:00",
     "date": "اليوم",
     "league": "تصفيات كأس العالم لكرة السلة - أفريقيا",
     "status": "UPCOMING",
@@ -70,12 +70,80 @@
   {
     "id": "match-4",
     "homeTeam": {
-      "name": "رواندا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\3\\rwanda12022_8_3_19_27.jpg"
+      "name": "مالي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\2\\21\\mali12024_2_21_19_50.jpg"
     },
     "awayTeam": {
-      "name": "تونس",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\3\\tunisia12022_8_3_19_15.jpg"
+      "name": "أوغندا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\3\\uganda12022_8_3_17_34.jpg"
+    },
+    "time": "18:00",
+    "date": "اليوم",
+    "league": "تصفيات كأس العالم لكرة السلة - أفريقيا",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-5",
+    "homeTeam": {
+      "name": "الكونغو الديمقراطية",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\3\\democratic_republic_of_the_congo12022_8_3_16_51.jpg"
+    },
+    "awayTeam": {
+      "name": "كوت ديفوار",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2023\\8\\16\\Ivory-Coast12023_8_16_21_57.jpg"
+    },
+    "time": "18:00",
+    "date": "اليوم",
+    "league": "تصفيات كأس العالم لكرة السلة - أفريقيا",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-6",
+    "homeTeam": {
+      "name": "الكاميرون",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\3\\cameroon12022_8_3_19_22.jpg"
+    },
+    "awayTeam": {
+      "name": "ليبيا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\2\\21\\libya12024_2_21_19_56.jpg"
+    },
+    "time": "20:00",
+    "date": "اليوم",
+    "league": "تصفيات كأس العالم لكرة السلة - أفريقيا",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-7",
+    "homeTeam": {
+      "name": "أنجولا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\3\\angola12022_8_3_19_38.jpg"
+    },
+    "awayTeam": {
+      "name": "مصر",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\3\\egypt12022_8_3_16_40.jpg"
+    },
+    "time": "21:00",
+    "date": "اليوم",
+    "league": "تصفيات كأس العالم لكرة السلة - أفريقيا",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-8",
+    "homeTeam": {
+      "name": "السنغال",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\3\\senegal12022_8_3_16_57.jpg"
+    },
+    "awayTeam": {
+      "name": "مدغشقر",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\2\\21\\madagascar12024_2_21_20_0.jpg"
     },
     "time": "21:00",
     "date": "اليوم",
