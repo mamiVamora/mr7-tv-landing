@@ -1,53 +1,42 @@
 [
   {
-    "id": "match-0",
-    "homeTeam": {
-      "name": "أمريكا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\USA2018_9_10_18_25.jpg"
-    },
-    "awayTeam": {
-      "name": "بلجيكا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Belgium2018_7_24_14_44.jpg"
-    },
-    "time": "03:00",
+    "id": "1",
+    "homeTeam": "ليفربول",
+    "awayTeam": "مانشستر سيتي",
+    "homeLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png",
+    "awayLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png",
+    "time": "22:00",
+    "score": "– –",
     "date": "اليوم",
-    "league": "كأس العالم",
+    "league": "الدوري الإنجليزي",
     "status": "UPCOMING",
-    "score": "1 - 4",
-    "channel": "غير محدد"
+    "channel": "beIN Sports 1"
   },
   {
-    "id": "match-1",
-    "homeTeam": {
-      "name": "الأرجنتين",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Argentina2018_7_24_14_45.jpg"
-    },
-    "awayTeam": {
-      "name": "مصر",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Egypt2018_7_24_14_37.jpg"
-    },
-    "time": "19:00",
+    "id": "2",
+    "homeTeam": "ريال مدريد",
+    "awayTeam": "برشلونة",
+    "homeLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png",
+    "awayLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png",
+    "time": "Direct",
+    "score": "2 – 1",
     "date": "اليوم",
-    "league": "كأس العالم",
-    "status": "UPCOMING",
-    "score": "- - -",
-    "channel": "غير محدد"
+    "league": "الكلاسيكو - مباشر 🔥",
+    "status": "LIVE",
+    "minute": "75'",
+    "channel": "beIN Sports 4K"
   },
   {
-    "id": "match-2",
-    "homeTeam": {
-      "name": "سويسرا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Switherland2018_7_24_14_36.jpg"
-    },
-    "awayTeam": {
-      "name": "كولومبيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Colombia2018_7_24_14_38.jpg"
-    },
-    "time": "23:00",
+    "id": "3",
+    "homeTeam": "العراق",
+    "awayTeam": "اليابان",
+    "homeLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Iraq_Football_Association_Logo.svg/1200px-Iraq_Football_Association_Logo.svg.png",
+    "awayLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Japan_national_football_team_crest.svg/1200px-Japan_national_football_team_crest.svg.png",
+    "time": "انتهت",
+    "score": "2 – 1",
     "date": "اليوم",
-    "league": "كأس العالم",
-    "status": "UPCOMING",
-    "score": "- - -",
-    "channel": "غير محدد"
+    "league": "تصفيات كأس العالم",
+    "status": "FINISHED",
+    "channel": "الرابعة الرياضية"
   }
 ]
