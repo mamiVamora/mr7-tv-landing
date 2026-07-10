@@ -2,14 +2,14 @@
   {
     "id": "match-0",
     "homeTeam": {
-      "name": "فرنسا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\France2018_7_24_14_43.jpg"
+      "name": "إسبانيا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\7\\8\\Spain2026_7_8_22_59.webp"
     },
     "awayTeam": {
-      "name": "المغرب",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Morocco2018_7_24_14_48.jpg"
+      "name": "بلجيكا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Belgium2018_7_24_14_44.jpg"
     },
-    "time": "23:00",
+    "time": "22:00",
     "date": "اليوم",
     "league": "كأس العالم",
     "status": "UPCOMING",
