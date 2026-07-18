@@ -1,42 +1,189 @@
 [
   {
-    "id": "1",
-    "homeTeam": "ليفربول",
-    "awayTeam": "مانشستر سيتي",
-    "homeLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png",
-    "awayLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png",
-    "time": "22:00",
-    "score": "– –",
+    "id": "match-0",
+    "homeTeam": {
+      "name": "أياكس امستردام",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\8\\12\\Ajax2018_8_12_13_3.jpg"
+    },
+    "awayTeam": {
+      "name": "أولمبياكوس",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\13\\Olympiacos2018_9_13_12_40.jpg"
+    },
+    "time": "16:30",
     "date": "اليوم",
-    "league": "الدوري الإنجليزي",
+    "league": "مباريات ودية -أندية",
     "status": "UPCOMING",
-    "channel": "beIN Sports 1"
+    "score": "- - -",
+    "channel": "غير محدد"
   },
   {
-    "id": "2",
-    "homeTeam": "ريال مدريد",
-    "awayTeam": "برشلونة",
-    "homeLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png",
-    "awayLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png",
-    "time": "Direct",
-    "score": "2 – 1",
+    "id": "match-1",
+    "homeTeam": {
+      "name": "بازل",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\Basel2018_9_10_12_37.jpg"
+    },
+    "awayTeam": {
+      "name": "يوفنتوس",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\7\\14\\Juventus12021_7_14_17_22.jpg"
+    },
+    "time": "16:30",
     "date": "اليوم",
-    "league": "الكلاسيكو - مباشر 🔥",
-    "status": "LIVE",
-    "minute": "75'",
-    "channel": "beIN Sports 4K"
+    "league": "مباريات ودية -أندية",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
   },
   {
-    "id": "3",
-    "homeTeam": "العراق",
-    "awayTeam": "اليابان",
-    "homeLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Iraq_Football_Association_Logo.svg/1200px-Iraq_Football_Association_Logo.svg.png",
-    "awayLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Japan_national_football_team_crest.svg/1200px-Japan_national_football_team_crest.svg.png",
-    "time": "انتهت",
-    "score": "2 – 1",
+    "id": "match-2",
+    "homeTeam": {
+      "name": "سلتيك",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\8\\12\\Celtic2018_8_12_13_0.jpg"
+    },
+    "awayTeam": {
+      "name": "ميدلسبره",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\24\\MiddlesbroughFC2018_9_24_12_59.jpg"
+    },
+    "time": "17:00",
     "date": "اليوم",
-    "league": "تصفيات كأس العالم",
-    "status": "FINISHED",
-    "channel": "الرابعة الرياضية"
+    "league": "مباريات ودية -أندية",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-3",
+    "homeTeam": {
+      "name": "ريد بول سالسبورج",
+      "logo": "https://mediayk.gemini.media/img/yallakora/teamlogo/salzburg121-1-2014-22-14-46.png"
+    },
+    "awayTeam": {
+      "name": "ماميلودي صنداونز",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\8\\18\\Mamelodi2018_8_18_23_12.jpg"
+    },
+    "time": "17:00",
+    "date": "اليوم",
+    "league": "مباريات ودية -أندية",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-4",
+    "homeTeam": {
+      "name": "مانشستر يونايتد",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\ManchesterUnited2018_7_29_15_29.jpg"
+    },
+    "awayTeam": {
+      "name": "ريكسهام",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2023\\7\\25\\Untitled2023_7_25_23_41.jpg"
+    },
+    "time": "18:00",
+    "date": "اليوم",
+    "league": "مباريات ودية -أندية",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-5",
+    "homeTeam": {
+      "name": "لوريان",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2015\\3\\23\\Lorient2015_3_23_18_7.jpg"
+    },
+    "awayTeam": {
+      "name": "نانت",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\5\\Nantes2021_9_5_14_49.jpg"
+    },
+    "time": "18:00",
+    "date": "اليوم",
+    "league": "مباريات ودية -أندية",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-6",
+    "homeTeam": {
+      "name": "نيس",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Nice2018_7_29_17_14.jpg"
+    },
+    "awayTeam": {
+      "name": "نيم أولمبيك",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Nimes2018_7_29_17_18.jpg"
+    },
+    "time": "19:00",
+    "date": "اليوم",
+    "league": "مباريات ودية -أندية",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-7",
+    "homeTeam": {
+      "name": "ريال سوسيداد",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\RealSociedad2018_7_29_14_56.jpg"
+    },
+    "awayTeam": {
+      "name": "ر.سانتاندير",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\10\\31\\RacingSantander2018_10_31_12_21.jpg"
+    },
+    "time": "19:00",
+    "date": "اليوم",
+    "league": "مباريات ودية -أندية",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-8",
+    "homeTeam": {
+      "name": "بترو أتليتكو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\2\\12\\243352271_2801188596848397_4776173440084276977_n2022_2_12_18_59.jpg"
+    },
+    "awayTeam": {
+      "name": "فالنسيا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Valencia2018_7_29_14_44.jpg"
+    },
+    "time": "19:30",
+    "date": "اليوم",
+    "league": "مباريات ودية -أندية",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-9",
+    "homeTeam": {
+      "name": "أورلاندو بايرتس",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2015\\6\\25\\orlando2015_6_25_22_7.jpg"
+    },
+    "awayTeam": {
+      "name": "قادش",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\10\\31\\Cadiz2018_10_31_12_21.jpg"
+    },
+    "time": "19:45",
+    "date": "اليوم",
+    "league": "مباريات ودية -أندية",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-10",
+    "homeTeam": {
+      "name": "سبورتينج براجا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\30\\SportingBraga2018_7_30_10_23.jpg"
+    },
+    "awayTeam": {
+      "name": "سيلتا فيجو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\7\\8\\CeltaVigo2021_7_8_18_14.jpg"
+    },
+    "time": "21:30",
+    "date": "اليوم",
+    "league": "مباريات ودية -أندية",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
   }
 ]
