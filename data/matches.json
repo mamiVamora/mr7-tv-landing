@@ -2,14 +2,14 @@
   {
     "id": "match-0",
     "homeTeam": {
-      "name": "الترجى الرياضي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\8\\18\\AlTraji2018_8_18_22_5.jpg"
+      "name": "سيمبا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Simba2018_7_24_12_50.jpg"
     },
     "awayTeam": {
-      "name": "السويحلي الرياضي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\8\\18\\sehwely-logo2024_8_18_17_33.jpg"
+      "name": "نادي 15 أوجوستو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\10\\19\\15_de_Agosto_Femenino_Logo2026_10_19_23_36.webp"
     },
-    "time": "19:00",
+    "time": "16:00",
     "date": "اليوم",
     "league": "دوري أبطال أفريقيا",
     "status": "UPCOMING",
@@ -19,14 +19,14 @@
   {
     "id": "match-1",
     "homeTeam": {
-      "name": "الزمالك",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Zamalek2018_7_24_13_31.jpg"
+      "name": "نادي كولومب",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\10\\4\\Colombe_Sportive_logo2026_10_4_19_11.webp"
     },
     "awayTeam": {
-      "name": "الجيش الرواندي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\ElgaishElrwandy2018_7_24_12_48.jpg"
+      "name": "توينجيت",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2020\\12\\21\\Teungueth2020_12_21_18_25.jpg"
     },
-    "time": "20:00",
+    "time": "18:00",
     "date": "اليوم",
     "league": "دوري أبطال أفريقيا",
     "status": "UPCOMING",
@@ -36,14 +36,14 @@
   {
     "id": "match-2",
     "homeTeam": {
-      "name": "المريخ",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\25\\AlMerrikh2018_7_25_15_22.jpg"
+      "name": "الهلال السوداني",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\8\\18\\Alhilal2018_8_18_22_11.jpg"
     },
     "awayTeam": {
-      "name": "حوريا كوناكري",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\10\\31\\HoryaConacry22018_10_31_13_25.jpg"
+      "name": "سيداما بونا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\10\\4\\Siidaama logo2026_10_4_19_20.webp"
     },
-    "time": "20:00",
+    "time": "19:00",
     "date": "اليوم",
     "league": "دوري أبطال أفريقيا",
     "status": "UPCOMING",
@@ -53,14 +53,14 @@
   {
     "id": "match-3",
     "homeTeam": {
-      "name": "بيراميدز",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2020\\12\\17\\PyramidsFC2020_12_17_17_30.jpg"
+      "name": "أسيك أبيدجـــــان",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\8\\18\\ASECMimosas2018_8_18_22_21.jpg"
     },
     "awayTeam": {
-      "name": "المريخ بانتيو",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\8\\18\\12024_8_18_17_45.jpg"
+      "name": "المغرب الفاسي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\23\\MAS2021_9_23_16_16.jpg"
     },
-    "time": "20:00",
+    "time": "19:00",
     "date": "اليوم",
     "league": "دوري أبطال أفريقيا",
     "status": "UPCOMING",
@@ -70,14 +70,14 @@
   {
     "id": "match-4",
     "homeTeam": {
-      "name": "نهضة بركان",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\23\\NahdetBourkan2021_9_23_16_20.jpg"
+      "name": "إف سي نواذيبو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2023\\3\\6\\Nouadhibou12023_3_6_0_5.jpg"
     },
     "awayTeam": {
-      "name": "ستار سبورت",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\10\\4\\33332026_10_4_19_7.webp"
+      "name": "سان بيدرو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\12\\17\\SanPedro2018_12_17_10_39.jpg"
     },
-    "time": "22:00",
+    "time": "20:00",
     "date": "اليوم",
     "league": "دوري أبطال أفريقيا",
     "status": "UPCOMING",
@@ -87,16 +87,16 @@
   {
     "id": "match-5",
     "homeTeam": {
-      "name": "عزام يونايتد",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\7\\Azam2021_9_7_11_2.jpg"
+      "name": "الافريقي التونسي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\Africain2018_7_24_12_32.jpg"
     },
     "awayTeam": {
-      "name": "زد",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\8\\27\\470102024_8_27_17_31.jpg"
+      "name": "مازيمبي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\8\\18\\Mazembe2018_8_18_23_49.jpg"
     },
-    "time": "16:00",
+    "time": "20:00",
     "date": "اليوم",
-    "league": "الكونفيدرالية الأفريقية",
+    "league": "دوري أبطال أفريقيا",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -104,14 +104,14 @@
   {
     "id": "match-6",
     "homeTeam": {
-      "name": "ريال باماكو",
-      "logo": "https://mediayk.gemini.media/img/yallakora/teamlogo/bamako7513-4-2012-16-1-23.png"
+      "name": "أس مانيما يونيون",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\ManiemaUnion2018_7_24_13_5.jpg"
     },
     "awayTeam": {
-      "name": "الترجي الجرجيسي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/teamlogo/AlTaraggiAlGergesi6-10-2010-21-22-21.png"
+      "name": "كابوسكورب",
+      "logo": "https://mediayk.gemini.media/img/yallakora/teamlogo/Kabuscorp4513-1-2014-20-23-45.png"
     },
-    "time": "19:00",
+    "time": "16:00",
     "date": "اليوم",
     "league": "الكونفيدرالية الأفريقية",
     "status": "UPCOMING",
@@ -121,14 +121,14 @@
   {
     "id": "match-7",
     "homeTeam": {
-      "name": "أهلي طرابلس",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\25\\AhliTrablos2018_7_25_15_30.jpg"
+      "name": "بورت لويس",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\PortLouis2018_7_24_12_59.jpg"
     },
     "awayTeam": {
-      "name": "ويلوالو أديجرات",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\9\\30\\Welwalo Adigrat FC2026_9_30_22_39.webp"
+      "name": "ديربان سيتي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\10\\1\\Durban City FC2026_10_1_0_24.webp"
     },
-    "time": "20:00",
+    "time": "16:00",
     "date": "اليوم",
     "league": "الكونفيدرالية الأفريقية",
     "status": "UPCOMING",
@@ -138,14 +138,14 @@
   {
     "id": "match-8",
     "homeTeam": {
-      "name": "بلاك بولز",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\11\\27\\227306_imgbank_16865837002024_11_27_0_9.jpg"
+      "name": "اسكو كارا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\10\\9\\download2022_10_9_14_16.jpg"
     },
     "awayTeam": {
-      "name": "رايون سبورت",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\RayonSports2018_7_24_12_27.jpg"
+      "name": "إف سي ديارا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\9\\30\\FC Diarra12026_9_30_23_52.webp"
     },
-    "time": "20:00",
+    "time": "18:30",
     "date": "اليوم",
     "league": "الكونفيدرالية الأفريقية",
     "status": "UPCOMING",
@@ -155,14 +155,14 @@
   {
     "id": "match-9",
     "homeTeam": {
-      "name": "الصفاقســــي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\25\\Sfaxien2018_7_25_15_27.jpg"
+      "name": "الأهلي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2023\\10\\19\\ahly12023_10_19_17_58.jpg"
     },
     "awayTeam": {
-      "name": "أكاديمية أمادو ديالو",
-      "logo": "https://mediayk.gemini.media/img/yallakora/teamlogo/amado-dialo7514-3-2012-20-17-24.png"
+      "name": "نادي كيتارا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\9\\kitara2026_8_9_18_24.webp"
     },
-    "time": "20:00",
+    "time": "19:00",
     "date": "اليوم",
     "league": "الكونفيدرالية الأفريقية",
     "status": "UPCOMING",
@@ -172,16 +172,16 @@
   {
     "id": "match-10",
     "homeTeam": {
-      "name": "أستون فيلا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\AstonVilla2018_9_10_12_22.jpg"
+      "name": "سينجيدا بلاك ستارز",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2025\\10\\16\\singida2025_10_16_18_40.webp"
     },
     "awayTeam": {
-      "name": "مانشستر سيتي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\ManchesterCity2018_7_29_15_27.jpg"
+      "name": "توسكر",
+      "logo": "https://mediayk.gemini.media/img/yallakora/teamlogo/Tusker10014-3-2013-18-28-53.png"
     },
-    "time": "14:30",
+    "time": "19:00",
     "date": "اليوم",
-    "league": "الدوري الإنجليزي",
+    "league": "الكونفيدرالية الأفريقية",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -189,16 +189,16 @@
   {
     "id": "match-11",
     "homeTeam": {
-      "name": "كوفنتري سيتي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/teamlogo/476px-Coventry_City4517-1-2014-21-55-44.png"
+      "name": "اتحاد العاصمة",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\EtihadElAasema2018_7_24_12_55.jpg"
     },
     "awayTeam": {
-      "name": "فولهام",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Fulham2018_7_29_15_26.jpg"
+      "name": "بانثرز إف سي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\9\\30\\The Panthers FC2026_9_30_22_47.webp"
     },
-    "time": "17:00",
+    "time": "22:00",
     "date": "اليوم",
-    "league": "الدوري الإنجليزي",
+    "league": "الكونفيدرالية الأفريقية",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -206,16 +206,16 @@
   {
     "id": "match-12",
     "homeTeam": {
-      "name": "أرسنال",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\5\\Arsenal2021_9_5_14_15.jpg"
+      "name": "الجيش الملكي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\AlgaishElmalaky2018_7_24_17_49.jpg"
     },
     "awayTeam": {
-      "name": "إيفرتون",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Everton2018_7_29_15_28.jpg"
+      "name": "كورهوغو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\9\\30\\CO Korhogo2026_9_30_23_15.webp"
     },
-    "time": "17:00",
+    "time": "22:00",
     "date": "اليوم",
-    "league": "الدوري الإنجليزي",
+    "league": "الكونفيدرالية الأفريقية",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -223,14 +223,14 @@
   {
     "id": "match-13",
     "homeTeam": {
-      "name": "تشيلسي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Chelsea2018_7_29_15_28.jpg"
+      "name": "ليفربول",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\8\\25\\Liverpool12024_8_25_20_39.jpg"
     },
     "awayTeam": {
-      "name": "توتنهام هوتسبر",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\8\\19\\1482024_8_19_21_30.jpg"
+      "name": "برايتون",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Brighton2018_7_29_15_31.jpg"
     },
-    "time": "19:30",
+    "time": "17:00",
     "date": "اليوم",
     "league": "الدوري الإنجليزي",
     "status": "UPCOMING",
@@ -240,16 +240,16 @@
   {
     "id": "match-14",
     "homeTeam": {
-      "name": "رايو فاييكانو",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\5\\RayoVallecano2021_9_5_14_18.jpg"
+      "name": "مانشستر يونايتد",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\ManchesterUnited2018_7_29_15_29.jpg"
     },
     "awayTeam": {
-      "name": "إلتشي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2015\\2\\18\\Elche CF2015_2_18_20_41.jpg"
+      "name": "بورنموث",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Bournemouth2018_7_29_15_32.jpg"
     },
-    "time": "15:00",
+    "time": "17:00",
     "date": "اليوم",
-    "league": "الدوري الإسباني",
+    "league": "الدوري الإنجليزي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -257,16 +257,16 @@
   {
     "id": "match-15",
     "homeTeam": {
-      "name": "ر.سانتاندير",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\10\\31\\RacingSantander2018_10_31_12_21.jpg"
+      "name": "هال سيتي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2015\\3\\23\\Hull City2015_3_23_13_59.jpg"
     },
     "awayTeam": {
-      "name": "اسبانيول",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Espanyol2018_7_29_14_44.jpg"
+      "name": "برينتفورد",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\24\\Brentford2018_9_24_13_3.jpg"
     },
-    "time": "17:15",
+    "time": "17:00",
     "date": "اليوم",
-    "league": "الدوري الإسباني",
+    "league": "الدوري الإنجليزي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -274,16 +274,16 @@
   {
     "id": "match-16",
     "homeTeam": {
-      "name": "فالنسيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Valencia2018_7_29_14_44.jpg"
+      "name": "كريستال بالاس",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\8\\19\\CrystalPalace2021_8_19_15_7.jpg"
     },
     "awayTeam": {
-      "name": "فياريال",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Villareal2018_7_29_14_53.jpg"
+      "name": "نيوكاسل",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\NewcastleUnited2018_7_29_15_27.jpg"
     },
-    "time": "19:30",
+    "time": "17:00",
     "date": "اليوم",
-    "league": "الدوري الإسباني",
+    "league": "الدوري الإنجليزي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -291,16 +291,16 @@
   {
     "id": "match-17",
     "homeTeam": {
-      "name": "اتلتيكو مدريد",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\8\\11\\132024_8_11_20_56.jpg"
+      "name": "سندرلاند",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2015\\3\\23\\Sunderland2015_3_23_13_59.jpg"
     },
     "awayTeam": {
-      "name": "ديبورتيفو لاكورونيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\DeportivoLaCoruna2018_7_29_14_52.jpg"
+      "name": "ليدز يونايتد",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2019\\1\\20\\LeedsUnited2019_1_20_14_7.jpg"
     },
-    "time": "22:00",
+    "time": "19:30",
     "date": "اليوم",
-    "league": "الدوري الإسباني",
+    "league": "الدوري الإنجليزي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -308,16 +308,16 @@
   {
     "id": "match-18",
     "homeTeam": {
-      "name": "ايوبسبور",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\8\\15\\nZORQJAr-tnyYwm3e2024_8_15_22_57.jpg"
+      "name": "أتلتيك بلباو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\AthleticBilbao2018_7_29_14_44.jpg"
     },
     "awayTeam": {
-      "name": "قاسم باشا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\2\\14\\Kasimpasa12021_2_14_3_44.jpg"
+      "name": "خيتافي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Getafe2018_7_29_14_53.jpg"
     },
-    "time": "13:30",
+    "time": "16:00",
     "date": "اليوم",
-    "league": "الدوري التركي",
+    "league": "الدوري الإسباني",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -325,16 +325,16 @@
   {
     "id": "match-19",
     "homeTeam": {
-      "name": "غازي عنتاب بي.بي.كي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\7\\15\\Gaziantep2021_7_15_15_45.jpg"
+      "name": "سيلتا فيجو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\7\\8\\CeltaVigo2021_7_8_18_14.jpg"
     },
     "awayTeam": {
-      "name": "إيرزوروم سبور",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\7\\15\\Erzurumspor2021_7_15_16_2.jpg"
+      "name": "ريال بيتيس",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\RealBetis2018_7_29_14_50.jpg"
     },
-    "time": "16:00",
+    "time": "18:15",
     "date": "اليوم",
-    "league": "الدوري التركي",
+    "league": "الدوري الإسباني",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -342,12 +342,63 @@
   {
     "id": "match-20",
     "homeTeam": {
-      "name": "سامسون سبور",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2023\\8\\4\\Samsunspor12023_8_4_21_39.jpg"
+      "name": "ريال سوسيداد",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\RealSociedad2018_7_29_14_56.jpg"
     },
     "awayTeam": {
-      "name": "آميد سبورتيف",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\5\\Amed SFK2026_8_5_15_14.webp"
+      "name": "ليفانتي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Levante2018_7_29_14_48.jpg"
+    },
+    "time": "20:30",
+    "date": "اليوم",
+    "league": "الدوري الإسباني",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-21",
+    "homeTeam": {
+      "name": "برشلونة",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Barcelona2018_7_29_14_44.jpg"
+    },
+    "awayTeam": {
+      "name": "ريال مدريد",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\RealMadrid2018_7_29_14_47.jpg"
+    },
+    "time": "23:00",
+    "date": "اليوم",
+    "league": "الدوري الإسباني",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-22",
+    "homeTeam": {
+      "name": "كونيا سبور",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\7\\15\\Konyaspor2021_7_15_15_34.jpg"
+    },
+    "awayTeam": {
+      "name": "جنتشلربيرليجي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\7\\15\\Genclerbirligi2021_7_15_16_19.jpg"
+    },
+    "time": "16:00",
+    "date": "اليوم",
+    "league": "الدوري التركي",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-23",
+    "homeTeam": {
+      "name": "جوزتيبي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\2\\13\\Goztepe-12021_2_13_23_51.jpg"
+    },
+    "awayTeam": {
+      "name": "كوروم",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\5\\Corum_FK_Logo112026_8_5_14_27.webp"
     },
     "time": "19:00",
     "date": "اليوم",
@@ -357,16 +408,16 @@
     "channel": "غير محدد"
   },
   {
-    "id": "match-21",
+    "id": "match-24",
     "homeTeam": {
-      "name": "لانس",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\10\\Lens2018_9_10_13_11.jpg"
+      "name": "موناكو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Monaco2018_7_29_17_13.jpg"
     },
     "awayTeam": {
-      "name": "باريس إف سي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2023\\1\\28\\Paris_FC_logo.svg2023_1_28_18_18.jpg"
+      "name": "ليل",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\5\\Lille2021_9_5_15_50.jpg"
     },
-    "time": "21:45",
+    "time": "17:00",
     "date": "اليوم",
     "league": "الدوري الفرنسي",
     "status": "UPCOMING",
@@ -374,69 +425,18 @@
     "channel": "غير محدد"
   },
   {
-    "id": "match-22",
-    "homeTeam": {
-      "name": "كالياري",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Cagliari2018_7_29_15_8.jpg"
-    },
-    "awayTeam": {
-      "name": "بولونيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Bologna2018_7_29_15_11.jpg"
-    },
-    "time": "16:00",
-    "date": "اليوم",
-    "league": "الدوري الإيطالي",
-    "status": "UPCOMING",
-    "score": "- - -",
-    "channel": "غير محدد"
-  },
-  {
-    "id": "match-23",
-    "homeTeam": {
-      "name": "كومو",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\8\\12\\10472024_8_12_20_53.jpg"
-    },
-    "awayTeam": {
-      "name": "ساسولو",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Sassuolo2018_7_29_15_11.jpg"
-    },
-    "time": "16:00",
-    "date": "اليوم",
-    "league": "الدوري الإيطالي",
-    "status": "UPCOMING",
-    "score": "- - -",
-    "channel": "غير محدد"
-  },
-  {
-    "id": "match-24",
-    "homeTeam": {
-      "name": "نابولي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\8\\25\\Napoli12024_8_25_20_48.jpg"
-    },
-    "awayTeam": {
-      "name": "روما",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\ASRoma2018_7_29_15_7.jpg"
-    },
-    "time": "19:00",
-    "date": "اليوم",
-    "league": "الدوري الإيطالي",
-    "status": "UPCOMING",
-    "score": "- - -",
-    "channel": "غير محدد"
-  },
-  {
     "id": "match-25",
     "homeTeam": {
-      "name": "لاتسيو",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Lazio2018_7_29_15_9.jpg"
+      "name": "تولوز",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\2\\22026_8_2_19_16.webp"
     },
     "awayTeam": {
-      "name": "بارما",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Parma2018_7_29_15_23.jpg"
+      "name": "تروا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/teamlogo/logo_troyes2752-7-2012-19-55-47.png"
     },
-    "time": "21:45",
+    "time": "19:15",
     "date": "اليوم",
-    "league": "الدوري الإيطالي",
+    "league": "الدوري الفرنسي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -444,16 +444,16 @@
   {
     "id": "match-26",
     "homeTeam": {
-      "name": "كولن",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\12\\Koln2018_9_12_13_9.jpg"
+      "name": "رين",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Rennais2018_7_29_17_14.jpg"
     },
     "awayTeam": {
-      "name": "شالكه",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Schalke2018_7_29_16_4.jpg"
+      "name": "ستراسبورج",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Strasburg2018_7_29_17_17.jpg"
     },
-    "time": "16:30",
+    "time": "19:15",
     "date": "اليوم",
-    "league": "الدوري الألماني",
+    "league": "الدوري الفرنسي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -461,16 +461,16 @@
   {
     "id": "match-27",
     "homeTeam": {
-      "name": "ماينز",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Mainz2018_7_29_16_7.jpg"
+      "name": "مارسيليا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\5\\669647185_1400616615413599_4784152006441617777_n2026_8_5_17_38.webp"
     },
     "awayTeam": {
-      "name": "فيردر بريمن",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\WerderBremen2018_7_29_16_2.jpg"
+      "name": "لوهافر",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\2\\12026_8_2_19_12.webp"
     },
-    "time": "16:30",
+    "time": "19:15",
     "date": "اليوم",
-    "league": "الدوري الألماني",
+    "league": "الدوري الفرنسي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -478,16 +478,16 @@
   {
     "id": "match-28",
     "homeTeam": {
-      "name": "لايبزيج",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Leipzig2018_7_29_16_8.jpg"
+      "name": "أنجيه",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\5\\Angers2021_9_5_15_15.jpg"
     },
     "awayTeam": {
-      "name": "إس في إلفيرسبيرج",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\2\\Screenshot 2026-08-02 1929152026_8_2_19_28.webp"
+      "name": "لوريان",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2015\\3\\23\\Lorient2015_3_23_18_7.jpg"
     },
-    "time": "16:30",
+    "time": "19:15",
     "date": "اليوم",
-    "league": "الدوري الألماني",
+    "league": "الدوري الفرنسي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -495,16 +495,16 @@
   {
     "id": "match-29",
     "homeTeam": {
-      "name": "بادربورن",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\12\\Paderborn2018_9_12_13_11.jpg"
+      "name": "اوكسير",
+      "logo": "https://mediayk.gemini.media/img/yallakora/teamlogo/Auxerre21-10-2010-13-40-47.png"
     },
     "awayTeam": {
-      "name": "هامبورج",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\8\\16\\Hamburg2018_8_16_10_18.jpg"
+      "name": "لو مان",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\2\\4201b154-511d-4128-ab82-9b619ecc60832026_8_2_19_13.webp"
     },
-    "time": "16:30",
+    "time": "19:15",
     "date": "اليوم",
-    "league": "الدوري الألماني",
+    "league": "الدوري الفرنسي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -512,16 +512,16 @@
   {
     "id": "match-30",
     "homeTeam": {
-      "name": "أوجسبورج",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Augsburg2018_7_29_16_8.jpg"
+      "name": "إنتر ميلان",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\5\\InterMilan2021_9_5_16_40.jpg"
     },
     "awayTeam": {
-      "name": "يونيون برلين",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\9\\12\\UnionBerlin2018_9_12_13_37.jpg"
+      "name": "فيورنتينا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\5\\Screenshot 2026-08-05 1746362026_8_5_17_45.webp"
     },
-    "time": "16:30",
+    "time": "14:30",
     "date": "اليوم",
-    "league": "الدوري الألماني",
+    "league": "الدوري الإيطالي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -529,12 +529,97 @@
   {
     "id": "match-31",
     "homeTeam": {
-      "name": "بروسيا دورتموند",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\BorussiaDortmund2018_7_29_16_4.jpg"
+      "name": "أتالانتا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\5\\706198349_1535034964645365_1594040213893298031_n2026_8_5_17_41.webp"
     },
     "awayTeam": {
-      "name": "آ. فرانكفورت",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Frankfurt2018_7_29_16_5.jpg"
+      "name": "فروزينوني",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Frosinone2018_7_29_15_23.jpg"
+    },
+    "time": "17:00",
+    "date": "اليوم",
+    "league": "الدوري الإيطالي",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-32",
+    "homeTeam": {
+      "name": "جنوى",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Genoa2018_7_29_15_10.jpg"
+    },
+    "awayTeam": {
+      "name": "فينيزيا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\5\\Screenshot 2026-08-05 1753182026_8_5_17_52.webp"
+    },
+    "time": "17:00",
+    "date": "اليوم",
+    "league": "الدوري الإيطالي",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-33",
+    "homeTeam": {
+      "name": "ليتشي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2019\\7\\14\\Lecce2019_7_14_16_55.jpg"
+    },
+    "awayTeam": {
+      "name": "يوفنتوس",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\7\\14\\Juventus12021_7_14_17_22.jpg"
+    },
+    "time": "20:00",
+    "date": "اليوم",
+    "league": "الدوري الإيطالي",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-34",
+    "homeTeam": {
+      "name": "أودينيزي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Udinese2018_7_29_15_6.jpg"
+    },
+    "awayTeam": {
+      "name": "ميلان",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\ACMilan2018_7_29_15_9.jpg"
+    },
+    "time": "22:45",
+    "date": "اليوم",
+    "league": "الدوري الإيطالي",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-35",
+    "homeTeam": {
+      "name": "هوفنهايم",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Hoffenheim2018_7_29_16_6.jpg"
+    },
+    "awayTeam": {
+      "name": "باير ليفركوزن",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\BayerLeverkusen2018_7_29_16_6.jpg"
+    },
+    "time": "17:30",
+    "date": "اليوم",
+    "league": "الدوري الألماني",
+    "status": "UPCOMING",
+    "score": "- - -",
+    "channel": "غير محدد"
+  },
+  {
+    "id": "match-36",
+    "homeTeam": {
+      "name": "فرايبورج",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\Freiburg2018_7_29_16_7.jpg"
+    },
+    "awayTeam": {
+      "name": "بايرن ميونيخ",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\29\\BayernMunchen2018_7_29_16_3.jpg"
     },
     "time": "19:30",
     "date": "اليوم",
@@ -544,103 +629,18 @@
     "channel": "غير محدد"
   },
   {
-    "id": "match-32",
-    "homeTeam": {
-      "name": "إستريلا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2023\\11\\22\\72023_11_22_18_57.jpg"
-    },
-    "awayTeam": {
-      "name": "كازا بيا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\11\\Casa12022_8_11_22_40.jpg"
-    },
-    "time": "17:30",
-    "date": "اليوم",
-    "league": "الدوري البرتغالي",
-    "status": "UPCOMING",
-    "score": "- - -",
-    "channel": "غير محدد"
-  },
-  {
-    "id": "match-33",
-    "homeTeam": {
-      "name": "ألفيركا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2025\\9\\11\\F.C._Alverca_logo12025_9_11_18_18.webp"
-    },
-    "awayTeam": {
-      "name": "أروكا",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2015\\3\\23\\Arouca2015_3_23_18_40.jpg"
-    },
-    "time": "20:00",
-    "date": "اليوم",
-    "league": "الدوري البرتغالي",
-    "status": "UPCOMING",
-    "score": "- - -",
-    "channel": "غير محدد"
-  },
-  {
-    "id": "match-34",
-    "homeTeam": {
-      "name": "جل فيسنتي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\9\\5\\GilVicente2021_9_5_18_48.jpg"
-    },
-    "awayTeam": {
-      "name": "بورتو",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\30\\Porto2018_7_30_10_21.jpg"
-    },
-    "time": "22:30",
-    "date": "اليوم",
-    "league": "الدوري البرتغالي",
-    "status": "UPCOMING",
-    "score": "- - -",
-    "channel": "غير محدد"
-  },
-  {
-    "id": "match-35",
-    "homeTeam": {
-      "name": "نادي نيوم",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2024\\7\\21\\neom2024_7_21_16_52.jpg"
-    },
-    "awayTeam": {
-      "name": "أبها",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\2\\429662615_419286860612195_8035419170743120015_n2026_8_2_18_22.webp"
-    },
-    "time": "17:00",
-    "date": "اليوم",
-    "league": "الدوري السعودي",
-    "status": "UPCOMING",
-    "score": "- - -",
-    "channel": "غير محدد"
-  },
-  {
-    "id": "match-36",
-    "homeTeam": {
-      "name": "الخلود",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2025\\9\\25\\Al_Kholood_Club12025_9_25_0_22.webp"
-    },
-    "awayTeam": {
-      "name": "الاتفـــــاق",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\25\\Ettifaq2018_7_25_17_9.jpg"
-    },
-    "time": "18:05",
-    "date": "اليوم",
-    "league": "الدوري السعودي",
-    "status": "UPCOMING",
-    "score": "- - -",
-    "channel": "غير محدد"
-  },
-  {
     "id": "match-37",
     "homeTeam": {
-      "name": "الرياض",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\2\\xOyjlucX_400x4002026_8_2_18_28.webp"
+      "name": "إستوريل برايا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2015\\3\\23\\Estoril2015_3_23_18_36.jpg"
     },
     "awayTeam": {
-      "name": "التعاون",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2023\\11\\10\\tawwoun2023_11_10_17_9.jpg"
+      "name": "موريرنسي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\30\\Moreirense2018_7_30_10_24.jpg"
     },
-    "time": "21:00",
+    "time": "18:30",
     "date": "اليوم",
-    "league": "الدوري السعودي",
+    "league": "الدوري البرتغالي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -648,16 +648,16 @@
   {
     "id": "match-38",
     "homeTeam": {
-      "name": "الوكرة",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\5\\22026_8_5_23_0.webp"
+      "name": "ريو آفي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\30\\RioAve2018_7_30_10_23.jpg"
     },
     "awayTeam": {
-      "name": "العربي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\26\\AlArabi2018_7_26_12_12.jpg"
+      "name": "فاماليكاو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2020\\3\\16\\Famalicao12020_3_16_19_44.jpg"
     },
-    "time": "17:30",
+    "time": "21:00",
     "date": "اليوم",
-    "league": "دوري نجوم قطر",
+    "league": "الدوري البرتغالي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -665,16 +665,16 @@
   {
     "id": "match-39",
     "homeTeam": {
-      "name": "الدحيل",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\26\\AlDuhail2018_7_26_12_12.jpg"
+      "name": "ناسيونال ماديرا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\2\\22026_8_2_19_3.webp"
     },
     "awayTeam": {
-      "name": "نادي لوسيل",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\7\\16\\lucail sc2026_7_16_23_36.webp"
+      "name": "سبورتينج براجا",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\30\\SportingBraga2018_7_30_10_23.jpg"
     },
-    "time": "19:45",
+    "time": "21:00",
     "date": "اليوم",
-    "league": "دوري نجوم قطر",
+    "league": "الدوري البرتغالي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -682,16 +682,16 @@
   {
     "id": "match-40",
     "homeTeam": {
-      "name": "أمل تزنيت",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/YK-Generic-team-logo.png"
+      "name": "سبورتنج لشبونة",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2020\\8\\5\\Sporting-CP-Lisbon12020_8_5_16_42.jpg"
     },
     "awayTeam": {
-      "name": "النادي المكناسي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/teamlogo/meknasi7515-3-2012-18-28-11.png"
+      "name": "أكاديميكو فيزيو",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2026\\8\\2\\medium_Emb_Ac_Viseu_AF_200x200_300_849bd92d0b2026_8_2_19_1.webp"
     },
-    "time": "19:00",
+    "time": "23:30",
     "date": "اليوم",
-    "league": "الدوري المغربي",
+    "league": "الدوري البرتغالي",
     "status": "UPCOMING",
     "score": "- - -",
     "channel": "غير محدد"
@@ -699,14 +699,14 @@
   {
     "id": "match-41",
     "homeTeam": {
-      "name": "الاتحاد التوركي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2022\\8\\2\\22022_8_2_20_43.jpg"
+      "name": "نهضة الزمامرة",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2021\\7\\13\\Untitled-12021_7_13_0_43.jpg"
     },
     "awayTeam": {
-      "name": "الوداد البيضاوي",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\8\\18\\Wydad2018_8_18_21_18.jpg"
+      "name": "الفتح الرباطي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\ElfathAlrabaty2018_7_24_17_51.jpg"
     },
-    "time": "21:00",
+    "time": "19:00",
     "date": "اليوم",
     "league": "الدوري المغربي",
     "status": "UPCOMING",
@@ -716,14 +716,14 @@
   {
     "id": "match-42",
     "homeTeam": {
-      "name": "المغرب التطواني",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\AlmaghrebEltetwany2018_7_24_17_50.jpg"
+      "name": "الكوكب المراكشي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\7\\24\\AlkawkabAlmarakshy2018_7_24_17_50.jpg"
     },
     "awayTeam": {
-      "name": "وداد تمارة",
-      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/YK-Generic-team-logo.png"
+      "name": "الدفاع الجديدي",
+      "logo": "https://mediayk.gemini.media/img/yallakora/iosteams/120\\2018\\8\\18\\ElDifaaElJadidi2018_8_18_23_13.jpg"
     },
-    "time": "23:00",
+    "time": "21:00",
     "date": "اليوم",
     "league": "الدوري المغربي",
     "status": "UPCOMING",
